@@ -11,15 +11,21 @@ $ npm login
 $ npm publish
 ```
 
+#### Private mode enable
+
 ```
 npm ERR! no_perms Private mode enable, only admin can publish this module
 SOL: $ npm config set registry http://registry.npmjs.org
 ```
 
+#### You do not have permission to publish
+
 ```
 npm ERR! You do not have permission to publish "npmtest". Are you logged in as the correct user? : npmtest
 SOL: There is a same package name as yours. Change your package's name.
 ```
+
+#### need auth auth required for publishing
 
 ```
 npm ERR! code ENEEDAUTH
@@ -27,6 +33,8 @@ npm ERR! need auth auth required for publishing
 npm ERR! need auth You need to authorize this machine using `npm adduser`
 SOL: $ npm add user
 ```
+
+#### You cannot publish over the previously published versions:...
 
 ```
 npm ERR! You cannot publish over the previously published versions: 1.0.0. : npmtest-tomfriwel
