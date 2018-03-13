@@ -4,17 +4,13 @@
 `$  gem install bundler`
 
 
-new :
-```
-$ jekyll new project-name
-```
+# create a new project
+`$ jekyll new project-name`
 
-run local server(http://127.0.0.1:4000):
-```
-$ bundle exec jekyll serve
-```
+# run local server(http://127.0.0.1:4000):
+`$ bundle exec jekyll serve`
 
-can not load `/assets/main.css` (view in console):
+# can not load `/assets/main.css` (view in console):
 
 1. copy the assets folder of theme you are using to you resp
 
@@ -35,7 +31,7 @@ If build error, in local run:
 $ bundle exec jekyll build
 ```
 
-you can set value between `---` in post markdown file like:
+# you can set value between `---` in post markdown file like:
 ```
 ---
 title: a title

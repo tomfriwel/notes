@@ -16,6 +16,8 @@ $ npm publish
 ```
 npm ERR! no_perms Private mode enable, only admin can publish this module
 SOL: $ npm config set registry http://registry.npmjs.org
+
+set back: $ npm config set registry https://registry.npm.taobao.org
 ```
 
 #### You do not have permission to publish
