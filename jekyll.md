@@ -48,3 +48,19 @@ and use it by `post.custom` or `post.title`
 To preivew posts in `_drafts` folder:
 
 `$ jekyll serve --drafts`
+
+# order the same date posts
+
+add a `date` field to YAML Front Matter just like:
+```
+---
+# latest
+date: '2018-03-15 18:02:12'
+---
+
+
+---
+# older
+date: '2018-03-15 13:02:12'
+---
+```
