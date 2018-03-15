@@ -26,10 +26,10 @@ baseurl: /blog
 ...
 ```
 
-If build error, in local run:
-```
-$ bundle exec jekyll build
-```
+If build error or for test, in local run:
+
+`$ bundle exec jekyll build`
+
 
 # you can set value between `---` in post markdown file like:
 ```
@@ -42,3 +42,9 @@ custom: custom content lalala
 ```
 
 and use it by `post.custom` or `post.title`
+
+# preview drafts
+
+To preivew posts in `_drafts` folder:
+
+`$ jekyll serve --drafts`
