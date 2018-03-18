@@ -1,6 +1,6 @@
 # programming-notes
 
-Some notes when using some tools or languages.
+Some notes when using some programming tools and languages or some games experience.
 
 # Programming
 
@@ -10,4 +10,5 @@ Some notes when using some tools or languages.
 * [Git](./git.md)
 
 # Game
+
 * [Nintendo Switch](./nintendoswitch.md)
