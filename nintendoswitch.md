@@ -1,6 +1,14 @@
+# 换区后的黄金点数
+
+换区后黄金点数不会被清空，但是获取的黄金点数应该是只能在你获取点数的时候的区才能使用，因为我换区后点数是变成各个区的点数，而不是通用的。
+
+建议卡带的黄金点数先不要急着领取，等要买某个区的游戏的时候，换好区再领。
+
 # Error Code: 2124 8028
 
-网络问题，我用移动4G开热点解决。再看看是不是在下载东西。
+这种情况一般出现在账号切换区域后，进入eShop需要重新登录的情况。
+
+网络问题，我用移动4G开热点解决。再看看是不是在下载东西。如果连续切换，可能需要断开热点后重新连接一次热点。
 
 [Nintendo Support About this Issue](http://en-americas-support.nintendo.com/app/answers/detail/a_id/22443/~/error-code%3A-2124-8028)
 
@@ -29,8 +37,3 @@ Many routers support both the 2.4Ghz and 5Ghz frequency bands. If your router su
 
 #### Situation Not Resolved:
 If this issue persists, it may just indicate a temporary issue with your Internet service. Wait a while and try again later.
-
-
-# 换区后的黄金点数
-
-换区后黄金点数不会被清空，但是获取的黄金点数应该是只能在你获取点数的时候的区才能使用，因为我换区后点数是变成各个区的点数，而不是通用的。
