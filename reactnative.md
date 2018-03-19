@@ -15,6 +15,8 @@ TARGETS > General > Signing > Team
 
 # Specify Simulator
 
+Add `--simulator="xxx"`:
+
 `$ react-native run-ios --simulator="iPhone 8 Plus"`
 
 # upgrade
