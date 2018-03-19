@@ -12,11 +12,15 @@ npm start
 
 # iOS
 
-```
+```shell
 weex platform add ios
 cd platforms/ios/
 pod install
+//back to project root 
+week run ios
 ```
+You'd better run it in Xcode, because I run `$ week run ios` stop at `Reloading page...`. Maybe it's a network problem.
+
 If:
 
 ```
