@@ -19,6 +19,12 @@ Add `--simulator="xxx"`:
 
 `$ react-native run-ios --simulator="iPhone 8 Plus"`
 
+# shortcuts
+
+ios: Press Cmd+R to reload, Cmd+D or shake for dev menu
+
+android: Double tap R on your keyboard to reload, Shake or press menu button for dev menu
+
 # upgrade
 
 You should consider using the new upgrade tool based on Git. It makes upgrades easier by resolving most conflicts automatically.
