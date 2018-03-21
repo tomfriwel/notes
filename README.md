@@ -14,6 +14,7 @@ Some notes when using some programming tools and languages or some games experie
 * [Git](./git.md)
 * [React Native](./reactnative.md)
 * [Weex](./weex.md)
+* [iOS](./ios.md)
 
 # Computer
 
