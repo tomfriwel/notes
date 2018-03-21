@@ -2,4 +2,4 @@
 
 Select the code block that you want to format.
 
-Then press <kbd>Ctrl</kbd>+<kbd>I</kbd>.
+Then press <kbd>Ctrl</kbd>+<kbd>I</kbd>.
