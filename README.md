@@ -1,4 +1,4 @@
-# programming-notes
+# Notes
 
 Some notes when using some programming tools and languages or some games experience.
 
@@ -13,7 +13,7 @@ Some notes when using some programming tools and languages or some games experie
 * [jekyll](./jekyll.md)
 * [Git](./git.md)
 * [React Native](./reactnative.md)
-* [Weex](./week.md)
+* [Weex](./weex.md)
 
 # Game
 
