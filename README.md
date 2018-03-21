@@ -1,6 +1,6 @@
 # Notes
 
-Some notes when using some programming tools and languages or some games experience.
+Some notes when using some programming tools and languages or some games experience, etc.
 
 # Programming Tools
 
@@ -14,6 +14,10 @@ Some notes when using some programming tools and languages or some games experie
 * [Git](./git.md)
 * [React Native](./reactnative.md)
 * [Weex](./weex.md)
+
+# Computer
+
+* [Mac](./mac.md)
 
 # Game
 
