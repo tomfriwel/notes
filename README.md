@@ -2,6 +2,8 @@
 
 Some notes when using some programming tools and languages or some games experience, etc.
 
+[![](https://img.shields.io/badge/weibo-tomfriwel-blue.svg)](https://weibo.com/tomfriwel)
+
 # Programming Tools
 
 * [Visual Studio Code](./vscode.md)
