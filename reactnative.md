@@ -1,6 +1,14 @@
 
 # [React Native Tutorial – Building Your First iOS App With JavaScript (Part 1)](https://www.smashingmagazine.com/2016/04/the-beauty-of-react-native-building-your-first-ios-app-with-javascript-part-1/)
 
+# new 
+
+`$ react-native init AwesomeProject`
+
+# run ios
+
+`$ react-native run-ios`
+
 # iOS Xcode fix sign issues
 
 Open ios project in folder ./ios.
