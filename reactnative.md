@@ -46,3 +46,5 @@ See https://facebook.github.io/react-native/docs/upgrading.html
 
 `$ sudo ...`
 
+# [No bundle url present](https://github.com/facebook/react-native/issues/12754)
+
