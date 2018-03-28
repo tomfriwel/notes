@@ -48,3 +48,20 @@ See https://facebook.github.io/react-native/docs/upgrading.html
 
 # [No bundle url present](https://github.com/facebook/react-native/issues/12754)
 
+```
+yustada commented on Mar 9, 2017
+My problem has been solved by adding NSAllowsLocalNetworking to Info.plist
+
+<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSAllowsArbitraryLoadsInWebContent</key>
+		<true/>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+	</dict>
+</key>
+I am not sure it is because of RN0.42 or iOS issue, but it is solved in my case.
+```
+
