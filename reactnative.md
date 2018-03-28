@@ -65,3 +65,4 @@ My problem has been solved by adding NSAllowsLocalNetworking to Info.plist
 I am not sure it is because of RN0.42 or iOS issue, but it is solved in my case.
 ```
 
+# 
