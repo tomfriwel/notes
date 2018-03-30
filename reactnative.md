@@ -65,4 +65,25 @@ My problem has been solved by adding NSAllowsLocalNetworking to Info.plist
 I am not sure it is because of RN0.42 or iOS issue, but it is solved in my case.
 ```
 
-# 
+# React Navigation
+
+navigate to other page:
+
+```
+this.props.navigation.navigate('ToPage')
+//or with params
+this.props.navigation.navigate('ToPage', {
+    title:'anything'
+})
+
+//get the param in ToPage's render
+const { params } = this.props.navigation.state;
+
+<Text>title:{JSON.stringify(params.title)}</Text>
+```
+
+Back to previous page:
+
+```
+this.props.navigation.goBack()
+```
