@@ -76,7 +76,7 @@ this.props.navigation.navigate('ToPage', {
     title:'anything'
 })
 
-//get the param in ToPage's render
+//get the param inside of ToPage's render()
 const { params } = this.props.navigation.state;
 
 <Text>title:{JSON.stringify(params.title)}</Text>
