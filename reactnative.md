@@ -67,7 +67,7 @@ I am not sure it is because of RN0.42 or iOS issue, but it is solved in my case.
 
 # React Navigation
 
-navigate to other page:
+### navigate to other page:
 
 ```
 this.props.navigation.navigate('ToPage')
@@ -82,7 +82,7 @@ const { params } = this.props.navigation.state;
 <Text>title:{JSON.stringify(params.title)}</Text>
 ```
 
-Back to previous page:
+### Back to previous page:
 
 ```
 this.props.navigation.goBack()
