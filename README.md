@@ -26,6 +26,8 @@ Some notes when using some programming tools and languages or some games experie
 - [React Native](./reactnative.md)
 - [Weex](./weex.md)
 - [iOS](./ios.md)
+- [shell](./shell.md)
+- [mysql](./mysql.md)
 
 # Computer
 
