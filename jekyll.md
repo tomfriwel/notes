@@ -49,6 +49,8 @@ To preivew posts in `_drafts` folder:
 
 `$ jekyll serve --drafts`
 
+`$ bundle exec jekyll serve --drafts`
+
 # order the same date posts
 
 add a `date` field to YAML Front Matter just like:
