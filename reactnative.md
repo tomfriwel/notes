@@ -46,7 +46,7 @@ See https://facebook.github.io/react-native/docs/upgrading.html
 
 `$ sudo ...`
 
-# [No bundle url present](https://github.com/facebook/react-native/issues/12754)
+# [No bundle url present #12754](https://github.com/facebook/react-native/issues/12754)
 
 ```
 yustada commented on Mar 9, 2017
@@ -63,6 +63,31 @@ My problem has been solved by adding NSAllowsLocalNetworking to Info.plist
 	</dict>
 </key>
 I am not sure it is because of RN0.42 or iOS issue, but it is solved in my case.
+```
+
+# [RCTBridge required dispatch_sync to load RCTDevLoadingView. This may lead to deadlocks #16376](https://github.com/facebook/react-native/issues/16376)
+
+I was able to workaround the warning by updating `AppDelegate.m`
+
+```
+#if RCT_DEV
+#import <React/RCTDevLoadingView.h>
+#endif
+...
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+  ...
+  RCTBridge *bridge = [[RCTBridge alloc] initWithBundleURL:jsCodeLocation
+                                            moduleProvider:nil
+                                             launchOptions:launchOptions];
+#if RCT_DEV
+  [bridge moduleForClass:[RCTDevLoadingView class]];
+#endif
+  RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
+                                                   moduleName:@"Test"
+                                            initialProperties:nil];
+  ...
+}
 ```
 
 # React Navigation
