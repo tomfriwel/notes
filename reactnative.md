@@ -112,3 +112,7 @@ const { params } = this.props.navigation.state;
 ```
 this.props.navigation.goBack()
 ```
+
+### Some library need link after installed
+For example:
+After run `$ npm i --save react-native-ble-manager`, you need link by command `$ react-native link`
