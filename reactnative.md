@@ -120,3 +120,5 @@ After run `$ npm i --save react-native-ble-manager`, you need link by command `$
 ### About Native Module
 
 You need rebuild project to use your module.
+
+`NSNumber` parameter need specify `nonnull`
