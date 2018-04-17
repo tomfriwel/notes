@@ -7,3 +7,5 @@
 ### {"errcode":41002,"errmsg":"appid missing"}
 
 [公众号第三方平台获取服务令牌{"errcode":41002,"errmsg":"appid missing"}](https://segmentfault.com/a/1190000008986029)
+
+### [获取access_token](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421140183)
