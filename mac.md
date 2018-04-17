@@ -20,3 +20,9 @@
 [Calendar Help](https://support.apple.com/zh-cn/guide/calendar/subscribe-to-calendars-icl1022/mac)
 
 [Calendar**labs**.com](https://www.calendarlabs.com/ical-calendar/)
+
+### [How to take a screenshot on your Mac](https://support.apple.com/en-gb/HT201361)
+
+- Whole Screen: `Shift + Command + 3`
+- Select Area: `Shit + Command + 4`
+- A Window: `Shift + Command + 4` then press `Space`
