@@ -28,6 +28,7 @@ Some notes when using some programming tools and languages or some games experie
 - [iOS](./ios.md)
 - [shell](./shell.md)
 - [mysql](./mysql.md)
+- [wechat develop](./wechatdev.md)
 
 # Computer
 
