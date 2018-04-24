@@ -29,6 +29,7 @@ Some notes when using some programming tools and languages or some games experie
 - [shell](./shell.md)
 - [mysql](./mysql.md)
 - [wechat develop](./wechatdev.md)
+- [Vue.js](./vuejs.md)
 
 # Computer
 
