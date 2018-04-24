@@ -40,6 +40,8 @@ If this issue persists, it may just indicate a temporary issue with your Interne
 
 # reverse engineer
 
+### posts
+
 [bertrandom/snowball-thrower](https://github.com/bertrandom/snowball-thrower)
 [Automating Zelda](https://medium.com/@bertrandom/automating-zelda-3b37127e24c8)
 [dekuNukem/Nintendo_Switch_Reverse_Engineering](https://github.com/dekuNukem/Nintendo_Switch_Reverse_Engineering)
@@ -47,3 +49,8 @@ If this issue persists, it may just indicate a temporary issue with your Interne
 [progmem/Switch-Fightstick](https://github.com/progmem/Switch-Fightstick)
 [Not only does the Pokken Pro Pad work on the Switch, so do controllers reverse-engineered off of it!](https://www.reddit.com/r/NintendoSwitch/comments/6ijs0p/not_only_does_the_pokken_pro_pad_work_on_the/)
 [shinyquagsire23/Switch-Fightstick](https://github.com/shinyquagsire23/Switch-Fightstick)
+
+### tool list
+
+- Teensy++ 2.0
+- USB-C to USB-A adapter
