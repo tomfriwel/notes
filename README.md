@@ -17,6 +17,7 @@ Some notes when using some programming tools and languages or some games experie
 - [Visual Studio Code](./vscode.md)
 - [Xcode](./xcode.md)
 - [微信开发者工具](./wechatwebdevtools.md)
+- [Chrome](./chrome.md)
 
 # Programming
 
