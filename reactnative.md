@@ -122,3 +122,5 @@ After run `$ npm i --save react-native-ble-manager`, you need link by command `$
 You need rebuild project to use your module.
 
 `NSNumber` parameter need specify `nonnull`
+
+### `SectionList`item过多会导致动画卡顿
