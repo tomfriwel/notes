@@ -124,3 +124,8 @@ You need rebuild project to use your module.
 `NSNumber` parameter need specify `nonnull`
 
 ### `SectionList`item过多会导致动画卡顿
+
+
+### Do not `console.log` in `componentWillMount`
+
+In my test, I modal a page, in the page's `componentWillMount`, I `console.log` something, when modal the page, there will be a long stop.
