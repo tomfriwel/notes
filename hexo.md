@@ -31,6 +31,19 @@ Or not have a dir:
 
 > deploy
 
+If you want push `public` folder to branch `gh-pages`, you can setup `_config.yml`:
+
+```yml
+#...
+deploy:
+  type: git
+  repo: https://github.com/tomfriwel/hexotest
+  branch: gh-pages
+#...
+```
+
+Or mannually push:
+
 `$ git subtree push --prefix public origin gh-pages`
 
 > push public folder to gh-pages as github site
