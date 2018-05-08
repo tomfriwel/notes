@@ -21,3 +21,7 @@
 $ git push -d <remote_name> <branch_name>
 $ git branch -d <branch_name>
 ```
+
+### stop track files/ folder
+
+`$ git rm --cached [file name] -r`
