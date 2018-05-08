@@ -8,6 +8,7 @@ Some notes when using some programming tools and languages or some games experie
 
 - [Programming Tools](#programming-tools)
 - [Programming](#programming)
+- [Blog](#blog)
 - [Computer](#computer)
 - [Game](#game)
 - [Me](#me)
@@ -23,7 +24,6 @@ Some notes when using some programming tools and languages or some games experie
 # Programming
 
 - [npm](./npm.md)
-- [jekyll](./jekyll.md)
 - [Git](./git.md)
 - [React Native](./reactnative.md)
 - [Weex](./weex.md)
@@ -32,6 +32,11 @@ Some notes when using some programming tools and languages or some games experie
 - [mysql](./mysql.md)
 - [wechat develop](./wechatdev.md)
 - [Vue.js](./vuejs.md)
+
+# Blog
+
+- [jekyll](./jekyll.md)
+- [hexo](./hexo.md)
 
 # Computer
 
