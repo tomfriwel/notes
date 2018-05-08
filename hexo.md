@@ -39,6 +39,7 @@ Or not have a dir:
 ### References
 
 - [使用Hexo+Github一步步搭建属于自己的博客（基础）](https://www.cnblogs.com/fengxiongZz/p/7707219.html)
+- [Deployment](https://hexo.io/docs/deployment.html)
 
 ### gh-pages-deploy.md
 
