@@ -25,3 +25,7 @@ $ git branch -d <branch_name>
 ### stop track files/ folder
 
 `$ git rm --cached [file name] -r`
+
+### change remote url
+
+`$ git remote set-url origin git://new.url.here`
