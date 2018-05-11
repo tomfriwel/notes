@@ -11,6 +11,7 @@ Some notes when using some programming tools and languages or some games experie
 - [Blog](#blog)
 - [Computer](#computer)
 - [Game](#game)
+- [Link](#link)
 - [Me](#me)
 
 # Programming Tools
@@ -45,6 +46,10 @@ Some notes when using some programming tools and languages or some games experie
 # Game
 
 - [Nintendo Switch](./nintendoswitch.md)
+
+# Link
+
+- [Link](./link.md)
 
 # Me
 
