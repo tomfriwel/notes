@@ -48,3 +48,7 @@ If you do not want publish all files, you can move your `package.json` to a spec
 [How to npm publish specific folder but as package root](https://stackoverflow.com/questions/38935176/how-to-npm-publish-specific-folder-but-as-package-root)
 
 Or add `.npmignore`
+
+#### View globally installed packages
+
+`$ npm ls -g --depth=0`
