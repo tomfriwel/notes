@@ -52,3 +52,8 @@ Or add `.npmignore`
 #### View globally installed packages
 
 `$ npm ls -g --depth=0`
+
+
+#### Webpack Bundle Analyzer 
+
+`$ npm run build --report`
