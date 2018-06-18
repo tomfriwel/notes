@@ -6,4 +6,4 @@
 
  # open command
 
- Ctrl+Shift+P / Command+Shift+P
+ <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> / <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>
