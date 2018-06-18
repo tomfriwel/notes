@@ -6,4 +6,4 @@
 
  # open command
 
- Ctrl+Shift+P
+ Ctrl+Shift+P / Command+Shift+P
