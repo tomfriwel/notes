@@ -7,7 +7,7 @@
 ### create and switch to new branch
 `$ git checkout -b iss53`
 
-### remove files in a folder from version control withou deleting them from the filesystem
+### remove files in a folder from version control without deleting them from the filesystem
 
 `$ git rm -r --cached folder/*`
 
