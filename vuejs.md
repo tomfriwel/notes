@@ -14,3 +14,7 @@ html:
 ```
 
 [#v-cloak](https://cn.vuejs.org/v2/api/#v-cloak)
+
+### vue init in current folder
+
+`$ vue init webpack-simple .`
