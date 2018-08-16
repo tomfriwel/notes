@@ -30,6 +30,7 @@ Some notes when using some programming tools and languages or some games experie
 
 # Programming
 
+- [Objective C](./objective-c.md)
 - [npm](./npm.md)
 - [Git](./git.md)
 - [React Native](./reactnative.md)
