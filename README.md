@@ -32,6 +32,7 @@ Some notes when using some programming tools and languages or some games experie
 
 - [Objective C](./objective-c.md)
 - [Python](./python.md)
+- [Javascript](./javascript.md)
 - [npm](./npm.md)
 - [Git](./git.md)
 - [React Native](./reactnative.md)
