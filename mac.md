@@ -26,3 +26,6 @@
 - Whole Screen: `Shift + Command + 3`
 - Select Area: `Shit + Command + 4`
 - A Window: `Shift + Command + 4` then press `Space`
+
+
+#### [Easily Open A Second Finder Window From The Same Folder [OS X Tips]](https://www.cultofmac.com/228451/easily-open-a-second-finder-window-from-the-same-folder-os-x-tips/)
