@@ -7,3 +7,6 @@
 Simple array like [1, 2, 3]
 
 `var copy = array.slice()`
+
+
+#### [Deleting array elements in JavaScript - delete vs splice](https://stackoverflow.com/questions/500606/deleting-array-elements-in-javascript-delete-vs-splice)
