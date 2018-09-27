@@ -32,6 +32,7 @@ Some notes when using some programming tools and languages or some games experie
 - [微信开发者工具](./wechatwebdevtools.md)
 - [Chrome](./chrome.md)
 - [json-server](./json-server.md)
+- [Electron](./electron.md)
 
 # Programming
 
