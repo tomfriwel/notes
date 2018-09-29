@@ -126,3 +126,6 @@ python3 setup.py install
 [How to set python 3 as default interpreter in Ubuntu 14.04 [duplicate]](https://askubuntu.com/questions/590027/how-to-set-python-3-as-default-interpreter-in-ubuntu-14-04)
 
 [install pip3 for python 3.x](https://www.cnblogs.com/wenchengxiaopenyou/p/5709218.html)
+
+[How to enable MySQLi extension in php 7?
+](https://stackoverflow.com/questions/35424982/how-to-enable-mysqli-extension-in-php-7)
