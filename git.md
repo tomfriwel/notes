@@ -35,3 +35,10 @@ $ git branch -d <branch_name>
 `$ git remote set-url origin <URL>`
 
 [Changing a remote's URL](https://help.github.com/articles/changing-a-remote-s-url/)
+
+#### git set multiple remote url
+
+`$ git remote set-url origin --push --add <a remote>`
+`$ git remote set-url origin --push --add <another remote>`
+
+[pull/push from multiple remote locations](https://stackoverflow.com/questions/849308/pull-push-from-multiple-remote-locations)
