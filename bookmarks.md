@@ -5,6 +5,7 @@
 ### 学术
 
 - [Molecular Expressions](https://micro.magnet.fsu.edu)
+- [Wolfram MathWorld](http://mathworld.wolfram.com)
 
 ---
 
@@ -27,3 +28,15 @@
 - https://www.inprnt.com
 - https://www.deviantart.com
 - http://huaban.com
+
+---
+
+### Artists
+
+- Martina Petrova
+
+---
+
+### 编程
+
+- [SOURCE MAKING(design pattern, ...)](https://sourcemaking.com)
