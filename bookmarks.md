@@ -33,7 +33,7 @@
 
 ### Artists
 
-- Martina Petrova
+- Martina Petrova (Disney Style)
 
 ---
 
