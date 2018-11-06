@@ -40,3 +40,4 @@
 ### 编程
 
 - [SOURCE MAKING(design pattern, ...)](https://sourcemaking.com)
+- [TensorFlow Example Pages](https://www.dotnetperls.com/reduce-sum-tensorflow)
