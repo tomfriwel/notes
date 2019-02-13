@@ -14,6 +14,12 @@
 
 ---
 
+### 3D学习 - Blender
+
+- [Basic](https://cgcookie.com/lesson/welcome-to-the-blender-basics-course)
+- [Learn Character Modeling](https://cloud.blender.org/p/blenderella/56040ecf044a2a00a515adc2)
+- [Tutorials](https://www.blender.org/support/tutorials/)
+
 ### 图片素材
 - [Unsplash](https://unsplash.com) (free)
 - [Foodiesfeed](https://www.foodiesfeed.com) (food)
