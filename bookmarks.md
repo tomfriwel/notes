@@ -91,6 +91,11 @@
 - [Font Converter](https://font-converter.net/en)
 
 
+# 数学
+
+- [线性代数-同济大学(第五版)课件 [完整版]](https://wenku.baidu.com/view/e3efed47fe4733687e21aafd?pn=151NaN)
+
+
 
 # 语言
 
