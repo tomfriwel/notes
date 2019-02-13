@@ -21,6 +21,7 @@
 - [Tutorials](https://www.blender.org/support/tutorials/)
 
 ### 图片素材
+- [Pinterest - 综合](https://www.pinterest.com/)
 - [Unsplash](https://unsplash.com) (free)
 - [Foodiesfeed](https://www.foodiesfeed.com) (food)
 - [What's popular today](https://500px.com/popular)
