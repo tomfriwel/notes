@@ -51,7 +51,13 @@
 
 ---
 
-### Artists
+### 拍摄
+
+- [Unusual View Angle](http://www.secondpicture.com/tutorials/photography/photo_composition_with_unusual_view_angle.html)
+- [Image Composition](http://www.secondpicture.com/tutorials/photography/image_composition.html)
+- []()
+
+### Following Artists
 
 - Martina Petrova (Disney Style)
 
@@ -65,6 +71,7 @@
 - [SOURCE MAKING(design pattern, ...)](https://sourcemaking.com)
 - [TensorFlow Example Pages](https://www.dotnetperls.com/reduce-sum-tensorflow)
 - [raywenderlich.com](https://www.raywenderlich.com) (iOS, Android, Unity, Unreal Engine)
+- [GeeksforGeeks - A computer science portal for geeks - 算法](https://www.geeksforgeeks.org/convex-hull-set-1-jarviss-algorithm-or-wrapping/)
 
 ### iOS
 
