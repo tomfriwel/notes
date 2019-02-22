@@ -5,6 +5,19 @@
 
 `$ react-native init AwesomeProject`
 
+```shell
+To run your app on iOS:
+   cd /path/to/project
+   react-native run-ios
+   - or -
+   Open ios/project.xcodeproj in Xcode
+   Hit the Run button
+To run your app on Android:
+   cd /path/to/project
+   Have an Android emulator running (quickest way to get started), or a device connected
+   react-native run-android
+```
+
 #### run ios
 
 `$ react-native run-ios`
@@ -78,6 +91,30 @@ sdk.dir=/Users/tom/Library/Android/sdk
 ```
 android.useDeprecatedNdk=true
 ```
+
+#### Error 2
+
+```shell
+> Configure project :app
+WARNING: The specified Android SDK Build Tools version (28.0.2) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.2.1.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '28.0.2'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+Checking the license for package Android SDK Platform 28 in /Users/tom/Library/Android/sdk/licenses
+Warning: License for package Android SDK Platform 28 not accepted.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem occurred configuring project ':app'.
+> Failed to install the following Android SDK packages as some licences have not been accepted.
+     platforms;android-28 Android SDK Platform 28
+  To build this project, accept the SDK license agreements and install the missing components using the Android Studio SDK Manager.
+  Alternatively, to transfer the license agreements from one workstation to another, see http://d.android.com/r/studio-ui/export-licenses.html
+  
+  Using Android SDK: /Users/tom/Library/Android/sdk
+```
+
+Use Android Studio open `project/android` to install missing things. And solve `Android SDK Build Tools version (28.0.2)` problem.
 
 #### [No bundle url present #12754](https://github.com/facebook/react-native/issues/12754)
 
