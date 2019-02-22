@@ -36,6 +36,8 @@ TARGETS > General > Signing > Team
 
 `$ react-native run-android`
 
+Use `$ adb devices` to view connected android devices.
+
 #### Specify Simulator
 
 Add `--simulator="xxx"`:
@@ -115,6 +117,11 @@ A problem occurred configuring project ':app'.
 ```
 
 Use Android Studio open `project/android` to install missing things. And solve `Android SDK Build Tools version (28.0.2)` problem.
+
+#### Error 3
+
+[Unable to load script from assets index.android.bundle on windows
+](https://stackoverflow.com/a/44476757/6279975)
 
 #### [No bundle url present #12754](https://github.com/facebook/react-native/issues/12754)
 
