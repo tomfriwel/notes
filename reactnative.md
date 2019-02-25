@@ -167,6 +167,20 @@ I was able to workaround the warning by updating `AppDelegate.m`
 }
 ```
 
+#### Android 固定在底部的元素被键盘顶起
+
+`AndroidManifest.xml`:
+```xml
+<activity
+  ...
+  android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+  ...
+</activity>
+```
+
+设置`android:windowSoftInputMode="stateAlwaysHidden|adjustPan"`就行了。
+
+
 # React Navigation
 
 #### navigate to other page:
@@ -207,18 +221,21 @@ You need rebuild project to use your module.
 
 In my test, I modal a page, in the page's `componentWillMount`, I `console.log` something, when modal the page, there will be a long stop.
 
-#### Android 固定在底部的元素被键盘顶起
+#### hide header bar
 
-`AndroidManifest.xml`:
-```xml
-<activity
-  ...
-  android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
-  ...
-</activity>
+```js
+const AppNavigator = createStackNavigator(
+    {
+        Home: {
+            screen: Home,
+            navigationOptions: {
+                header: null,
+            }
+        }
+    },
+    // ...
+);
 ```
-
-设置`android:windowSoftInputMode="stateAlwaysHidden|adjustPan"`就行了。
 
 
 # react-native-camera
