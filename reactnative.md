@@ -245,6 +245,8 @@ From [how to delete installed library form react native project](https://stackov
 2. If you've installed a library with native content that requires linking, and you've linked it with rnpm then you can do: `rnpm unlink package_name` then follow step 1
 3. If you've installed a library with native content manually, then just undo all the steps you took to add the library in the first place. Then follow step 1.
 
+Search `package_name` in project, and delete lines contain it if necessary.
+
 
 # react-native-camera
 
