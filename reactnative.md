@@ -237,6 +237,14 @@ const AppNavigator = createStackNavigator(
 );
 ```
 
+# Uninstall library
+
+From [how to delete installed library form react native project](https://stackoverflow.com/a/38618379/6279975):
+
+1. If it is a library based only on javascript, than you can just run `npm uninstall --save package_name` or `npm uninstall --save-dev package_name`
+2. If you've installed a library with native content that requires linking, and you've linked it with rnpm then you can do: `rnpm unlink package_name` then follow step 1
+3. If you've installed a library with native content manually, then just undo all the steps you took to add the library in the first place. Then follow step 1.
+
 
 # react-native-camera
 
