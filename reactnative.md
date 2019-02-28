@@ -251,3 +251,7 @@ Search `package_name` in project, and delete lines contain it if necessary.
 # react-native-camera
 
 add `<uses-permission android:name="android.permission.CAMERA" />` to `project/android/app/src/main/AndroidManifest.xml`
+
+# react-navigation
+
+Parameters: [react-navigation笔记](https://www.cnblogs.com/yz1311/p/7057421.html)
