@@ -51,7 +51,7 @@
 
 ---
 
-### 拍摄
+### 构图
 
 - [Unusual View Angle](http://www.secondpicture.com/tutorials/photography/photo_composition_with_unusual_view_angle.html)
 - [Image Composition](http://www.secondpicture.com/tutorials/photography/image_composition.html)
@@ -102,6 +102,7 @@
 # 数学
 
 - [线性代数-同济大学(第五版)课件 [完整版]](https://wenku.baidu.com/view/e3efed47fe4733687e21aafd?pn=151NaN)
+- [About LaTeX and MathML support in Pages, Numbers, Keynote, and iBooks Author](https://support.apple.com/en-us/HT202501)
 
 
 
