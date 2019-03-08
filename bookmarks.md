@@ -3,7 +3,7 @@
 ### 绘画学习
 
 - [绘画板绘丨动漫人物五官的画法，告别面瘫脸，表情难点解析来了！](https://zhuanlan.zhihu.com/p/55013865)
-- [deviantart - tutorial](https://www.deviantart.com/popular-all-time/?section=&global=1&q=tutorial&offset=216)
+- [Deviantart - tutorial](https://www.deviantart.com/popular-all-time/?section=&global=1&q=tutorial&offset=216)
 - [1000个绘画资料，从头到脚来教你，还怕学不会吗？](https://zhuanlan.zhihu.com/p/51255816)
 - [300款动漫眼睛绘画参考素材！收着练习吧！](https://zhuanlan.zhihu.com/p/52119515)
 
@@ -20,12 +20,25 @@
 - [Learn Character Modeling](https://cloud.blender.org/p/blenderella/56040ecf044a2a00a515adc2)
 - [Tutorials](https://www.blender.org/support/tutorials/)
 
+### 设计学习
+
+- [UI中国 - 每周临摹 | 轻松学习、玩转设计](https://study.ui.cn/list.html)
+
 ### 图片素材
 - [Pinterest - 综合](https://www.pinterest.com/)
 - [Unsplash](https://unsplash.com) (free)
 - [Foodiesfeed](https://www.foodiesfeed.com) (food)
 - [What's popular today](https://500px.com/popular)
 - [摄图网](http://699pic.com/photo/)
+
+### ArtStation
+
+- [1/2写实 - XiaoGuang Sun](https://www.artstation.com/xiaoguang)
+- [1/4半写实草图 - Ramón Nuñez](https://www.artstation.com/ramonn90)
+- []()
+- []()
+- [1/2写实 - Jungah Lee](https://www.artstation.com/jibro)
+
 
 ---
 ### 学术
@@ -60,6 +73,10 @@
 ### Following Artists
 
 - Martina Petrova (Disney Style)
+
+### 工具
+
+- [Chrome Extension - Designers' Secret Source](https://muz.li/)
 
 ---
 
@@ -97,6 +114,14 @@
 
 ### 工具
 - [Font Converter](https://font-converter.net/en)
+
+---
+
+# 学习
+
+### 工具使用
+
+- [Topbook](http://topbook.cc/) - 电脑工具各种技巧
 
 
 # 数学
