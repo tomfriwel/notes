@@ -255,3 +255,50 @@ add `<uses-permission android:name="android.permission.CAMERA" />` to `project/a
 # react-navigation
 
 Parameters: [react-navigation笔记](https://www.cnblogs.com/yz1311/p/7057421.html)
+
+
+# Barcode Scanner
+
+[react-native 按键事件](https://blog.csdn.net/weixin_42865887/article/details/81366129)
+[Android USB 扫码枪获取扫描内容](https://blog.csdn.net/u011811983/article/details/82285507)
+[kevinejohn/react-native-keyevent](https://github.com/kevinejohn/react-native-keyevent)
+[android Keycode 完全对照表](https://www.cnblogs.com/Defry/p/4207988.html)
+
+
+```java
+// ...
+import com.facebook.react.bridge.ReactContext;
+import android.support.annotation.Nullable;
+import android.view.KeyEvent;
+import com.facebook.react.modules.core.DeviceEventManagerModule;
+import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.bridge.Arguments;
+
+import java.awt.event.KeyEvent;
+
+public class MainActivity extends ReactActivity {
+    // ...
+    
+    private void sendEvent(ReactContext reactContext, String eventName, @Nullable WritableMap params) {
+        reactContext
+                .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
+                .emit(eventName, params);
+    }
+
+    @Override
+    public boolean dispatchKeyEvent(KeyEvent event) {
+        ReactContext reactContext = getReactInstanceManager().getCurrentReactContext();
+        WritableMap params = Arguments.createMap();
+        params.putInt("keyCode", event.getKeyCode());
+        if (event.getAction() == KeyEvent.ACTION_DOWN) {
+            sendEvent(reactContext, "keydown", params);
+        }else if (event.getAction() == KeyEvent.ACTION_UP) {
+            sendEvent(reactContext, "keyup", params);
+        }
+        return super.dispatchKeyEvent(event);
+    }
+}
+```
+扫码枪是连续触发按键事件来实现的，最后以回车（`keyCode=66`）结尾。所以要自行拼接起来。
+
+比如扫描`barcode = 234`的条码，会触发四次`keydown`，四次`keyCode`分别为：`9`, `10`, `11`, `66`。
