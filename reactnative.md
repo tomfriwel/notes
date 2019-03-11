@@ -257,7 +257,7 @@ add `<uses-permission android:name="android.permission.CAMERA" />` to `project/a
 Parameters: [react-navigation笔记](https://www.cnblogs.com/yz1311/p/7057421.html)
 
 
-# Barcode Scanner
+# Barcode Scanner - Android
 
 [react-native 按键事件](https://blog.csdn.net/weixin_42865887/article/details/81366129)
 [Android USB 扫码枪获取扫描内容](https://blog.csdn.net/u011811983/article/details/82285507)
