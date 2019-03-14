@@ -24,6 +24,13 @@
 
 - [UI中国 - 每周临摹 | 轻松学习、玩转设计](https://study.ui.cn/list.html)
 
+### 配色
+
+- [Adobe Color CC](https://color.adobe.com/create/color-wheel)
+- [Colors Generate](https://coolors.co/browser/best/1)
+- [渐变色](https://webgradients.com)
+- [色块](https://trianglify.io)
+
 ### 图片素材
 - [Pinterest - 综合](https://www.pinterest.com/)
 - [Unsplash](https://unsplash.com) (free)
