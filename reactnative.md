@@ -302,3 +302,7 @@ public class MainActivity extends ReactActivity {
 扫码枪是连续触发按键事件来实现的，最后以回车（`keyCode=66`）结尾。所以要自行拼接起来。
 
 比如扫描`barcode = 234`的条码，会触发四次`keydown`，四次`keyCode`分别为：`9`, `10`, `11`, `66`。
+
+# Android apk release
+
+[打包APK](https://reactnative.cn/docs/0.43/signed-apk-android.html)
