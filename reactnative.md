@@ -180,6 +180,17 @@ I was able to workaround the warning by updating `AppDelegate.m`
 
 设置`android:windowSoftInputMode="stateAlwaysHidden|adjustPan"`就行了。
 
+#### VirtualizedList: missing keys for items, make sure to specify a key property on each item or provide a custom keyExtractor.
+
+[Basic FlatList code throws Warning - React Native](https://stackoverflow.com/questions/44545148/basic-flatlist-code-throws-warning-react-native)
+
+```
+<Flatlist
+    //...
+    keyExtractor={(item, index) => index.toString()}
+/>
+```
+
 
 # React Navigation
 
