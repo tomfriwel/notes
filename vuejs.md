@@ -40,3 +40,7 @@ html:
     display: none;
 }
 ```
+
+### Font Awesome
+
+[Font Awesome - Vue.js](https://fontawesome.com/how-to-use/on-the-web/using-with/vuejs)
