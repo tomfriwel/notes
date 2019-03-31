@@ -317,3 +317,7 @@ public class MainActivity extends ReactActivity {
 # Android apk release
 
 [打包APK](https://reactnative.cn/docs/0.43/signed-apk-android.html)
+
+# @ReactMethod
+
+[How to return a Boolean from @ReactMethod in React Native?](https://stackoverflow.com/questions/37252567/how-to-return-a-boolean-from-reactmethod-in-react-native)
