@@ -38,6 +38,10 @@
 - [What's popular today](https://500px.com/popular)
 - [摄图网](http://699pic.com/photo/)
 
+### 字体
+
+- [字魂网](https://izihun.com/shangyongziti/)
+
 ### ArtStation
 
 - [1/2写实 - XiaoGuang Sun](https://www.artstation.com/xiaoguang)
