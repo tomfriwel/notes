@@ -145,3 +145,8 @@
 # 语言
 
 - https://owlcation.com
+
+
+# News
+
+- [It's FOSS - Open Source in general and Linux in particular](https://itsfoss.com)
