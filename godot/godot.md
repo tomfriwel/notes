@@ -10,3 +10,10 @@
 # Docs
 
 - [Godot Docs](http://docs.godotengine.org/en/stable/)
+
+# Notes
+
+## 2019 4 4
+
+![](./shooter_instancing.png)
+![](./openworld_instancing.png)
