@@ -17,3 +17,14 @@
 
 ![](./shooter_instancing.png)
 ![](./openworld_instancing.png)
+
+```js
+Scene:{
+    Name,
+    Properties,
+    Script,
+    Nodes,
+}
+```
+
+Node also can be a Scene.
