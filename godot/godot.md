@@ -28,3 +28,32 @@ Scene:{
 ```
 
 Node also can be a Scene.
+
+#### Connect signals to script
+
+Connect in `Signals` or in `func _ready()`, for example, connect button's 'pressed' signal:
+
+manually:
+
+```js
+func _ready():
+	get_node("Button").connect("pressed", self, "_on_Button_pressed")
+
+func _on_Button_pressed():
+	get_node("Label").text = "HELLO!"
+```
+
+or:
+
+![](./connect-signal.png)
+
+
+Get a button in label:
+
+```
+get_node("Label/Button")
+```
+
+Nodes are referenced by name, not by type.
+
+#### idle processing, physics processing
