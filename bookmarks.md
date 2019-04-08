@@ -44,6 +44,10 @@
 
 - [字魂网](https://izihun.com/shangyongziti/)
 
+### Icon
+
+- [18 Free SVG Icon Sets for Commercial Use in Web Design](https://superdevresources.com/free-svg-icons/)
+
 ### ArtStation
 
 - [1/2写实 - XiaoGuang Sun](https://www.artstation.com/xiaoguang)
