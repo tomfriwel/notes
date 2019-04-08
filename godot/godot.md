@@ -58,6 +58,8 @@ Nodes are referenced by name, not by type.
 
 #### idle processing, physics processing
 
+## 2019 4 8
+
 #### group, loop
 
 For example, change the whole label's text in a group.
@@ -139,3 +141,4 @@ func _ready():
     var node = scene.instance()
     add_child(node)
 ```
+
