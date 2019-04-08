@@ -142,3 +142,48 @@ func _ready():
     add_child(node)
 ```
 
+#### signals
+
+`<source_node>.connect(<signal_name>, <target_node>, <target_function_name>)`
+
+Root node script:
+```js
+extends Node
+
+signal my_signal
+
+func _ready():
+	$Timer.connect("timeout", $Label, "_on_Timer_timeout", [$Sprite])
+	self.connect("my_signal", $Label, "_on_Signal", [])
+	emit_signal("my_signal")
+```
+
+Label's script:
+
+```js
+extends Label
+
+func _ready():
+	pass # Replace with function body.
+
+func _on_Timer_timeout(sprite):
+	sprite.visible = !sprite.visible
+	self.text = String(sprite.visible)
+	
+func _on_Signal():
+	self.text = "ready"
+```
+
+#### `export` keyword
+
+Using the `export` keyword on the first variable `speed` allows us to set its value in the Inspector. 
+
+```js
+extends Area2D
+
+export var speed = 400
+```
+
+#### `$` <-> `get_node()`
+
+`$` is shorthand for `get_node()`. For example, `$AnimatedSprite.play()` is the same as `get_node("AnimatedSprite").play()`.
