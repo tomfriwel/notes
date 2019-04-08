@@ -20,6 +20,8 @@
 - [Learn Character Modeling](https://cloud.blender.org/p/blenderella/56040ecf044a2a00a515adc2)
 - [Tutorials](https://www.blender.org/support/tutorials/)
 
+- [iOS 图像渲染过程解析](http://www.cocoachina.com/ios/20190404/26728.html)
+
 ### 设计学习
 
 - [UI中国 - 每周临摹 | 轻松学习、玩转设计](https://study.ui.cn/list.html)
