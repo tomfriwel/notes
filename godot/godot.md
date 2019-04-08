@@ -130,7 +130,7 @@ func _on_Button_pressed():
 
 #### Instancing scenes
 
-```
+```python
 var scene = load("res://Processing.tscn") # Will load when the script is instanced.
 # or
 var scene = preload("res://Processing.tscn") # Will load when parsing the script.
