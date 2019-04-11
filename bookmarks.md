@@ -25,6 +25,7 @@
 ### 设计学习
 
 - [UI中国 - 每周临摹 | 轻松学习、玩转设计](https://study.ui.cn/list.html)
+- [飞屋设计 - UI设计师的成长记](https://www.ifeiwu.com/blog)
 
 ### 配色
 
