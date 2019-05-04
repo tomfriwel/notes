@@ -321,3 +321,8 @@ public class MainActivity extends ReactActivity {
 # @ReactMethod
 
 [How to return a Boolean from @ReactMethod in React Native?](https://stackoverflow.com/questions/37252567/how-to-return-a-boolean-from-reactmethod-in-react-native)
+
+
+# NFC
+
+`<uses-permission android:name="android.permission.NFC" />`
