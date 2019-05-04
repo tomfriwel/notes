@@ -63,7 +63,7 @@ See https://facebook.github.io/react-native/docs/upgrading.html
 
 `$ sudo ...`
 
-#### Error 0
+#### Error 0: SDK location not found
 
 ```shell
 * What went wrong:
@@ -86,6 +86,12 @@ Add a file named `local.properties` to `project/android/` folder and add followi
 # ndk.dir=/Users/gabriel_peal/sdk/ndk-bundle
 sdk.dir=/Users/tom/Library/Android/sdk
 ```
+
+May the path above will depend on yours. Change it if not same to me.
+
+#### Error: jest-haste-map: Haste module naming collision:
+
+`$ npm install`
 
 #### Error 1
 
@@ -321,6 +327,18 @@ public class MainActivity extends ReactActivity {
 # @ReactMethod
 
 [How to return a Boolean from @ReactMethod in React Native?](https://stackoverflow.com/questions/37252567/how-to-return-a-boolean-from-reactmethod-in-react-native)
+
+# add Module
+In `MainApplication.java`:
+```
+    @Override
+    protected List<ReactPackage> getPackages() {
+      return Arrays.<ReactPackage>asList(
+          new MainReactPackage(),
+          new CustomPackage()
+      );
+    }
+```
 
 
 # NFC
