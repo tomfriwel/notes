@@ -40,6 +40,7 @@
 - [Foodiesfeed](https://www.foodiesfeed.com) (food)
 - [What's popular today](https://500px.com/popular)
 - [摄图网](http://699pic.com/photo/)
+- [#FR2](https://ceno.jp/FR2)
 
 ### 字体
 
