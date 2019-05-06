@@ -344,3 +344,9 @@ In `MainApplication.java`:
 # NFC
 
 `<uses-permission android:name="android.permission.NFC" />`
+
+# sunnylqm/react-native-storage
+
+[What happens when maximum storage size fills up?](https://github.com/sunnylqm/react-native-storage/issues/32)
+
+When maximum size fills up, it will loop over(the 1001th will overwrite the 1st, and the 1st is gone.

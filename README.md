@@ -52,6 +52,7 @@ Some notes when using some programming tools and languages or some games experie
 - [Apache](./apache.md)
 - [Ubuntu](./ubuntu.md)
 - [Carthage](./carthage.md)
+- [miniprogram - 微信小程序](./miniprogram.md)
 
 # Blog
 
