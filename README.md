@@ -41,6 +41,7 @@ Some notes when using some programming tools and languages or some games experie
 - [PHP](./php.md)
 - [Javascript](./javascript.md)
 - [npm](./npm.md)
+- [webpack](./webpack.md)
 - [Git](./git.md)
 - [React Native](./reactnative.md)
 - [Weex](./weex.md)

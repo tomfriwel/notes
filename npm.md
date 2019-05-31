@@ -52,8 +52,18 @@ Or add `.npmignore`
 #### View globally installed packages
 
 `$ npm ls -g --depth=0`
+`$ npm ls -g --depth 0 `
 
 
 #### Webpack Bundle Analyzer 
 
 `$ npm run build --report`
+
+#### Generate it without having it ask any questions
+
+`$ npm init -y`
+
+[init](https://docs.npmjs.com/cli/init)
+
+
+`$ npm install webpack -D` -> `$ npm install webpack --save-dev`
