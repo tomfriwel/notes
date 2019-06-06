@@ -11,6 +11,10 @@
 
 `$ git rm -r --cached folder/*`
 
+#### Delete remote
+
+`$ git remote remove origin`
+
 `-r` means recursively
 
 #### delete branch

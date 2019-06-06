@@ -67,3 +67,5 @@ Or add `.npmignore`
 
 
 `$ npm install webpack -D` -> `$ npm install webpack --save-dev`
+
+`$ npm i -D xxx` -> `$ npm install --save-dev xxx`
