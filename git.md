@@ -46,3 +46,10 @@ $ git branch -d <branch_name>
 `$ git remote set-url origin --push --add <another remote>`
 
 [pull/push from multiple remote locations](https://stackoverflow.com/questions/849308/pull-push-from-multiple-remote-locations)
+
+#### git@gitlab.com: Permission denied (publickey).
+
+`$ ssh -v git@github.com`
+`$ more ~/.ssh/id_rsa.pub`
+
+[使用git push origin master向github推送代码，出现git@github.com: Permission denied (publickey).](https://blog.csdn.net/yjk13703623757/article/details/87882294)
