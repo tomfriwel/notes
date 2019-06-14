@@ -32,3 +32,5 @@
     </IfModule>
 </FilesMatch>
 ```
+
+`service apache2 restart`
