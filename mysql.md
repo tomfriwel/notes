@@ -21,3 +21,15 @@ select DATE_FORMAT(create_time,'%Y%m') months,count(caseid) count from tc_case g
 #### TIMESTAMPDIFF(interval,datetime_expr1,datetime_expr2)
 
 `datetime_expr2 - datetime_expr1 = (interval)result`
+
+#### 累计统计
+
+```sql
+SET @i = 0;
+SELECT  cc.* ,(@i:=@i+cc.当日注册人数) as 累计注册人数
+FROM
+  (SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as "日期" , count(*) as "当日注册人数" FROM user_t GROUP BY  日期)cc
+  CROSS JOIN (select @i := 0) x;
+```
+
+[Mysql 统计每日注册人数和累计注册人数](https://blog.csdn.net/u012440725/article/details/82775178)
