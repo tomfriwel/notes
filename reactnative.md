@@ -350,3 +350,7 @@ In `MainApplication.java`:
 [What happens when maximum storage size fills up?](https://github.com/sunnylqm/react-native-storage/issues/32)
 
 When maximum size fills up, it will loop over(the 1001th will overwrite the 1st, and the 1st is gone.
+
+#### [ERROR] Cannot add task 'wrapper' as a task with that name already exists.
+
+[Cannot add task 'wrapper' as a task with that name already exists](https://stackoverflow.com/questions/53709282/cannot-add-task-wrapper-as-a-task-with-that-name-already-exists)
