@@ -52,6 +52,7 @@ Some notes when using some programming tools and languages or some games experie
 - [Vue.js](./vuejs.md)
 - [Apache](./apache.md)
 - [Ubuntu](./ubuntu.md)
+- [Linux](./linux.md)
 - [Carthage](./carthage.md)
 - [miniprogram - 微信小程序](./miniprogram.md)
 - [taro](./taro.md)
