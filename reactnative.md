@@ -320,9 +320,10 @@ public class MainActivity extends ReactActivity {
 
 比如扫描`barcode = 234`的条码，会触发四次`keydown`，四次`keyCode`分别为：`9`, `10`, `11`, `66`。
 
-# Android apk release
+# Android apk release 签名
 
 [打包APK](https://reactnative.cn/docs/0.43/signed-apk-android.html)
+[Androidstudio 3.4打包并生成签名](https://blog.csdn.net/u013297881/article/details/92805299)
 
 # @ReactMethod
 
