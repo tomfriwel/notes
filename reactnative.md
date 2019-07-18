@@ -320,10 +320,26 @@ public class MainActivity extends ReactActivity {
 
 比如扫描`barcode = 234`的条码，会触发四次`keydown`，四次`keyCode`分别为：`9`, `10`, `11`, `66`。
 
-# Android apk release 签名
+# Android apk release and sign 签名
 
 [打包APK](https://reactnative.cn/docs/0.43/signed-apk-android.html)
 [Androidstudio 3.4打包并生成签名](https://blog.csdn.net/u013297881/article/details/92805299)
+
+#### Task :app:bundleReleaseJsAndAssets FAILED
+```
+> Task :app:bundleReleaseJsAndAssets FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:bundleReleaseJsAndAssets'.
+> Could not list contents of '/...'. Couldn't follow symbolic link.
+```
+
+['Couldn't follow symbolic link' when testing release build for Android #11212](https://github.com/facebook/react-native/issues/11212)
+
+`./android/gradlew --stop`
+[Generating Release APK Fails at bundleReleaseJsAndAssets](https://stackoverflow.com/questions/36319667/generating-release-apk-fails-at-bundlereleasejsandassets)
 
 # @ReactMethod
 
@@ -355,3 +371,14 @@ When maximum size fills up, it will loop over(the 1001th will overwrite the 1st,
 #### [ERROR] Cannot add task 'wrapper' as a task with that name already exists.
 
 [Cannot add task 'wrapper' as a task with that name already exists](https://stackoverflow.com/questions/53709282/cannot-add-task-wrapper-as-a-task-with-that-name-already-exists)
+
+
+# run without development server
+
+```shell
+$ mkdir android/app/src/main/assets
+$ react-native bundle --platform android --dev false --en
+try-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --a
+ssets-dest android/app/src/main/res
+$ react-native run-android --variant=debug
+```
