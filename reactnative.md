@@ -382,3 +382,46 @@ try-file index.js --bundle-output android/app/src/main/assets/index.android.bund
 ssets-dest android/app/src/main/res
 $ react-native run-android --variant=debug
 ```
+
+# Change Picker Component styles
+
+Add the following code to `/res/values/styles.xml` 
+
+```xml
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+      <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+      <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item>
+    </style>
+
+    <style name="SpinnerItem" parent="Theme.AppCompat.Light.NoActionBar">
+      <item name="android:fontFamily">sans-serif-light</item>
+      <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="SpinnerDropDownItem" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/mydivider</item>
+    </style>
+
+</resources>
+```
+
+Create a file at `res/drawable/mydivider.xml` and add the following code
+
+```xml
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+        <solid android:color="#29A1C9" />
+        <corners android:radius="0.5dp" />
+        <stroke
+            android:color="#FFFFFF"
+            android:width="0.1dp" />
+    </shape>
+```
+
+[How to style the standard react-native android picker?](https://stackoverflow.com/questions/38921492/how-to-style-the-standard-react-native-android-picker)
