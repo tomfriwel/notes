@@ -22,3 +22,6 @@ This tool generate a independent environment, which you can install depends in t
 `$ pip install xlwt`
 `$ pip install openpyxl`
 
+
+
+`$ pip install sqlalchemy pymysql xlwt openpyxl`
