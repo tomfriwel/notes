@@ -17,3 +17,7 @@ sudo find / -name hosts
 sudo vim /etc/hosts
 ping address
 ```
+
+#### all read
+
+`$ sudo chmod a+r file`
