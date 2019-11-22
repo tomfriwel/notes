@@ -73,3 +73,7 @@ Addition:
 # View accounts
 more /etc/passwd
 ```
+
+[Linux 限制SFTP用户只能访问某个目录](https://blog.csdn.net/qin_weilong/article/details/69486104)
+[Linux创建用户，SFTP只允许访问指定目录](https://www.cnblogs.com/hark0623/p/11051133.html)
+[Linux - 设置SFTP服务用户目录权限](https://www.cnblogs.com/jiqing9006/p/8243161.html)
