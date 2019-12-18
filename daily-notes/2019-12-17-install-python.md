@@ -53,3 +53,4 @@ $ yum install libffi-devel
 # reinstall python
 ```
 
+[安装python3.7.3 报错： ModuleNotFoundError: No module named '_ctypes 解决方案](https://blog.csdn.net/qq_42353939/article/details/94609591)
