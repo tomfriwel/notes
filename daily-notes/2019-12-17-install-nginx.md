@@ -125,3 +125,20 @@ server {
 CGI: Common Gateway Interface
 
 [CGI与FastCGI](https://www.jianshu.com/p/ed1be12030a9)
+
+### [How To Create a Sudo User on CentOS [Quickstart]](https://www.digitalocean.com/community/tutorials/how-to-create-a-sudo-user-on-centos-quickstart)
+
+```shell
+$ adduser username
+$ passwd username
+
+# view gruop
+$ cat /etc/group
+# view users
+$ cat /etc/passwd
+
+$ usermod -aG wheel username
+
+# verify that you can use sudo
+$ sudo ls -la /root
+```
