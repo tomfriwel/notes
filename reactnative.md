@@ -425,3 +425,5 @@ Create a file at `res/drawable/mydivider.xml` and add the following code
 ```
 
 [How to style the standard react-native android picker?](https://stackoverflow.com/questions/38921492/how-to-style-the-standard-react-native-android-picker)
+
+### [Can I use the same keystore file to sign two different applications?](https://stackoverflow.com/a/7685529/6279975)
