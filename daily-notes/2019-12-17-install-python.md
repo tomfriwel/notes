@@ -33,6 +33,7 @@ $ make install
 For use:
 ```
 $ ln -s /usr/python38/bin/pip3 /usr/bin/pip3
+$ ln -s /usr/python38/bin/python3 /usr/bin/python3.8
 ```
 
 ### Install virtualenv and tornado
