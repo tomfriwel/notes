@@ -119,6 +119,7 @@ server {
 
 [Configuration Directives: root](http://nginx.org/en/docs/http/ngx_http_core_module.html#root)
 
+[Nginx中proxy_pass的斜杠问题](https://www.jianshu.com/p/c751250a5112)
 
 ### Words & Terminology
 
