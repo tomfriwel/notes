@@ -6,3 +6,15 @@
 #### MYSQL TIMESTAMPDIFF
 
 `sa.func.timestampdiff(text('second'), datetime1, datetime2)  # datetime2 - datetime1`
+
+
+#### [How to close sqlalchemy connection in MySQL](https://stackoverflow.com/questions/8645250/how-to-close-sqlalchemy-connection-in-mysql)
+
+```python
+db = create_engine('mysql://root@localhost/test_database')
+for i in range(1,2000):
+    conn = db.connect()
+    #some simple data operations
+    conn.close()
+db.dispose()
+```
