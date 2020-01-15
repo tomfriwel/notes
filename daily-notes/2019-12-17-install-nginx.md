@@ -113,13 +113,10 @@ server {
 }
 ```
 
-[Configuration Directives](http://nginx.org/en/docs/http/ngx_http_core_module.html#directives)
-
-[Configuration Directives: index](http://nginx.org/en/docs/http/ngx_http_index_module.html#index)
-
-[Configuration Directives: root](http://nginx.org/en/docs/http/ngx_http_core_module.html#root)
-
-[Nginx中proxy_pass的斜杠问题](https://www.jianshu.com/p/c751250a5112)
+- [Configuration Directives](http://nginx.org/en/docs/http/ngx_http_core_module.html#directives)
+- [Configuration Directives: index](http://nginx.org/en/docs/http/ngx_http_index_module.html#index)
+- [Configuration Directives: root](http://nginx.org/en/docs/http/ngx_http_core_module.html#root)
+- [Nginx中proxy_pass的斜杠问题](https://www.jianshu.com/p/c751250a5112)
 
 ### Words & Terminology
 
