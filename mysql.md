@@ -38,3 +38,10 @@ FROM
 #### 序号
 
 [Mysql查询数据时，自动为结果编上序号](https://blog.csdn.net/arbben/article/details/78665389)
+
+
+#### [ERROR 1205 (HY000): Lock wait timeout exceeded; try restarting transaction的问题解决（备忘）](https://blog.csdn.net/mayor125/article/details/76186661)
+
+Try to delete a record, occur:
+
+`1205 - Lock wait timeout exceeded; try restarting transaction`
