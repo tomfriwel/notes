@@ -32,3 +32,19 @@ ws2.title = "Title_B"
 
 wb.save(filename = 'sample_book.xlsx')
 ```
+
+### Error: AttributeError: 'Workbook' object has no attribute 'get_active_sheet'
+
+`get_active_sheet` removed in new version.
+
+Use `ws = wb.active`:
+```python
+from openpyxl import Workbook
+wb = Workbook()
+ws = wb.active
+```
+
+
+[Tutorial - Create a workbook](https://openpyxl.readthedocs.io/en/stable/tutorial.html)
+
+[Python错误：AttributeError: 'Worksheet' object has no attribute 'get_highest_row' 解决办法](https://blog.csdn.net/liuyukuan/article/details/84679683)
