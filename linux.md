@@ -40,7 +40,7 @@ chmod 755 /xxx/xxx
 vim /etc/ssh/sshd_config
 ```
 
-Edit sshd_config:
+Editing sshd_config:
 ```
 # override default of no subsystems
 # Subsystem     sftp    /usr/libexec/openssh/sftp-server
@@ -67,6 +67,11 @@ Match User xxxx
 ```
 
 `Match User` match which user, `ChrootDirectory` limit matched user accessing folder.
+
+
+Restart:
+
+`$ service sshd restart`
 
 Addition:
 ```
