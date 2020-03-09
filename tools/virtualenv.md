@@ -4,7 +4,11 @@ This tool generate a independent environment, which you can install depends in t
 
 ### Installing
 
+`$ pip install virtualenv`
 
+or
+
+`$ pip3 install virtualenv`
 
 ### Create a virtual environment
 
