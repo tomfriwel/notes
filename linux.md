@@ -52,14 +52,14 @@ Subsystem sftp internal-sftp
 #       AllowTcpForwarding no
 #       PermitTTY no
 #       ForceCommand cvs server
-Match User xxx
+Match User xxx1
     X11Forwarding no
     AllowTcpForwarding no
     ChrootDirectory /xxx
     ForceCommand internal-sftp
 
 
-Match User xxxx
+Match User xxx2
     X11Forwarding no
     AllowTcpForwarding no
     ChrootDirectory /xxxx
