@@ -109,6 +109,9 @@
 - [raywenderlich.com](https://www.raywenderlich.com) (iOS, Android, Unity, Unreal Engine)
 - [GeeksforGeeks - A computer science portal for geeks - 算法](https://www.geeksforgeeks.org/convex-hull-set-1-jarviss-algorithm-or-wrapping/)
 
+### 技术博客
+- [techtalkontv](https://techtalkontv.wordpress.com)
+
 ### iOS
 
 - [Operation and OperationQueue Tutorial in Swift](https://www.raywenderlich.com/5293-operation-and-operationqueue-tutorial-in-swift)
