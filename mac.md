@@ -29,3 +29,6 @@
 
 
 #### [Easily Open A Second Finder Window From The Same Folder [OS X Tips]](https://www.cultofmac.com/228451/easily-open-a-second-finder-window-from-the-same-folder-os-x-tips/)
+
+
+#### [修改mac默认python版本 为python3](https://www.jianshu.com/p/ee8dd8d78232)
