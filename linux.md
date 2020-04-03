@@ -29,15 +29,15 @@ DNS将域名解析成IP地址，但如果域名被劫持或者别人没有域名
 
 #### Create SFTP account with folder access limit.
 ```
-useradd -s /sbin/nologin -M sftpUserXXX
-passwd sftpUserXXX
-mkdir /xxx/xxx
-chown root:root /xxx/xxx
-chmod 755 /xxx/xxx
+sudo useradd -s /sbin/nologin -M sftpUserXXX
+sudo passwd sftpUserXXX
+sudo mkdir /xxx/xxx
+sudo chown root:root /xxx/xxx
+sudo chmod 755 /xxx/xxx
 
 # set access folder
 
-vim /etc/ssh/sshd_config
+sudo vim /etc/ssh/sshd_config
 ```
 
 Editing sshd_config:
@@ -71,7 +71,7 @@ Match User xxx2
 
 Restart:
 
-`$ service sshd restart`
+`$ sudo service sshd restart`
 
 Addition:
 ```
