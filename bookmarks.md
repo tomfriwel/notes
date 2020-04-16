@@ -158,8 +158,13 @@
 - https://owlcation.com
 
 
-# News
+# News - EN
 
-- [It's FOSS - Open Source in general and Linux in particular](https://itsfoss.com)
-- [nature](https://www.nature.com)
-- [EurekAlert!](https://www.eurekalert.org)
+- [It's FOSS - Open Source in general and Linux in particular](https://itsfoss.com) - Linux
+- [nature](https://www.nature.com) - Science
+- [EurekAlert!](https://www.eurekalert.org) - Science
+
+
+# News - CN
+
+- [虎嗅](https://www.huxiu.com)
