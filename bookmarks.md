@@ -161,4 +161,5 @@
 # News
 
 - [It's FOSS - Open Source in general and Linux in particular](https://itsfoss.com)
+- [nature](https://www.nature.com)
 - [EurekAlert!](https://www.eurekalert.org)
