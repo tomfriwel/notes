@@ -162,6 +162,9 @@
 
 - [It's FOSS - Open Source in general and Linux in particular](https://itsfoss.com) - Linux
 - [nature](https://www.nature.com) - Science
+- [NSR - National Science Review](https://academic.oup.com/nsr)
+- [AGU - Advancing Earth and Space Science](https://agupubs.onlinelibrary.wiley.com)
+- [British Ecological Society](https://besjournals.onlinelibrary.wiley.com)
 - [EurekAlert!](https://www.eurekalert.org) - Science
 
 
