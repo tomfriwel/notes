@@ -79,7 +79,7 @@ For exmaple, host's(http://localhost in above example) port ***8000*** > contain
 
 The `--force` option removes the running container. If you stop the container running with `docker stop bb` you do not need to use `--force`.
 
-![](./assets/docker/Screen Shot 2020-04-29 at 10.39.05.png?raw=true)
+![](https://github.com/tomfriwel/notes/blob/master/tools/assets/docker/s0.png)
 
 ### Part3: Share images on Docker Hub
 
