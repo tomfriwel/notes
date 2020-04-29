@@ -28,7 +28,17 @@
 - A Window: `Shift + Command + 4` then press `Space`
 
 
-#### [Easily Open A Second Finder Window From The Same Folder [OS X Tips]](https://www.cultofmac.com/228451/easily-open-a-second-finder-window-from-the-same-folder-os-x-tips/)
+### [Easily Open A Second Finder Window From The Same Folder [OS X Tips]](https://www.cultofmac.com/228451/easily-open-a-second-finder-window-from-the-same-folder-os-x-tips/)
 
 
-#### [修改mac默认python版本 为python3](https://www.jianshu.com/p/ee8dd8d78232)
+### [修改mac默认python版本 为python3](https://www.jianshu.com/p/ee8dd8d78232)
+
+
+### Restart SSH on Mac Terminal (High Sierra)
+
+```sh
+sudo launchctl stop com.openssh.sshd
+sudo launchctl start com.openssh.sshd
+```
+
+[gravefolk/restart-ssh](https://gist.github.com/gravefolk/96b79c321f7e6e52457f8a6fef603eac)
