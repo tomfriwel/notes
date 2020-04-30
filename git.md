@@ -76,3 +76,5 @@ Solution:
 Add `<IP> gitlab.com` to `/etc/hosts`
 
 Test: `$ ssh -T git@gitlab.com`
+
+[git push 时出现Connection closed by remote host](https://blog.csdn.net/qq_27633421/article/details/78343091)
