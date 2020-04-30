@@ -53,3 +53,26 @@ $ git branch -d <branch_name>
 `$ more ~/.ssh/id_rsa.pub`
 
 [使用git push origin master向github推送代码，出现git@github.com: Permission denied (publickey).](https://blog.csdn.net/yjk13703623757/article/details/87882294)
+
+#### Git: Connection to gitlab.com closed by remote host.
+
+Error Details:
+
+```
+Git: Connection to gitlab.com closed by remote host.
+```
+
+```
+Bad packet length xxx.
+ssh_dispatch_run_fatal: Connection to <IP> port 22: message authentication code incorrect
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+```
+
+Solution:
+
+Add `<IP> gitlab.com` to `/etc/hosts`
+
+Test: `$ ssh -T git@gitlab.com`

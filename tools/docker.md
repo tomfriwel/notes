@@ -81,6 +81,8 @@ The `--force` option removes the running container. If you stop the container ru
 
 ![](https://github.com/tomfriwel/notes/blob/master/tools/assets/docker/s0.png)
 
+name image port
+
 ### Part3: Share images on Docker Hub
 
 ```sh
@@ -93,6 +95,27 @@ docker push <Docker ID>/bulletinboard:1.0
 ```sh
 docker run mysql
 ```
+
+Got:
+```sh
+2020-04-29 02:50:48+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.20-1debian10 started.
+2020-04-29 02:50:48+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2020-04-29 02:50:48+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.20-1debian10 started.
+2020-04-29 02:50:48+00:00 [ERROR] [Entrypoint]: Database is uninitialized and password option is not specified
+	You need to specify one of MYSQL_ROOT_PASSWORD, MYSQL_ALLOW_EMPTY_PASSWORD and MYSQL_RANDOM_ROOT_PASSWORD
+```
+
+After read [Docker hub - mysql](https://hub.docker.com/_/mysql)
+
+Starting a MySQL instance: 
+
+`$ docker run --name mysqltest -e MYSQL_ROOT_PASSWORD=666666 -d mysql:latest`
+
+Connect to the MySQL instance above:
+
+
+
+[MySQL 8.0 Reference Manual](https://dev.mysql.com/doc/refman/8.0/en/mysql.html)
 
 
 ### [Docker hub Docs](https://docs.docker.com/docker-hub/)
