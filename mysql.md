@@ -45,3 +45,43 @@ FROM
 Try to delete a record, occur:
 
 `1205 - Lock wait timeout exceeded; try restarting transaction`
+
+
+#### Installing MySQL on macOS
+
+```sh
+brew install mysql
+
+# if not run command bellow, will get error: ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)
+mysql.server start
+```
+
+[Can't connect to local MySQL server through socket homebrew](https://stackoverflow.com/a/18090173/6279975)
+
+
+#### Commands
+
+```sh
+show databases;
+use <database name>
+show tables;
+show columns from <table name>;
+show index from <table name>;
+create database <new database name>;
+
+# delete database
+drop database <database name>;
+
+CREATE TABLE IF NOT EXISTS `<new table name>`(
+   `id` INT UNSIGNED AUTO_INCREMENT,
+   `title` VARCHAR(255) NOT NULL,
+   `author` VARCHAR(40) NOT NULL,
+   `timeCreated` DATE,
+   PRIMARY KEY ( `id` )
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+# delete table
+drop table <table name>;
+```
+
+[MySQL 管理](https://www.runoob.com/mysql/mysql-administration.html)

@@ -14,6 +14,7 @@ Error response from daemon: manifest for xxx/test:latest not found: manifest unk
 ### References
 
 - [Docker Documentation](https://docs.docker.com)
+- [RUNOOB.COM - Docker安装MySQL](https://www.runoob.com/docker/docker-install-mysql.html)
 
 ### [Quickstart](https://docs.docker.com/get-started/)
 
@@ -113,9 +114,26 @@ Starting a MySQL instance:
 
 Connect to the MySQL instance above:
 
+```sh
+docker exec -i -t mysqltest /bin/bash
+
+# or use command below to find the container's CONTAINER ID
+docker ps
+
+docker exec -i -t <CONTAINER ID> /bin/bash
+
+
+# exit container
+exit
+```
+
 
 
 [MySQL 8.0 Reference Manual](https://dev.mysql.com/doc/refman/8.0/en/mysql.html)
+
+### Docker Commands
+
+`$ docker search mysql`
 
 
 ### [Docker hub Docs](https://docs.docker.com/docker-hub/)
@@ -123,3 +141,5 @@ Connect to the MySQL instance above:
 ```sh
 docker build -t <your_username>/my-first-repo .
 ```
+
+
