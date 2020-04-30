@@ -9,11 +9,10 @@ Using default tag: latest
 Error response from daemon: manifest for xxx/test:latest not found: manifest unknown: manifest unknown
 ```
 
-
-
 ### References
 
 - [Docker Documentation](https://docs.docker.com)
+- [RUNOOB.COM - Docker 教程](https://www.runoob.com/docker/docker-tutorial.html)
 - [RUNOOB.COM - Docker安装MySQL](https://www.runoob.com/docker/docker-install-mysql.html)
 
 ### [Quickstart](https://docs.docker.com/get-started/)
@@ -112,24 +111,37 @@ Starting a MySQL instance:
 
 `$ docker run --name mysqltest -e MYSQL_ROOT_PASSWORD=666666 -d mysql:latest`
 
+If you already have a container, you can use `$ docker start mysqltest` or `$ docker start <CONTAINER ID>` to start the container. Using the command `$ docker stop mysqltest/<CONTAINER ID>` to stop container. (Use `$ docker ps -a` to find the container's id)
+
 Connect to the MySQL instance above:
 
 ```sh
 docker exec -i -t mysqltest /bin/bash
+
+# -i -t equal to -it
 
 # or use command below to find the container's CONTAINER ID
 docker ps
 
 docker exec -i -t <CONTAINER ID> /bin/bash
 
-
 # exit container
 exit
 ```
 
+In container:
 
+```sh
+mysql -u root -p
+# enter the password specified above. (MYSQL_ROOT_PASSWORD=666666)
+```
 
-[MySQL 8.0 Reference Manual](https://dev.mysql.com/doc/refman/8.0/en/mysql.html)
+Here [MySQL Basic Commands](../mysql.md#Commands) are some mysql commands.
+
+Referneces:
+- [Docker 进入正在运行的容器的4种方式](https://www.cnblogs.com/Mishell/p/12179000.html)
+- [Docker搭建MySQL服务](https://www.cnblogs.com/pwc1996/p/5425234.html)
+- [MySQL 8.0 Reference Manual](https://dev.mysql.com/doc/refman/8.0/en/mysql.html)
 
 ### Docker Commands
 
