@@ -434,3 +434,7 @@ Create a file at `res/drawable/mydivider.xml` and add the following code
 $ brew update
 $ brew install watchman
 ```
+
+### [Error: What went wrong: Could not determine the dependencies of task ':react-native-screens:generateDebugRFile ...](https://github.com/invertase/react-native-firebase/issues/1360#issuecomment-410404715)
+
+Moving `google()` repository at the top of the list in file build.gradle.
