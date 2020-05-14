@@ -77,4 +77,12 @@ Add `<IP> gitlab.com` to `/etc/hosts`
 
 Test: `$ ssh -T git@gitlab.com`
 
+```
+sudo launchctl stop com.openssh.sshd
+sudo launchctl start com.openssh.sshd
+
+sudo launchctl load -w /System/Library/LaunchDaemons/ssh.plist
+sudo launchctl unload -w /System/Library/LaunchDaemons/ssh.plist
+```
+
 [git push 时出现Connection closed by remote host](https://blog.csdn.net/qq_27633421/article/details/78343091)
