@@ -33,3 +33,8 @@ or
 
 
 `$ pip install sqlalchemy pymysql xlwt openpyxl`
+
+
+### Specify python version
+
+`$ virtualenv TEST --python=python2.7`
