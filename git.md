@@ -17,6 +17,10 @@
 
 `-r` means recursively
 
+#### undo commit
+
+`$ git reset --soft HEAD^`
+
 #### delete branch
 
 [](https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-both-locally-and-remotely)
