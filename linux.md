@@ -113,3 +113,5 @@ struct stat {
     time_t    st_ctime;   /* time of last status change */
 };
 ```
+
+[What algorithm does git use to detect changes on your working tree?](https://stackoverflow.com/questions/4075528/what-algorithm-does-git-use-to-detect-changes-on-your-working-tree/4075667)
