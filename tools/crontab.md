@@ -3,6 +3,10 @@
 This tool can run task every time when you setting up.
 
 
+### Install
+
+`$ yum install cronie`
+
 ### Tips
 
 Every five minutes  */5 * * * *
