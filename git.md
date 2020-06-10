@@ -58,7 +58,7 @@ $ git branch -d <branch_name>
 
 [使用git push origin master向github推送代码，出现git@github.com: Permission denied (publickey).](https://blog.csdn.net/yjk13703623757/article/details/87882294)
 
-#### Git: Connection to gitlab.com closed by remote host.
+#### Git: Connection to gitlab.com closed by remote host. (It could be the server)
 
 Error Details:
 
@@ -90,3 +90,19 @@ sudo launchctl unload -w /System/Library/LaunchDaemons/ssh.plist
 ```
 
 [git push 时出现Connection closed by remote host](https://blog.csdn.net/qq_27633421/article/details/78343091)
+
+#### See the metadata
+
+`$ git ls-files --debug`
+
+This command will outputs something like below:
+```
+...
+afilepath
+  ctime: 1587888319:776648808
+  mtime: 1587888319:776648808
+  dev: 16777220 ino: 73196524
+  uid: 501      gid: 20
+  size: 1227    flags: 0
+...
+```
