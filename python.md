@@ -19,3 +19,19 @@ change `json.loads` to `json.load`
 
 
 [python中读取json文件时报错，TypeError：the Json object must be str, bytes or bytearray，not ‘TextIOWrapper’](https://blog.csdn.net/not_guy/article/details/80954328)
+
+
+#### [How do I check whether a module is installed in Python, and install it if needed?](https://askubuntu.com/a/588392/707430)
+
+```shell
+$ python -c "import math"
+$ echo $?
+0                                # math module exists in system
+
+$ python -c "import numpy"
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ImportError: No module named numpy
+$ echo $?
+1                                # numpy module does not exist in system
+```
