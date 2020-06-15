@@ -70,3 +70,19 @@ with open('/home/joe/file.txt', 'rb') as f_in:
     with gzip.open('/home/joe/file.txt.gz', 'wb') as f_out:
         shutil.copyfileobj(f_in, f_out)
 ```
+
+#### [Python 判断文件/目录是否存在](https://www.runoob.com/w3cnote/python-check-whether-a-file-exists.html)
+
+```python
+import os.path
+
+# 检测文件是否存在：
+os.path.isfile(fname)
+
+if my_file.is_dir():
+    # 指定的目录存在
+
+# 如果要检测路径是一个文件或目录可以使用 exists() 方法：
+if my_file.exists():
+    # 指定的文件或目录存在
+```
