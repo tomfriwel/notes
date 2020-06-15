@@ -35,3 +35,38 @@ ImportError: No module named numpy
 $ echo $?
 1                                # numpy module does not exist in system
 ```
+
+#### About time
+
+```python
+from datetime import date, timedelta
+
+# Let's say it's Monday
+today = date.today()
+# datetime.date(2020, 6, 15)
+
+last_week_start = today - timedelta(days=today.weekday()+7)
+# today.weekday() = 0
+# datetime.date(2020, 6, 8)
+# last_week_start.weekday() = 0
+# str(last_week_start) = '2020-06-08'
+
+last_week_end = today - timedelta(days=today.weekday()+1)
+# datetime.date(2020, 6, 14)
+# last_week_end.weekday() = 6
+```
+
+[datetime — Basic date and time types](https://docs.python.org/3/library/datetime.html)
+
+
+#### [gzip — Support for gzip files](https://docs.python.org/3/library/gzip.html)
+
+Example of how to GZIP compress an existing file:
+
+```python
+import gzip
+import shutil
+with open('/home/joe/file.txt', 'rb') as f_in:
+    with gzip.open('/home/joe/file.txt.gz', 'wb') as f_out:
+        shutil.copyfileobj(f_in, f_out)
+```

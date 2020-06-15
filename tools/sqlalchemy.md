@@ -18,3 +18,11 @@ for i in range(1,2000):
     conn.close()
 db.dispose()
 ```
+
+#### funcs
+
+```
+.sort_by()
+.group_by()
+
+```

@@ -115,3 +115,15 @@ struct stat {
 ```
 
 [What algorithm does git use to detect changes on your working tree?](https://stackoverflow.com/questions/4075528/what-algorithm-does-git-use-to-detect-changes-on-your-working-tree/4075667)
+
+
+#### View file's ctime, mtime
+
+`$ stat [filepath]`
+
+[Linux如何查看文件的创建、修改时间？](https://www.cnblogs.com/yizhipanghu/p/9634325.html)
+
+
+#### [How to gzip and keep original file on Unix or Linux command line](https://www.cyberciti.biz/faq/how-to-gzip-and-keep-original-file-on-unix-or-linux-command-line/)
+
+`$ gzip -c Friday-Comic.jpg > Friday-Comic-1.jpg.gz`
