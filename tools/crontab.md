@@ -7,6 +7,13 @@ This tool can run task every time when you setting up.
 
 `$ yum install cronie`
 
+### Examples
+
+```shell
+# Command is executed every Monday at 9:55 a.m
+55 9 * * 1 python exec.py
+```
+
 ### Tips
 
 Every five minutes  */5 * * * *
