@@ -28,6 +28,14 @@ test # for example
 
 `$ db.collection.find({'key1':'123', 'key2':'abc'}).limit(2)`
 
+### not equal
+
+`$ db.collection.find({'key1':'123', 'key2': {$ne: 'abc'}})`
+
+### not in
+
+`$ db.collection.find({'key1':'123', 'key2': {$nin: ['abc', 'bcd']}})`
+
 
 ### References
 
