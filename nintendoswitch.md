@@ -2,6 +2,8 @@
 
 ### [eShop Prices](https://eshop-prices.com/prices?currency=CNY)
 
+### [Nintendo Accounts](https://accounts.nintendo.com)
+
 ### 换区后的黄金点数
 
 换区后黄金点数不会被清空，但是获取的黄金点数应该是只能在你获取点数的时候的区才能使用，因为我换区后点数是变成各个区的点数，而不是通用的。
