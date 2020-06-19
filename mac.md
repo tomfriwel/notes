@@ -44,3 +44,7 @@ sudo launchctl start com.openssh.sshd
 [gravefolk/restart-ssh](https://gist.github.com/gravefolk/96b79c321f7e6e52457f8a6fef603eac)
 
 [Command Line SSH restart Mac OSX Mountain Lion](https://superuser.com/questions/478035/command-line-ssh-restart-mac-osx-mountain-lion)
+
+### hosts file path
+
+`/private/etc/hosts`
