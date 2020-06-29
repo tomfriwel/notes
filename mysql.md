@@ -85,3 +85,20 @@ drop table <table name>;
 ```
 
 [MySQL 管理](https://www.runoob.com/mysql/mysql-administration.html)
+
+
+#### INSERT INTO SELECT
+
+```sql
+INSERT INTO Websites (name, country)
+SELECT app_name, country FROM apps;
+
+-- or
+
+INSERT INTO Websites (name, country)
+SELECT app_name, country FROM apps
+WHERE id=1;
+```
+
+[SQL INSERT INTO SELECT 语句](https://www.runoob.com/sql/sql-insert-into-select.html)
+
