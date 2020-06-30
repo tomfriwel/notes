@@ -21,8 +21,11 @@ db.dispose()
 
 #### funcs
 
-```
+```python
 .sort_by()
 .group_by()
+
+# group concat & concat
+func.group_concat(func.concat(table.c.column1, '-', table.c.column2).distinct()).label('otherName'),
 
 ```
