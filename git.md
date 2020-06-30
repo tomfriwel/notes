@@ -106,3 +106,9 @@ afilepath
   size: 1227    flags: 0
 ...
 ```
+
+#### git undo
+
+`$ git reset HEAD~1` keep changes
+
+`$ git reset --hard commit_id` will lose changes, use `$ git log` to view commits histroy and find the `commit_id`, which you want to reset to.
