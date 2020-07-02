@@ -127,3 +127,9 @@ struct stat {
 #### [How to gzip and keep original file on Unix or Linux command line](https://www.cyberciti.biz/faq/how-to-gzip-and-keep-original-file-on-unix-or-linux-command-line/)
 
 `$ gzip -c Friday-Comic.jpg > Friday-Comic-1.jpg.gz`
+
+#### humanize file size
+
+`$ ls -lh` or `$ ll -h`
+
+[[Linux技巧] 让ls -l和df命令显示的文件大小可读性增强](https://www.cnblogs.com/unimous/archive/2011/05/17/2049459.html)
