@@ -48,3 +48,11 @@ ws = wb.active
 [Tutorial - Create a workbook](https://openpyxl.readthedocs.io/en/stable/tutorial.html)
 
 [Python错误：AttributeError: 'Worksheet' object has no attribute 'get_highest_row' 解决办法](https://blog.csdn.net/liuyukuan/article/details/84679683)
+
+
+### [openpyxl.utils.exceptions.IllegalCharacterError 错误原因分析及解决办法](https://blog.csdn.net/javajiawei/article/details/97147219)
+
+```python
+from openpyxl.cell.cell import ILLEGAL_CHARACTERS_RE
+text = ILLEGAL_CHARACTERS_RE.sub(r'', text)
+```
