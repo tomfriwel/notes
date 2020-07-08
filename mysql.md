@@ -102,3 +102,23 @@ WHERE id=1;
 
 [SQL INSERT INTO SELECT 语句](https://www.runoob.com/sql/sql-insert-into-select.html)
 
+#### UPDATE INNER JOIN
+
+```sql
+UPDATE T1, T2,
+[INNER JOIN | LEFT JOIN] T1 ON T1.C1 = T2. C1
+SET T1.C2 = T2.C2, 
+    T2.C3 = expr
+WHERE condition
+```
+
+[[转]MySQL update join语句](https://www.cnblogs.com/dirgo/p/9491777.html)
+
+#### GROUP_CONCAT SEPARATOR
+
+```sql
+
+GROUP_CONCAT(<tablecolumn> SEPARATOR '|')
+
+```
+[MySQL中使用group_concat()指定分隔符](https://www.cnblogs.com/ljch/p/12205580.html)
