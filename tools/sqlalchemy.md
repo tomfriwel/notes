@@ -32,8 +32,16 @@ func.group_concat(func.concat(table.c.column1, '-', table.c.column2).distinct())
 
 #### LIMIT
 
-``python
+```python
 query.limit(limit).offset(offset)
 ```
-
 [Applying LIMIT and OFFSET to all queries in SQLAlchemy](https://stackoverflow.com/questions/13258934/applying-limit-and-offset-to-all-queries-in-sqlalchemy)
+
+#### SELECT *
+
+```python
+sqlalchemy.select([sqlalchemy.text('*')])
+```
+
+[SELECT * in SQLAlchemy?](https://stackoverflow.com/questions/636548/select-in-sqlalchemy)
+
