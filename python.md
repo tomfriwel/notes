@@ -86,3 +86,9 @@ if my_file.is_dir():
 if my_file.exists():
     # 指定的文件或目录存在
 ```
+
+#### View moudel version
+
+`$  python -c "import sqlalchemy; print(sqlalchemy.__version__)"`
+
+[How to check version of python modules?](https://stackoverflow.com/questions/20180543/how-to-check-version-of-python-modules)
