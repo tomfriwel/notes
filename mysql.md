@@ -122,3 +122,12 @@ GROUP_CONCAT(<tablecolumn> SEPARATOR '|')
 
 ```
 [MySQL中使用group_concat()指定分隔符](https://www.cnblogs.com/ljch/p/12205580.html)
+
+
+#### Get week day
+
+```sql
+SELECT dayofweek(curdate())-1
+```
+
+[mysql 获取星期几，dayofweek()函数](https://www.cnblogs.com/sea-stream/p/11299476.html)

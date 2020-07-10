@@ -92,3 +92,24 @@ if my_file.exists():
 `$  python -c "import sqlalchemy; print(sqlalchemy.__version__)"`
 
 [How to check version of python modules?](https://stackoverflow.com/questions/20180543/how-to-check-version-of-python-modules)
+
+
+#### sort list
+
+`sort`: change original list
+
+`sorted`: keep original list and return sorted list
+
+
+[Python列表排序方法reverse、sort、sorted详解](https://www.cnblogs.com/jsdd/p/11654860.html)
+
+#### Ternary operator
+
+`b =  a > 1? "Greater thant 1":"Less than or equal to 1"`
+
+[python中的三元表达式（三目运算符）](https://www.cnblogs.com/ellisonzhang/p/10242626.html)
+
+
+#### Remove dulplicate items in list
+
+[python：对list去重](https://www.cnblogs.com/gcgc/p/11474369.html)
