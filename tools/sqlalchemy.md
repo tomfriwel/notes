@@ -1,5 +1,9 @@
 # sqlalchemy(python)
 
+#### Documentation
+
+[SQLAlchemy 1.3 Documentation](https://docs.sqlalchemy.org/en/13/index.html)
+
 #### [How to increase a counter in SQLAlchemy](https://stackoverflow.com/a/2334917/6279975)
 
 
@@ -33,15 +37,27 @@ func.group_concat(func.concat(table.c.column1, '-', table.c.column2).distinct())
 #### LIMIT
 
 ```python
-query.limit(limit).offset(offset)
+sqlalchemy.select(["""..."""]).select_from(table).limit(limit).offset(offset)
 ```
 [Applying LIMIT and OFFSET to all queries in SQLAlchemy](https://stackoverflow.com/questions/13258934/applying-limit-and-offset-to-all-queries-in-sqlalchemy)
 
 #### SELECT *
 
 ```python
-sqlalchemy.select([sqlalchemy.text('*')])
+sqlalchemy.select([sqlalchemy.text('*')]).select_from(table)
 ```
 
 [SELECT * in SQLAlchemy?](https://stackoverflow.com/questions/636548/select-in-sqlalchemy)
 
+#### subquery (alias)
+
+```python
+subquery = sqlalchemy.select(["""..."""]).select_from(table1).alias()
+
+query = sqlalchemy.select(["""..."""]).select_from(
+    subquery.join(
+        table2,
+        """some condition"""
+    )
+)
+```
