@@ -12,7 +12,7 @@ or
 
 ### Create a virtual environment
 
-`$ virtualenv envfoldername`
+`$ virtualenv envfoldername` or `$ virtualenv envfoldername --python=python3.5`
 
 `$ cd envfoldername`
 
