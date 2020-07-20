@@ -118,3 +118,15 @@ if my_file.exists():
 #### InsecureRequestWarning: Unverified HTTPS request is being made.
 
 [解决Python3 控制台输出InsecureRequestWarning的问题](https://www.cnblogs.com/ernana/p/8601789.html)
+
+
+#### compare list
+
+```
+print set(a) & set(b) # 交集, 等价于set(a).intersection(set(b))
+print set(a) | set(b) # 并集, 等价于set(a).union(set(b))
+print set(a) - set(b) # 差集，在a中但不在b中的元素, 等价于set(a).difference(set(b))
+print set(b) - set(a) # 差集，在b中但不在a中的元素, 等价于set(b).difference(set(a))
+```
+
+[[Python] 比较两个数组的元素的异同](https://www.cnblogs.com/bymo/p/7376363.html)
