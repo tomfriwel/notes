@@ -113,3 +113,8 @@ if my_file.exists():
 #### Remove dulplicate items in list
 
 [python：对list去重](https://www.cnblogs.com/gcgc/p/11474369.html)
+
+
+#### InsecureRequestWarning: Unverified HTTPS request is being made.
+
+[解决Python3 控制台输出InsecureRequestWarning的问题](https://www.cnblogs.com/ernana/p/8601789.html)
