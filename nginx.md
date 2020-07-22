@@ -30,6 +30,21 @@ location ~* \.html$ {
 }
 ```
 
+### Nginx 502 with Codeigniter
+
+Finally found is pho-fpm version error.
+
+```conf
+location ~ \.php$ {
+     # ...
+     fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
+     # ...
+}
+```
+
 ### Refs
 
 - [Nginx实现URL重写](https://www.cnblogs.com/dalaoyang/p/10264919.html)
+- [Ubuntu 18.04系统用Nginx替换Apache的方法](https://www.laozuo.org/14171.html)
+- [How to Install Nginx, PHP 7.3 (LEMP stack) on Ubuntu 18.04 | Google Cloud](https://www.cloudbooklet.com/how-to-install-nginx-php-7-3-lemp-stack-on-ubuntu-18-04-google-cloud/)
+- [Nginx - Codeigniter](https://www.nginx.com/resources/wiki/start/topics/recipes/codeigniter/)
