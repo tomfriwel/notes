@@ -61,3 +61,9 @@ query = sqlalchemy.select(["""..."""]).select_from(
     )
 )
 ```
+
+#### where in
+```python
+arr = [1,2]
+table.c.id.in_(arr)
+```
