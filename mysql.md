@@ -131,3 +131,16 @@ SELECT dayofweek(curdate())-1
 ```
 
 [mysql 获取星期几，dayofweek()函数](https://www.cnblogs.com/sea-stream/p/11299476.html)
+
+
+#### Date of today and date of yesterday
+
+```sql
+-- today
+SELECT CURDATE();
+
+-- yesterday
+SELECT DATE_ADD(CURDATE(),INTERVAL -1 DAY);
+```
+
+[【数据库】MySQL语句获取今天昨天日期、格式化日期](https://blog.csdn.net/m18633778874/article/details/88244539)
