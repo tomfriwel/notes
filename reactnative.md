@@ -438,3 +438,9 @@ $ brew install watchman
 ### [Error: What went wrong: Could not determine the dependencies of task ':react-native-screens:generateDebugRFile ...](https://github.com/invertase/react-native-firebase/issues/1360#issuecomment-410404715)
 
 Moving `google()` repository at the top of the list in file build.gradle.
+
+### Multiple apps
+
+Change `applicationId` in `android/app/build.gradle`
+
+[react native之android多包共存解决方案](https://blog.csdn.net/weixin_33816300/article/details/91434700)
