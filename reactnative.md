@@ -444,3 +444,11 @@ Moving `google()` repository at the top of the list in file build.gradle.
 Change `applicationId` in `android/app/build.gradle`
 
 [react native之android多包共存解决方案](https://blog.csdn.net/weixin_33816300/article/details/91434700)
+
+
+### Error: Invariant Violation: Module AppRegistry is not a registered callable module (calling runApplication)
+
+[https://github.com/facebook/react-native/issues/26687](https://github.com/facebook/react-native/issues/26687#issuecomment-537504575)
+
+
+### Warning: Cannot update a component from inside the function body of a different component.
