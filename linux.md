@@ -133,3 +133,13 @@ struct stat {
 `$ ls -lh` or `$ ll -h`
 
 [[Linux技巧] 让ls -l和df命令显示的文件大小可读性增强](https://www.cnblogs.com/unimous/archive/2011/05/17/2049459.html)
+
+#### view linux info
+
+```
+$ cat /proc/version
+$ uname -a
+$ lsb_release -a
+```
+
+[查看Linux系统版本信息](https://www.linuxidc.com/Linux/2016-05/131749.htm)
