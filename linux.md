@@ -143,3 +143,8 @@ $ lsb_release -a
 ```
 
 [查看Linux系统版本信息](https://www.linuxidc.com/Linux/2016-05/131749.htm)
+
+
+#### File recovery
+
+[linux误删文件怎么恢复](https://jingyan.baidu.com/article/2d5afd69bc7dfec4a2e28e89.html)
