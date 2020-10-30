@@ -148,3 +148,13 @@ $ lsb_release -a
 #### File recovery
 
 [linux误删文件怎么恢复](https://jingyan.baidu.com/article/2d5afd69bc7dfec4a2e28e89.html)
+
+
+#### view port and kill
+
+```
+lsof -i:3000
+kill [PID]
+```
+
+[How to kill a process listening on a port in linux](https://codippa.com/how-to-kill-a-process-listening-on-a-port-in-linux/)
