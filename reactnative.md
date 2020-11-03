@@ -452,3 +452,8 @@ Change `applicationId` in `android/app/build.gradle`
 
 
 ### Warning: Cannot update a component from inside the function body of a different component.
+
+
+### Global Tips
+
+[react-native 配置全局loading，弹框，以及toast组件](https://blog.csdn.net/oihezz/article/details/107787792)
