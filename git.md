@@ -1,3 +1,7 @@
+# Got
+
+[Documentation](https://git-scm.com/doc)
+
 #### clone
 `$ git clone https://github.com/tomfriwel/programming-notes.git`
 
@@ -112,3 +116,13 @@ afilepath
 `$ git reset HEAD~1` keep changes
 
 `$ git reset --hard commit_id` will lose changes, use `$ git log` to view commits histroy and find the `commit_id`, which you want to reset to.
+
+#### View/Change git http.postBuffer
+
+```shell
+git config --get http.postBuffer
+
+git config http.postBuffer 524288000
+```
+[git clone error: RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 10054](https://stackoverflow.com/a/49728862/6279975)
+[http.postBuffer](https://git-scm.com/docs/git-config#Documentation/git-config.txt-httppostBuffer)
