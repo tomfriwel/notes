@@ -34,6 +34,11 @@
 - [渐变色](https://webgradients.com)
 - [色块](https://trianglify.io)
 
+### 速写练习素材
+
+- [Human anatomy for artist](https://www.human-anatomy-for-artist.com)
+- [SketchDaily References](http://reference.sketchdaily.net/zh)
+
 ### 图片素材
 - [Pinterest - 综合](https://www.pinterest.com/)
 - [Unsplash](https://unsplash.com) (free)
