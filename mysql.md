@@ -150,3 +150,6 @@ SELECT DATE_ADD(CURDATE(),INTERVAL -1 DAY);
 `$ mysql -u root -p'root' -h 127.0.0.1 -P 3306 -D local`
 
 `-D` means database.
+
+
+#### [MySQL Slow Query Log Tutorial](https://www.a2hosting.com/kb/developer-corner/mysql/enabling-the-slow-query-log-in-mysql)
