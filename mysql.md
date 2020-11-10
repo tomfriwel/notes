@@ -144,3 +144,9 @@ SELECT DATE_ADD(CURDATE(),INTERVAL -1 DAY);
 ```
 
 [【数据库】MySQL语句获取今天昨天日期、格式化日期](https://blog.csdn.net/m18633778874/article/details/88244539)
+
+#### Remote connection
+
+`$ mysql -u root -p'root' -h 127.0.0.1 -P 3306 -D local`
+
+`-D` means database.
