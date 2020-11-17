@@ -457,3 +457,17 @@ Change `applicationId` in `android/app/build.gradle`
 ### Global Tips
 
 [react-native 配置全局loading，弹框，以及toast组件](https://blog.csdn.net/oihezz/article/details/107787792)
+
+### error: Error: Unable to resolve module `xxx` from `ddd`: xxx could not be found within the project.
+
+`$ yarn cache clean`
+
+If not work:
+
+```shell
+If you are sure the module exists, try these steps:
+ 1. Clear watchman watches: watchman watch-del-all
+ 2. Delete node_modules: rm -rf node_modules and run yarn install
+ 3. Reset Metro's cache: yarn start --reset-cache
+ 4. Remove the cache: rm -rf /tmp/metro-*
+```
