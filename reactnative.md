@@ -471,3 +471,43 @@ If you are sure the module exists, try these steps:
  3. Reset Metro's cache: yarn start --reset-cache
  4. Remove the cache: rm -rf /tmp/metro-*
 ```
+
+### error
+
+we I run `$ cd android && ./gradlew assembleRelease`
+
+```shell
+yarn run v1.13.0
+$ cd android && ./gradlew assembleRelease
+> Task :@react-native-community_async-storage:compileReleaseJavaWithJavac FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':@react-native-community_async-storage:compileReleaseJavaWithJavac'.
+> Could not find tools.jar. Please check that /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home contains a valid JDK installation.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 7s
+19 actionable tasks: 18 executed, 1 up-to-date*
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+```
+
+not this `$ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home`
+
+I remove flavor setting.
+
+### JAVA_HOME
+
+```shell
+java -version
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/
+react-native run-android
+```
+
+[Set JAVA_HOME location for react native application](https://trinitytuts.com/tips/set-java_home-location-for-react-native-application/)
