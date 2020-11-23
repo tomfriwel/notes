@@ -66,3 +66,18 @@ const userScreens = {
 ```
 
 [Nesting navigators](https://reactnavigation.org/docs/nesting-navigators/)
+
+### 20201120
+```shell
+yarn add react-native-image-picker
+
+# RN >= 0.60
+cd ios && pod install
+
+# RN < 0.60
+react-native link react-native-image-picker
+```
+
+[react-native-image-picker/react-native-image-picker](https://github.com/react-native-image-picker/react-native-image-picker)
+
+[An In-Depth Guide to Using React Native Image Picker](https://blog.crowdbotics.com/how-to-use-react-native-image-picker/)
