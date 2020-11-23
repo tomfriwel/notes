@@ -151,5 +151,7 @@ SELECT DATE_ADD(CURDATE(),INTERVAL -1 DAY);
 
 `-D` means database.
 
-
 #### [MySQL Slow Query Log Tutorial](https://www.a2hosting.com/kb/developer-corner/mysql/enabling-the-slow-query-log-in-mysql)
+
+
+#### [Checking Whether a String Contains a Substring](https://www.oreilly.com/library/view/mysql-cookbook/0596001452/ch04s06.html)
