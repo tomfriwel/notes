@@ -81,3 +81,17 @@ react-native link react-native-image-picker
 [react-native-image-picker/react-native-image-picker](https://github.com/react-native-image-picker/react-native-image-picker)
 
 [An In-Depth Guide to Using React Native Image Picker](https://blog.crowdbotics.com/how-to-use-react-native-image-picker/)
+
+### 20201123 save image
+
+- [react-native-cameraroll/react-native-cameraroll](https://github.com/react-native-cameraroll/react-native-cameraroll)
+- [joltup/rn-fetch-blob](https://github.com/joltup/rn-fetch-blob/wiki/File-System-Access-API#writefilepathstring-contentstring--array-encodingstringpromise)
+
+[React Native Series: How to save an image from a remote url in React Native](https://dev.to/majiyd/react-native-series-how-to-save-an-image-from-a-remote-url-in-react-native-109d)
+
+```shell
+yarn add @react-native-community/cameraroll rn-fetch-blob
+cd ios && pod install
+```
+
+#### [useState hook vs this.state and this.setState in React-Native.](https://medium.com/@ayzik55/usestate-hook-vs-this-state-and-this-setstate-in-react-and-react-native-6c0936e9a8b)
