@@ -511,3 +511,19 @@ react-native run-android
 ```
 
 [Set JAVA_HOME location for react native application](https://trinitytuts.com/tips/set-java_home-location-for-react-native-application/)
+
+### Error: [“xcodebuild” command but it exited with error code 65 #25240](https://github.com/facebook/react-native/issues/25240#issuecomment-614180012)
+
+```
+react-native unlink react-native-vector-icons
+cd ios
+rm -rf build/
+```
+
+### Error: [Unrecognized Font Family on React Native](https://stackoverflow.com/a/57874804/6279975)
+
+```js
+mport Icon from 'react-native-vector-icons/FontAwesome';
+
+Icon.loadFont();
+```
