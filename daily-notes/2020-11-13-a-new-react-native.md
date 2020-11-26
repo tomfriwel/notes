@@ -95,3 +95,37 @@ cd ios && pod install
 ```
 
 #### [useState hook vs this.state and this.setState in React-Native.](https://medium.com/@ayzik55/usestate-hook-vs-this-state-and-this-setstate-in-react-and-react-native-6c0936e9a8b)
+
+### 20201124 icons
+
+[Add custom icons to your React Native application](https://medium.com/bam-tech/add-custom-icons-to-your-react-native-application-f039c244386c)
+
+[Fontello](https://fontello.com)
+
+```shell
+yarn add react-native-vector-icons
+react-native link react-native-vector-icons
+
+```
+
+Add to `package.json`:
+
+```json
+{
+  ...
+  "yarn": { "assets": [ "src/fonts" ] },
+  ...
+}
+```
+
+
+### trasition
+[Custom screen transitions in React Navigation](https://callstack.com/blog/custom-screen-transitions-in-react-navigation/)
+
+[Using TypeScript](https://reactnative.dev/docs/typescript)
+
+`yarn add react-native-swiper`
+
+[magicismight/react-native-root-toast](https://github.com/magicismight/react-native-root-toast)
+
+[magicismight/react-native-root-siblings](https://github.com/magicismight/react-native-root-siblings)

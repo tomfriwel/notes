@@ -527,3 +527,9 @@ mport Icon from 'react-native-vector-icons/FontAwesome';
 
 Icon.loadFont();
 ```
+
+### Device debug
+If cannot find server: `adb reverse tcp:8081 tcp:8081`
+
+
+### [joltup/rn-fetch-blob: Require cycle #183](https://github.com/joltup/rn-fetch-blob/issues/183#issuecomment-450826541)
