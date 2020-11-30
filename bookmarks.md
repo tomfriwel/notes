@@ -47,6 +47,9 @@
 - [摄图网](http://699pic.com/photo/)
 - [#FR2](https://ceno.jp/FR2)
 
+### 纹理素材
+- [Good Textures](https://www.goodtextures.com)
+
 ### 字体
 
 - [字魂网](https://izihun.com/shangyongziti/)
@@ -117,6 +120,9 @@
 
 ### 技术博客
 - [techtalkontv](https://techtalkontv.wordpress.com)
+
+### Github Organization
+- [WIX](https://github.com/wix)
 
 ### iOS
 
