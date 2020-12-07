@@ -187,3 +187,7 @@
 # Raspberry Pi
 
 [34 个使用 Raspberry Pi 的酷创意](https://linuxtoy.org/archives/cool-ideas-for-raspberry-pi.html)
+
+# 创作保护
+- [creative commons](https://creativecommons.org/choose/)
+- [谈谈创作共用许可证（Creative Commons licenses）](http://www.ruanyifeng.com/blog/2008/04/creative_commons_licenses.html)
