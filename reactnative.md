@@ -472,7 +472,7 @@ If you are sure the module exists, try these steps:
  4. Remove the cache: rm -rf /tmp/metro-*
 ```
 
-### error
+### Error: Could not find tools.jar. Please check that /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home contains a valid JDK installation.
 
 we I run `$ cd android && ./gradlew assembleRelease`
 
@@ -501,6 +501,26 @@ info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this comm
 not this `$ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home`
 
 I remove flavor setting.
+
+***2020 12 9 update:***
+
+In my case:
+
+I used the command `/usr/libexec/java_home -V | grep jdk` [Cristian Gomez](https://stackoverflow.com/users/1987977/cristian-gomez) provided to find two paths:
+
+```
+Matching Java Virtual Machines (2):
+    1.8.181.13 (x86_64) "Oracle Corporation" - "Java" /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home
+    1.8.0_111 (x86_64) "Oracle Corporation" - "Java SE 8" /Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home
+```
+
+Changing the `.zshrc` did not solve the problem.
+
+Finally I copied `tools.jar` in `/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/lib/` to `/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/` and solved the problem.
+
+I don't know if this approach will lead to any unknown problems.
+
+[Could not find tools.jar. Please check that /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home contains a valid JDK installation](https://stackoverflow.com/a/64987486/6279975)
 
 ### JAVA_HOME
 
@@ -533,3 +553,10 @@ If cannot find server: `adb reverse tcp:8081 tcp:8081`
 
 
 ### [joltup/rn-fetch-blob: Require cycle #183](https://github.com/joltup/rn-fetch-blob/issues/183#issuecomment-450826541)
+
+
+### 
+```conf
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home
+export PATH=$JAVA_HOME/bin:$PATH
+```
