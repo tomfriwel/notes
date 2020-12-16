@@ -69,4 +69,46 @@ func add(add a:Double, with b: Double)->Double {
 }
 
 print(add(add: 3, with: 4)) // 7.0
+
+// A function can take another function as one of its arguments.
+
+func hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {
+    for item in list {
+        if condition(item) {
+            return true
+        }
+    }
+    return false
+}
+func lessThanTen(number: Int) -> Bool {
+    return number < 10
+}
+var numbers = [20, 19, 7, 12]
+hasAnyMatches(list: numbers, condition: lessThanTen)
+
+// different between struct and class
+// copy when passed
+struct Data {
+    var width = 200
+}
+
+let d0 = Data()
+d0.width    // 200
+
+var d1 = d0 // -copy-, create a copy
+d1.width = 500  // if let d1, d1.width = 500 error
+d1.width    // 500
+d0.width    // 200
+
+// passed by reference
+class Model {
+    var no:Int = 111
+}
+
+let m0 = Model()
+m0.no   // 111
+let m1 = m0 // -reference-, only one
+m1.no = 222
+m0.no   // 222
+m1.no   // 222
 ```

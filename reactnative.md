@@ -520,7 +520,8 @@ Finally I copied `tools.jar` in `/Library/Java/JavaVirtualMachines/jdk1.8.0_111.
 
 I don't know if this approach will lead to any unknown problems.
 
-[Could not find tools.jar. Please check that /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home contains a valid JDK installation](https://stackoverflow.com/a/64987486/6279975)
+- [Could not find tools.jar. Please check that /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home contains a valid JDK installation](https://stackoverflow.com/a/64987486/6279975)
+- [MACBOOK(OSX)最升到11.0.1后android 打包报错 Could not find tools.jar. Please check that /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home contains a valid JDK installation.](https://www.cnblogs.com/johnjackson/p/14040958.html)
 
 ### JAVA_HOME
 
@@ -530,7 +531,7 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Hom
 react-native run-android
 ```
 
-[Set JAVA_HOME location for react native application](https://trinitytuts.com/tips/set-java_home-location-for-react-native-application/)
+- [Set JAVA_HOME location for react native application](https://trinitytuts.com/tips/set-java_home-location-for-react-native-application/)
 
 ### Error: [“xcodebuild” command but it exited with error code 65 #25240](https://github.com/facebook/react-native/issues/25240#issuecomment-614180012)
 
