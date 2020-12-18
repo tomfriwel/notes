@@ -112,3 +112,5 @@ m1.no = 222
 m0.no   // 222
 m1.no   // 222
 ```
+
+[Where usage in Swift](https://www.avanderlee.com/swift/where-using-swift/)
