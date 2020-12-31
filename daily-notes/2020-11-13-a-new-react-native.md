@@ -118,6 +118,13 @@ Add to `package.json`:
 }
 ```
 
+### 20201231 bug tracking
+
+```shell
+yarn add @sentry/react-native
+yarn sentry-wizard -i reactNative -p ios android
+```
+
 
 ### trasition
 [Custom screen transitions in React Navigation](https://callstack.com/blog/custom-screen-transitions-in-react-navigation/)
@@ -129,3 +136,4 @@ Add to `package.json`:
 [magicismight/react-native-root-toast](https://github.com/magicismight/react-native-root-toast)
 
 [magicismight/react-native-root-siblings](https://github.com/magicismight/react-native-root-siblings)
+
