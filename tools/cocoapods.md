@@ -20,3 +20,11 @@ fatal: index-pack failed
 ```
 
 `$ git config http.postBuffer 524288000`
+
+
+china:
+- https://gitee.com/mirrors/CocoaPods-Specs.git
+- https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git
+
+
+- https://github.com/CocoaPods/Specs.git

@@ -123,6 +123,34 @@ afilepath
 git config --get http.postBuffer
 
 git config http.postBuffer 524288000
+
+git config --global http.postBuffer 524288000
 ```
 [git clone error: RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 10054](https://stackoverflow.com/a/49728862/6279975)
 [http.postBuffer](https://git-scm.com/docs/git-config#Documentation/git-config.txt-httppostBuffer)
+
+[error: RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 54 #7025](https://github.com/CocoaPods/CocoaPods/issues/7025)
+
+### Add ssh key (github)
+
+```shell
+ssh-keygen -t rsa -b 4096 -C xxx@xx.com
+eval "$(ssh-agent -s)"
+open ~/.ssh/config
+```
+
+```config
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519
+```
+
+```ssh
+ssh-add -K ~/.ssh/id_ed25519
+# add to github
+pbcopy < ~/.ssh/id_ed25519.pub
+```
+
+- [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+- [Adding a new SSH key to your GitHub account](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
