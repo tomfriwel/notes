@@ -557,9 +557,9 @@ If cannot find server: `adb reverse tcp:8081 tcp:8081`
 
 Modify these files can avoid require cycle:
 
-IN DIR rn-fetch-blob/polyfill
+IN DIR `rn-fetch-blob/polyfill`
 
-all thease 4 files: Blob.js, Fetch.js, FileReader.js, XMLHttpRequest.js
+all thease 4 files: `Blob.js`, `Fetch.js`, `FileReader.js`, `XMLHttpRequest.js`
 
 ```js
 // import RNFetchBlob from '../index.js'
