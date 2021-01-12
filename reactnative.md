@@ -44,6 +44,37 @@ Add `--simulator="xxx"`:
 
 `$ react-native run-ios --simulator="iPhone 8 Plus"`
 
+#### React.createContext
+
+```js
+const userContext = React.createContext({user: {}});
+// ...
+render() {
+    return (
+        // Pass user state as value to context.Provider so it can be consumed by context.Consumer
+        <userContext.Provider value={this.state.user}>
+            <Main/>
+        </userContext.Provider>
+    );
+}
+// ...
+function Main(props) {
+    return (
+    <Sidebar/>
+    <userContext.Consumer>
+        {(value) => (<Avatar user={value}/>);}
+    </userContext.Consumer>
+    <Content/>
+    )
+}
+```
+
+- [Manage User Login with React Context](https://www.digitalocean.com/community/tutorials/react-manage-user-login-react-context#:~:text=The%20React.createContext%20method%20returns%20a%20Context%20object.%20This,allow%20for%20subscribing%20to%20data%3A%20Provider%20and%20Consumer.)
+
+#### React.useMemo
+
+- [Understanding the React useMemo Hook](https://www.digitalocean.com/community/tutorials/react-usememo)
+
 #### shortcuts
 
 ios: Press Cmd+R to reload, Cmd+D or shake for dev menu

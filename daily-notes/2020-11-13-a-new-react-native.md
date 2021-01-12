@@ -137,3 +137,9 @@ yarn sentry-wizard -i reactNative -p ios android
 
 [magicismight/react-native-root-siblings](https://github.com/magicismight/react-native-root-siblings)
 
+
+### 20210111 storage
+
+`$ yarn add @react-native-async-storage/async-storage`
+
+- [API](https://react-native-async-storage.github.io/async-storage/docs/api)
