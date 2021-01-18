@@ -75,6 +75,9 @@ function Main(props) {
 
 - [Understanding the React useMemo Hook](https://www.digitalocean.com/community/tutorials/react-usememo)
 
+
+#### [useEffect vs. useLayoutEffect in plain, approachable language](https://blog.logrocket.com/useeffect-vs-uselayouteffect/#:~:text=%20The%20difference%20between%20useEffect%20and%20useLayoutEffect%20in,impact%20the...%203%20Inconsistent%20visual%20changes%20More%20)
+
 #### shortcuts
 
 ios: Press Cmd+R to reload, Cmd+D or shake for dev menu
