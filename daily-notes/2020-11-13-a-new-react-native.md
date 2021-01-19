@@ -143,3 +143,7 @@ yarn sentry-wizard -i reactNative -p ios android
 `$ yarn add @react-native-async-storage/async-storage`
 
 - [API](https://react-native-async-storage.github.io/async-storage/docs/api)
+
+### 20210119 Display a native `UIViewController`
+
+[How can I present a native UIViewController in React Native? (Can't use just a UIView)](https://stackoverflow.com/a/36581163/6279975)
