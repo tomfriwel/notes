@@ -12,6 +12,7 @@ test # for example
 ### Installation on macOS
 
 ```shell
+# use untap to remove
 brew tap mongodb/brew
 brew install mongodb-community@4.4
 
