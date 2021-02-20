@@ -158,3 +158,20 @@ kill [PID]
 ```
 
 [How to kill a process listening on a port in linux](https://codippa.com/how-to-kill-a-process-listening-on-a-port-in-linux/)
+
+#### View process run time
+
+```bash
+$ ps -p [PID] -o etime
+    ELAPSED
+   01:41:02
+```
+
+#### Improve readability
+
+```bash
+ls [PATH] -lh
+
+# or
+ll [PATH] -h
+```
