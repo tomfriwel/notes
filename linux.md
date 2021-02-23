@@ -175,3 +175,23 @@ ls [PATH] -lh
 # or
 ll [PATH] -h
 ```
+
+#### Copy all files in folder to another
+
+`$ cp -R /folderA/. /folderB/`
+
+`-R`参数，表示递归处理，将指定目录下的所有文件与子目录一并处理
+
+[linux中复制文件夹的所有文件到指定目录](https://www.cnblogs.com/alonely/p/9382736.html)
+
+#### Soft link
+
+```bash
+# file
+ln -s {source-filename} {symbolic-filename}
+
+# folder
+ln -s {source-dir-name} {symbolic-dir-name}
+```
+
+[How to: Linux / UNIX create soft link with ln command](https://www.cyberciti.biz/faq/creating-soft-link-or-symbolic-link/#:~:text=Getting%20help%20about%20the%20ln%20command%20%20,existing%20destination%20files%20%2012%20more%20rows%20)
