@@ -187,10 +187,10 @@ ll [PATH] -h
 #### Create/Delete soft link
 
 ```bash
-# file
+# file(absolute path)
 ln -s {source-filename} {symbolic-filename}
 
-# folder
+# folder(absolute path)
 ln -s {source-dir-name}/ {symbolic-dir-name}/
 
 # delete
