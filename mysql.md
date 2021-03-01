@@ -8,7 +8,7 @@ UPDATE tb`
 SET tb.key0 = tb.key1
 
 
-#### 按月、周、日统计
+### 按月、周、日统计
 
 ```sql
 select DATE_FORMAT(create_time,'%Y%m%d') days,count(caseid) count from tc_case group by days;
@@ -18,11 +18,11 @@ select DATE_FORMAT(create_time,'%Y%m') months,count(caseid) count from tc_case g
 
 [MySQL按天，按周，按月，按时间段统计【转载】](https://blog.csdn.net/qq_28056641/article/details/78306870)
 
-#### TIMESTAMPDIFF(interval,datetime_expr1,datetime_expr2)
+### TIMESTAMPDIFF(interval,datetime_expr1,datetime_expr2)
 
 `datetime_expr2 - datetime_expr1 = (interval)result`
 
-#### 累计统计
+### 累计统计
 
 ```sql
 SET @i = 0;
@@ -35,19 +35,19 @@ FROM
 [Mysql 统计每日注册人数和累计注册人数](https://blog.csdn.net/u012440725/article/details/82775178)
 
 
-#### 序号
+### 序号
 
 [Mysql查询数据时，自动为结果编上序号](https://blog.csdn.net/arbben/article/details/78665389)
 
 
-#### [ERROR 1205 (HY000): Lock wait timeout exceeded; try restarting transaction的问题解决（备忘）](https://blog.csdn.net/mayor125/article/details/76186661)
+### [ERROR 1205 (HY000): Lock wait timeout exceeded; try restarting transaction的问题解决（备忘）](https://blog.csdn.net/mayor125/article/details/76186661)
 
 Try to delete a record, occur:
 
 `1205 - Lock wait timeout exceeded; try restarting transaction`
 
 
-#### Installing MySQL on macOS
+### Installing MySQL on macOS
 
 ```sh
 brew install mysql
@@ -59,7 +59,7 @@ mysql.server start
 [Can't connect to local MySQL server through socket homebrew](https://stackoverflow.com/a/18090173/6279975)
 
 
-#### Commands
+### Commands
 
 ```sh
 show databases;
@@ -87,7 +87,7 @@ drop table <table name>;
 [MySQL 管理](https://www.runoob.com/mysql/mysql-administration.html)
 
 
-#### INSERT INTO SELECT
+### INSERT INTO SELECT
 
 ```sql
 INSERT INTO Websites (name, country)
@@ -102,7 +102,7 @@ WHERE id=1;
 
 [SQL INSERT INTO SELECT 语句](https://www.runoob.com/sql/sql-insert-into-select.html)
 
-#### UPDATE INNER JOIN
+### UPDATE INNER JOIN
 
 ```sql
 UPDATE T1, T2,
@@ -114,7 +114,7 @@ WHERE condition
 
 [[转]MySQL update join语句](https://www.cnblogs.com/dirgo/p/9491777.html)
 
-#### GROUP_CONCAT SEPARATOR
+### GROUP_CONCAT SEPARATOR
 
 ```sql
 
@@ -124,7 +124,7 @@ GROUP_CONCAT(<tablecolumn> SEPARATOR '|')
 [MySQL中使用group_concat()指定分隔符](https://www.cnblogs.com/ljch/p/12205580.html)
 
 
-#### Get week day
+### Get week day
 
 ```sql
 SELECT dayofweek(curdate())-1
@@ -133,7 +133,7 @@ SELECT dayofweek(curdate())-1
 [mysql 获取星期几，dayofweek()函数](https://www.cnblogs.com/sea-stream/p/11299476.html)
 
 
-#### Date of today and date of yesterday
+### Date of today and date of yesterday
 
 ```sql
 -- today
@@ -145,13 +145,25 @@ SELECT DATE_ADD(CURDATE(),INTERVAL -1 DAY);
 
 [【数据库】MySQL语句获取今天昨天日期、格式化日期](https://blog.csdn.net/m18633778874/article/details/88244539)
 
-#### Remote connection
+### Remote connection
 
 `$ mysql -u root -p'root' -h 127.0.0.1 -P 3306 -D local`
 
 `-D` means database.
 
-#### [MySQL Slow Query Log Tutorial](https://www.a2hosting.com/kb/developer-corner/mysql/enabling-the-slow-query-log-in-mysql)
+### [MySQL Slow Query Log Tutorial](https://www.a2hosting.com/kb/developer-corner/mysql/enabling-the-slow-query-log-in-mysql)
 
 
-#### [Checking Whether a String Contains a Substring](https://www.oreilly.com/library/view/mysql-cookbook/0596001452/ch04s06.html)
+### [Checking Whether a String Contains a Substring](https://www.oreilly.com/library/view/mysql-cookbook/0596001452/ch04s06.html)
+
+### [SELECT list is not in GROUP BY clause and contains nonaggregated column … incompatible with sql_mode=only_full_group_by](https://stackoverflow.com/a/41887627/6279975)
+
+```bash
+# mysql command
+mysql -u username -p
+
+# Change mode to ONLY_FULL_GROUP_BY
+SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+
+# Reconnect mysql and run the query that previously reported the error
+```
