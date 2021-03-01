@@ -1,3 +1,7 @@
+# mysql
+
+- [Linux mysql command](https://www.computerhope.com/unix/mysql.htm#:~:text=The%20mysql%20command%20is%20a%20simple%20shell%20for,run%20a%20batch%20script%20containing%20your%20SQL%20commands.)
+
 ### Change password
 
 `mysql>update user set password=password('xxx') where user='root';`
