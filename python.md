@@ -1,4 +1,4 @@
-#### Generate random string
+### Generate random string
 
 ```python
 import uuid
@@ -7,13 +7,13 @@ filename = str(uuid.uuid4())
 
 [Best way to generate random file names in Python](https://stackoverflow.com/a/10501355/6279975)
 
-#### Delete dict key
+### Delete dict key
 
 `my_dict.pop('key', None)`
 
 [How to remove a key from a Python dictionary?](https://stackoverflow.com/a/11277439/6279975)
 
-#### TypeError: the JSON object must be str, bytes or bytearray, not 'TextIOWrapper'
+### TypeError: the JSON object must be str, bytes or bytearray, not 'TextIOWrapper'
 
 change `json.loads` to `json.load`
 
@@ -21,7 +21,7 @@ change `json.loads` to `json.load`
 [python中读取json文件时报错，TypeError：the Json object must be str, bytes or bytearray，not ‘TextIOWrapper’](https://blog.csdn.net/not_guy/article/details/80954328)
 
 
-#### [How do I check whether a module is installed in Python, and install it if needed?](https://askubuntu.com/a/588392/707430)
+### [How do I check whether a module is installed in Python, and install it if needed?](https://askubuntu.com/a/588392/707430)
 
 ```shell
 $ python -c "import math"
@@ -36,7 +36,7 @@ $ echo $?
 1                                # numpy module does not exist in system
 ```
 
-#### About time
+### About time
 
 ```python
 from datetime import date, timedelta
@@ -59,7 +59,7 @@ last_week_end = today - timedelta(days=today.weekday()+1)
 [datetime — Basic date and time types](https://docs.python.org/3/library/datetime.html)
 
 
-#### [gzip — Support for gzip files](https://docs.python.org/3/library/gzip.html)
+### [gzip — Support for gzip files](https://docs.python.org/3/library/gzip.html)
 
 Example of how to GZIP compress an existing file:
 
@@ -71,7 +71,7 @@ with open('/home/joe/file.txt', 'rb') as f_in:
         shutil.copyfileobj(f_in, f_out)
 ```
 
-#### [Python 判断文件/目录是否存在](https://www.runoob.com/w3cnote/python-check-whether-a-file-exists.html)
+### [Python 判断文件/目录是否存在](https://www.runoob.com/w3cnote/python-check-whether-a-file-exists.html)
 
 ```python
 import os.path
@@ -87,14 +87,14 @@ if my_file.exists():
     # 指定的文件或目录存在
 ```
 
-#### View moudel version
+### View moudel version
 
 `$  python -c "import sqlalchemy; print(sqlalchemy.__version__)"`
 
 [How to check version of python modules?](https://stackoverflow.com/questions/20180543/how-to-check-version-of-python-modules)
 
 
-#### sort list
+### sort list
 
 `sort`: change original list
 
@@ -103,24 +103,24 @@ if my_file.exists():
 
 [Python列表排序方法reverse、sort、sorted详解](https://www.cnblogs.com/jsdd/p/11654860.html)
 
-#### Ternary operator
+### Ternary operator
 
 `b =  a > 1? "Greater thant 1":"Less than or equal to 1"`
 
 [python中的三元表达式（三目运算符）](https://www.cnblogs.com/ellisonzhang/p/10242626.html)
 
 
-#### Remove dulplicate items in list
+### Remove dulplicate items in list
 
 [python：对list去重](https://www.cnblogs.com/gcgc/p/11474369.html)
 
 
-#### InsecureRequestWarning: Unverified HTTPS request is being made.
+### InsecureRequestWarning: Unverified HTTPS request is being made.
 
 [解决Python3 控制台输出InsecureRequestWarning的问题](https://www.cnblogs.com/ernana/p/8601789.html)
 
 
-#### compare list
+### compare list
 
 ```
 print set(a) & set(b) # 交集, 等价于set(a).intersection(set(b))
@@ -130,3 +130,18 @@ print set(b) - set(a) # 差集，在b中但不在a中的元素, 等价于set(b).
 ```
 
 [[Python] 比较两个数组的元素的异同](https://www.cnblogs.com/bymo/p/7376363.html)
+
+### Safe cast
+
+```python
+def safe_cast(val, to_type, default=None):
+    try:
+        return to_type(val)
+    except (ValueError, TypeError):
+        return default
+
+safe_cast('tst', int) # will return None
+safe_cast('tst', int, 0) # will return 0
+```
+
+- [Safe casting in python](https://stackoverflow.com/a/6330109/6279975)
