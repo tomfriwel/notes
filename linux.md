@@ -188,15 +188,15 @@ ll [PATH] -h
 
 ```bash
 # file(absolute path)
-ln -s {source-filename} {symbolic-filename}
+`ln -s {source-filename} {symbolic-filename}`
 
 # folder(absolute path)
-ln -s {source-dir-name}/ {symbolic-dir-name}/
+`ln -s {source-dir-name}/ {symbolic-dir-name}/`
 
 # delete
-rm linkname
-unlink linkname
-```
+`rm linkname`
+`unlink linkname`
+
 
 - [How to: Linux / UNIX create soft link with ln command](https://www.cyberciti.biz/faq/creating-soft-link-or-symbolic-link/#:~:text=Getting%20help%20about%20the%20ln%20command%20%20,existing%20destination%20files%20%2012%20more%20rows%20)
 [Linux Delete Symbolic Link ( Softlink )](https://www.cyberciti.biz/faq/linux-remove-delete-symbolic-softlink-command/#:~:text=%20Linux%20Delete%20Symbolic%20Link%20%28%20Softlink%20%29,Remove%20Symbolic%20Link%20Command%20Options.%20%20More%20)
