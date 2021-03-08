@@ -1,4 +1,4 @@
-#### virtualenv
+### virtualenv
 
 ```shell
 virtualenv alpha
@@ -8,7 +8,7 @@ pip install sqlalchemy pymysql
 mkdir code
 ```
 
-#### inner outter network
+### inner outter network
 
 ```
 sudo vim /etc/resolv.conf
@@ -18,16 +18,16 @@ sudo vim /etc/hosts
 ping address
 ```
 
-#### all read
+### all read
 
 `$ sudo chmod a+r file`
 
 
-#### DNS hosts解析
+### DNS hosts解析
 
 DNS将域名解析成IP地址，但如果域名被劫持或者别人没有域名想要借用别人的，这是后可以在hosts添加相应的记录，强制域名解析到指定IP地址。
 
-#### Create SFTP account with folder access limit.
+### Create SFTP account with folder access limit.
 ```
 sudo useradd -s /sbin/nologin -M sftpUserXXX
 sudo passwd sftpUserXXX
@@ -84,7 +84,7 @@ more /etc/passwd
 [Linux - 设置SFTP服务用户目录权限](https://www.cnblogs.com/jiqing9006/p/8243161.html)
 
 
-#### View Intranet and extranet IP addresses
+### View Intranet and extranet IP addresses
 
 Intranet: `$ ifconfig -a`
 
@@ -92,7 +92,7 @@ Extranet: `$ curl ifconfig.me`
 
 [linux 查看内网IP和外网IP](https://www.cnblogs.com/gyrgyr/p/11607904.html)
 
-#### `lstat`
+### `lstat`
 
 `$ os.lstat(filepath)`
 
@@ -117,24 +117,24 @@ struct stat {
 [What algorithm does git use to detect changes on your working tree?](https://stackoverflow.com/questions/4075528/what-algorithm-does-git-use-to-detect-changes-on-your-working-tree/4075667)
 
 
-#### View file's ctime, mtime
+### View file's ctime, mtime
 
 `$ stat [filepath]`
 
 [Linux如何查看文件的创建、修改时间？](https://www.cnblogs.com/yizhipanghu/p/9634325.html)
 
 
-#### [How to gzip and keep original file on Unix or Linux command line](https://www.cyberciti.biz/faq/how-to-gzip-and-keep-original-file-on-unix-or-linux-command-line/)
+### [How to gzip and keep original file on Unix or Linux command line](https://www.cyberciti.biz/faq/how-to-gzip-and-keep-original-file-on-unix-or-linux-command-line/)
 
 `$ gzip -c Friday-Comic.jpg > Friday-Comic-1.jpg.gz`
 
-#### humanize file size
+### humanize file size
 
 `$ ls -lh` or `$ ll -h`
 
 [[Linux技巧] 让ls -l和df命令显示的文件大小可读性增强](https://www.cnblogs.com/unimous/archive/2011/05/17/2049459.html)
 
-#### view linux info
+### view linux info
 
 ```
 $ cat /proc/version
@@ -145,12 +145,12 @@ $ lsb_release -a
 [查看Linux系统版本信息](https://www.linuxidc.com/Linux/2016-05/131749.htm)
 
 
-#### File recovery
+### File recovery
 
 [linux误删文件怎么恢复](https://jingyan.baidu.com/article/2d5afd69bc7dfec4a2e28e89.html)
 
 
-#### view port and kill
+### view port and kill
 
 ```
 lsof -i:3000
@@ -159,7 +159,7 @@ kill [PID]
 
 [How to kill a process listening on a port in linux](https://codippa.com/how-to-kill-a-process-listening-on-a-port-in-linux/)
 
-#### View process run time
+### View process run time
 
 ```bash
 $ ps -p [PID] -o etime
@@ -167,7 +167,7 @@ $ ps -p [PID] -o etime
    01:41:02
 ```
 
-#### Improve readability
+### Improve readability
 
 ```bash
 ls [PATH] -lh
@@ -176,7 +176,7 @@ ls [PATH] -lh
 ll [PATH] -h
 ```
 
-#### Copy all files in folder to another
+### Copy all files in folder to another
 
 `$ cp -R /folderA/. /folderB/`
 
@@ -184,7 +184,7 @@ ll [PATH] -h
 
 [linux中复制文件夹的所有文件到指定目录](https://www.cnblogs.com/alonely/p/9382736.html)
 
-#### Create/Delete soft link
+### Create/Delete soft link
 
 ```bash
 # file(absolute path)
@@ -200,3 +200,13 @@ unlink linkname
 
 - [How to: Linux / UNIX create soft link with ln command](https://www.cyberciti.biz/faq/creating-soft-link-or-symbolic-link/#:~:text=Getting%20help%20about%20the%20ln%20command%20%20,existing%20destination%20files%20%2012%20more%20rows%20)
 [Linux Delete Symbolic Link ( Softlink )](https://www.cyberciti.biz/faq/linux-remove-delete-symbolic-softlink-command/#:~:text=%20Linux%20Delete%20Symbolic%20Link%20%28%20Softlink%20%29,Remove%20Symbolic%20Link%20Command%20Options.%20%20More%20)
+
+### View a file's line number
+
+`wc -l filename` 就是查看文件里有多少行
+
+`wc -w filename` 看文件里有多少个word。
+
+`wc -L filename` 文件里最长的那一行是多少个字。
+
+[linux查看文件有多少行(WC)](https://www.cnblogs.com/yanyujie/archive/2018/03/03/8495921.html)
