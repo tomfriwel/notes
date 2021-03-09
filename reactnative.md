@@ -607,3 +607,14 @@ const RNFetchBlob = NativeModules.RNFetchBlob
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home
 export PATH=$JAVA_HOME/bin:$PATH
 ```
+
+### No variants found for 'app'. Check build files to ensure at least one variant exists.
+
+I have just solved the same issue like this:
+
+**Tools -> SDK Manager**
+
+Verify that the SDK platform package for **Android 10.0** (the one with **API level 29**, like you defined in your gradle file) is checked.
+If not, check it and apply changes. Accept the licence terms, install the package and then **File -> Sync Project with Gradle Files** (or open the project again)
+
+[Android Studio: No build variant found error](https://stackoverflow.com/a/64486128/6279975)
