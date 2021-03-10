@@ -154,3 +154,18 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 - [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 - [Adding a new SSH key to your GitHub account](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
+
+### Error exited with 128.
+
+```sh
+$ brew install --cask adoptopenjdk/openjdk/adoptopenjdk8                     
+Updating Homebrew...
+==> Tapping adoptopenjdk/openjdk
+Cloning into '/usr/local/Homebrew/Library/Taps/adoptopenjdk/homebrew-openjdk'...
+fatal: unable to access 'https://github.com/adoptopenjdk/homebrew-openjdk/': Could not resolve proxy: proxiURL
+Error: Failure while executing; `git clone https://github.com/adoptopenjdk/homebrew-openjdk /usr/local/Homebrew/Library/Taps/adoptopenjdk/homebrew-openjdk` exited with 128.
+```
+
+`$ git config --global http.proxyAuthMethod 'basic'`
+
+- [git returns http error 407 from proxy after CONNECT](https://stackoverflow.com/a/53956231/6279975)
