@@ -117,6 +117,10 @@ afilepath
 
 `$ git reset --hard commit_id` will lose changes, use `$ git log` to view commits histroy and find the `commit_id`, which you want to reset to.
 
+#### [How can I undo the last commit?](https://www.git-tower.com/learn/git/faq/undo-last-commit/)
+
+`$ git reset --soft HEAD~1`
+
 #### View/Change git http.postBuffer
 
 ```shell
