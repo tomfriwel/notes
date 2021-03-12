@@ -661,3 +661,20 @@ Verify that the SDK platform package for **Android 10.0** (the one with **API le
 If not, check it and apply changes. Accept the licence terms, install the package and then **File -> Sync Project with Gradle Files** (or open the project again)
 
 [Android Studio: No build variant found error](https://stackoverflow.com/a/64486128/6279975)
+
+
+### error: package com.reactnativecommunity.rnpermissions does not exist
+
+```bash
+error: package com.reactnativecommunity.rnpermissions does not exist
+import com.reactnativecommunity.rnpermissions.RNPermissionsPackage;
+```
+
+`Android Studio`>`File`>`Sync Project with Gradle Files`
+
+### [Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0. #640](https://github.com/software-mansion/react-native-gesture-handler/issues/640)
+
+```sh
+npm I jetifier
+npx jetify
+```
