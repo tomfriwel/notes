@@ -677,4 +677,25 @@ import com.reactnativecommunity.rnpermissions.RNPermissionsPackage;
 ```sh
 npm I jetifier
 npx jetify
+### Invariant Violation: "XXX" has not been registered. This can happen if:...
+```sh
+Invariant Violation: "XXX" has not been registered. This can happen if:
+* Metro (the local dev server) is run from the wrong folder. Check if Metro is running, stop it and restart it in the current project.
+* A module failed to load due to an error and `AppRegistry.registerComponent` wasn't called.
+```
+
+`project/app.json`:
+```json
+{
+  "name": "XXX",
+  "displayName": "XXX"
+}
+```
+
+`project/package.json`:
+```json
+{
+  "name": "XXX",
+//   ...
+}
 ```
