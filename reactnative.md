@@ -18,6 +18,36 @@ To run your app on Android:
    react-native run-android
 ```
 
+### new 2021
+
+```bash
+brew install node
+brew install watchman
+sudo gem install cocoapods
+brew install --cask adoptopenjdk/openjdk/adoptopenjdk8
+```
+
+```conf
+# adb
+export PATH=${PATH}:~/Library/Android/sdk/platform-tools
+
+# java sdk
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+export PATH=$JAVA_HOME/bin:$PATH
+export CLASS_PATH=$JAVA_HOME/lib/tools.jar
+
+# android home
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+```
+
+Check by `$ echo $JAVA_HOME` and `$ echo $CLASS_PATH`.
+
+- [Setting up the development environment](https://reactnative.dev/docs/environment-setup)
+
 #### run ios
 
 `$ react-native run-ios`
@@ -302,6 +332,19 @@ Search `package_name` in project, and delete lines contain it if necessary.
 # react-native-camera
 
 add `<uses-permission android:name="android.permission.CAMERA" />` to `project/android/app/src/main/AndroidManifest.xml`
+
+- [Could not resolve project :react-native-camera. on Android #2150](https://github.com/react-native-camera/react-native-camera/issues/2150)
+- [migrationV2](https://github.com/react-native-camera/react-native-camera/blob/master/docs/migrationV2.md#android)
+
+```conf
+android {
+  ...
+  defaultConfig {
+    ...
+    missingDimensionStrategy 'react-native-camera', 'general' <-- insert this line
+  }
+}
+```
 
 # react-navigation
 
@@ -607,6 +650,17 @@ const RNFetchBlob = NativeModules.RNFetchBlob
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home
 export PATH=$JAVA_HOME/bin:$PATH
 ```
+
+### No variants found for 'app'. Check build files to ensure at least one variant exists.
+
+I have just solved the same issue like this:
+
+**Tools -> SDK Manager**
+
+Verify that the SDK platform package for **Android 10.0** (the one with **API level 29**, like you defined in your gradle file) is checked.
+If not, check it and apply changes. Accept the licence terms, install the package and then **File -> Sync Project with Gradle Files** (or open the project again)
+
+[Android Studio: No build variant found error](https://stackoverflow.com/a/64486128/6279975)
 
 ### Invariant Violation: "XXX" has not been registered. This can happen if:...
 ```sh
