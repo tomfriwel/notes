@@ -196,6 +196,7 @@ ll [PATH] -h
 # delete
 `rm linkname`
 `unlink linkname`
+```
 
 
 - [How to: Linux / UNIX create soft link with ln command](https://www.cyberciti.biz/faq/creating-soft-link-or-symbolic-link/#:~:text=Getting%20help%20about%20the%20ln%20command%20%20,existing%20destination%20files%20%2012%20more%20rows%20)
