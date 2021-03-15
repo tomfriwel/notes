@@ -210,3 +210,7 @@ ll [PATH] -h
 `wc -L filename` 文件里最长的那一行是多少个字。
 
 [linux查看文件有多少行(WC)](https://www.cnblogs.com/yanyujie/archive/2018/03/03/8495921.html)
+
+### location
+
+`$ ps -ef|grep python`
