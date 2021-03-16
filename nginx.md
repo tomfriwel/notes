@@ -68,6 +68,22 @@ location ~ \.php$ {
 
 [Nginx 服务器证书安装](https://cloud.tencent.com/document/product/400/35244)
 
+
+### 413 Request Entity Too Large
+
+`/etc/nginx/nginx.conf`:
+```conf
+client_max_body_size 20m;
+```
+
+`php.ini`:
+```ini
+upload_max_filesize = 20M
+post_max_size = 20M
+```
+
+- [nginx 出现413 Request Entity Too Large问题的解决方法](https://blog.csdn.net/fdipzone/article/details/45544497)
+
 ### Refs
 
 - [Nginx实现URL重写](https://www.cnblogs.com/dalaoyang/p/10264919.html)
