@@ -215,3 +215,9 @@ ll [PATH] -h
 ### location
 
 `$ ps -ef|grep python`
+
+### chown
+
+`$ chown root:root /xxx/xxx`
+
+- [chown -R命令的使用](https://www.cnblogs.com/fengli9998/p/6112808.html)
