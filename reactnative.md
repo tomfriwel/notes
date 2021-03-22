@@ -699,3 +699,7 @@ Invariant Violation: "XXX" has not been registered. This can happen if:
 //   ...
 }
 ```
+
+### Blogs
+
+- [Flutter Vs React Native: Which Framework is Better in 2020?](https://theonetechnologies.com/blog/post/flutter-vs-react-native-which-framework-is-better-in-2020)
