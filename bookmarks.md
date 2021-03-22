@@ -118,6 +118,7 @@
 - [GeeksforGeeks - A computer science portal for geeks - 算法](https://www.geeksforgeeks.org/convex-hull-set-1-jarviss-algorithm-or-wrapping/)
 - [w3schools.com](https://www.w3schools.com/default.asp)
 - [腾讯云社区-开发者手册](https://cloud.tencent.com/developer/devdocs)
+- [The One Technologies(vs)](https://theonetechnologies.com/blog)
 
 ### 技术博客
 - [techtalkontv](https://techtalkontv.wordpress.com)
