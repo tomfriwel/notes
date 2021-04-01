@@ -221,3 +221,25 @@ ll [PATH] -h
 `$ chown root:root /xxx/xxx`
 
 - [chown -R命令的使用](https://www.cnblogs.com/fengli9998/p/6112808.html)
+
+
+### Compress
+
+```shell
+tar czf name_of_archive_file.tar.gz name_of_directory_to_tar
+
+tar zxvf name_of_archive_file.tar.gz
+```
+
+- [Compress a folder with tar?](https://unix.stackexchange.com/a/46971/238250)
+
+
+### CentOS Apache Nginx
+
+```sh
+# port
+netstat -tlnp
+```
+
+- [How to configure Nginx as a reverse proxy for Apache on CentOS](https://www.hugeserver.com/kb/configure-nginx-reverse-proxy-apache-centos/)
+
