@@ -226,12 +226,18 @@ ll [PATH] -h
 ### Compress
 
 ```shell
+# compress
 tar czf name_of_archive_file.tar.gz name_of_directory_to_tar
 
+# decompress
 tar zxvf name_of_archive_file.tar.gz
+
+# decompress to other directory
+tar -xvf name_of_archive_file.tar.gz -C /path/to/directory
 ```
 
 - [Compress a folder with tar?](https://unix.stackexchange.com/a/46971/238250)
+- [How to Extract Tar Files to Specific or Different Directory in Linux](https://www.tecmint.com/extract-tar-files-to-specific-or-different-directory-in-linux/)
 
 
 ### CentOS Apache Nginx
