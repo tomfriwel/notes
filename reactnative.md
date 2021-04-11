@@ -711,7 +711,7 @@ Invariant Violation: "XXX" has not been registered. This can happen if:
 
 即可以运行成功，记得多处更改。
 
-另一种：将react native库里的`build.gradle`里的`https://maven.google.com`改为`https://maven.aliyun.com/repository/public/`
+另一种：将react native库里的`build.gradle`里的`https://maven.google.com`改为`https://maven.aliyun.com/repository/public/`。比如这次出问题的`node_modules/@react-native-community/masked-view/android/build.gradle`.
 
 
 ### Blogs
