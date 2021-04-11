@@ -700,6 +700,20 @@ Invariant Violation: "XXX" has not been registered. This can happen if:
 }
 ```
 
+### [Connect to maven.google.com:443 [maven.google.com] failed: Connection timed out: connect 解决办法](https://blog.csdn.net/qq_40690947/article/details/111470731)
+
+
+如果将上述图片的  `google()`  和 `jcenter()` 各自改为
+
+`maven { url 'https://maven.aliyun.com/repository/google' }`
+
+`maven { url 'https://maven.aliyun.com/repository/jcenter' }`
+
+即可以运行成功，记得多处更改。
+
+另一种：将react native库里的`build.gradle`里的`https://maven.google.com`改为`https://maven.aliyun.com/repository/public/`
+
+
 ### Blogs
 
 - [Flutter Vs React Native: Which Framework is Better in 2020?](https://theonetechnologies.com/blog/post/flutter-vs-react-native-which-framework-is-better-in-2020)
