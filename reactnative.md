@@ -713,6 +713,11 @@ Invariant Violation: "XXX" has not been registered. This can happen if:
 
 另一种：将react native库里的`build.gradle`里的`https://maven.google.com`改为`https://maven.aliyun.com/repository/public/`。比如这次出问题的`node_modules/@react-native-community/masked-view/android/build.gradle`.
 
+### [No bundle URL present [fixed]](https://onexlab-io.medium.com/no-bundle-url-present-fixed-ca2688a80f66)
+
+add `"build:ios": "react-native bundle --entry-file='index.js' --bundle-output='./ios/main.jsbundle' --dev=false --platform='ios'"` to `package.json`.
+
+In Xcode, add `main.jsbundle` to `Target → Build Phases → Copy Bundle Resources`
 
 ### Blogs
 
