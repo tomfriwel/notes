@@ -229,6 +229,8 @@ ll [PATH] -h
 # compress
 tar czf name_of_archive_file.tar.gz name_of_directory_to_tar
 
+tar czf name.tar.gz name_of_directory_to_tar
+
 # decompress
 tar zxvf name_of_archive_file.tar.gz
 
