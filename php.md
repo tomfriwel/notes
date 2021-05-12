@@ -15,3 +15,15 @@ $date = date('Y-m-d', strtotime('+1 month', strtotime('2015-01-01')));
 ### mongo
 
 [MongoDB driver classes](https://www.php.net/manual/en/book.mongodb.php)
+
+### password regex
+
+```php
+$password= $_POST['password'];
+if (preg_match("#.*^(?=.{8,20})(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).*$#", $password)){
+    echo "Your password is good.";
+} else {
+    echo "Your password is bad.";
+}
+```
+- [Password Validation with PHP and Regular Expressions](https://www.imtiazepu.com/password-validation/)
