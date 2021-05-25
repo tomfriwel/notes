@@ -27,3 +27,16 @@ if (preg_match("#.*^(?=.{8,20})(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).*$#", $password
 }
 ```
 - [Password Validation with PHP and Regular Expressions](https://www.imtiazepu.com/password-validation/)
+
+### [Get current week date range using php](https://www.thesoftwareguy.in/get-current-week-date-range-using-php/)
+
+```php
+<?php
+$monday = strtotime("last monday");
+$monday = date('w', $monday)==date('w') ? $monday+7*86400 : $monday;
+$sunday = strtotime(date("Y-m-d",$monday)." +6 days");
+$this_week_sd = date("Y-m-d",$monday);
+$this_week_ed = date("Y-m-d",$sunday);
+echo "Current week range from $this_week_sd to $this_week_ed ";
+?>
+```
