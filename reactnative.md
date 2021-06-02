@@ -719,6 +719,13 @@ add `"build:ios": "react-native bundle --entry-file='index.js' --bundle-output='
 
 In Xcode, add `main.jsbundle` to `Target → Build Phases → Copy Bundle Resources`
 
+### [react-native run-ios build failure "x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler " #1311](https://github.com/react-native-community/cli/issues/1311)
+
+
+That's because there is a new version of Flipper and React Native might not come with the right one so best is to go in your podfile and add this use_flipper!({ 'Flipper' => '0.74.0' }) then run pod install
+
+- [Lexical or Preprocessor Issue - event2/event-config.h file not found](https://stackoverflow.com/a/66126037/6279975)
+
 ### Blogs
 
 - [Flutter Vs React Native: Which Framework is Better in 2020?](https://theonetechnologies.com/blog/post/flutter-vs-react-native-which-framework-is-better-in-2020)
