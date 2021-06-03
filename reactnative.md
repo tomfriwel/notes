@@ -726,6 +726,10 @@ That's because there is a new version of Flipper and React Native might not come
 
 - [Lexical or Preprocessor Issue - event2/event-config.h file not found](https://stackoverflow.com/a/66126037/6279975)
 
+### ['event2/event-config.h' file not found](https://stackoverflow.com/a/66071245/6279975)
+
+`use_flipper!({ 'Flipper' => '0.87.0', 'Flipper-Folly' => '2.5.3', 'Flipper-RSocket' => '1.3.1' })`
+
 ### Blogs
 
 - [Flutter Vs React Native: Which Framework is Better in 2020?](https://theonetechnologies.com/blog/post/flutter-vs-react-native-which-framework-is-better-in-2020)
