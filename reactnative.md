@@ -730,6 +730,33 @@ That's because there is a new version of Flipper and React Native might not come
 
 `use_flipper!({ 'Flipper' => '0.87.0', 'Flipper-Folly' => '2.5.3', 'Flipper-RSocket' => '1.3.1' })`
 
+
+### unable to resolve module fbjs/lib/invariant
+
+`$ yarn add fbjs`
+
+- [Material-ui - cannot resolve module 'fbjs/lib/emptyFunction', 'fbjs/lib/invariant', 'fbjs/lib/warning'](https://stackoverflow.com/a/44212984/6279975)
+
+### Assets destination folder is not set, skipping...
+
+```
+Try This it worked for me
+
+for android
+
+    react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
+
+**EDIT**
+
+for ios
+
+`react-native bundle --entry-file ./index.js --platform ios --bundle-output ios/main.jsbundle --assets-dest ios`
+
+Thank you @kalpa
+```
+
+- [Assets destination folder is not set Skipping react native (Images not loading in the APK)](https://stackoverflow.com/a/51112166/6279975)
+
 ### Blogs
 
 - [Flutter Vs React Native: Which Framework is Better in 2020?](https://theonetechnologies.com/blog/post/flutter-vs-react-native-which-framework-is-better-in-2020)
