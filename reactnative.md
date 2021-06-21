@@ -757,6 +757,21 @@ Thank you @kalpa
 
 - [Assets destination folder is not set Skipping react native (Images not loading in the APK)](https://stackoverflow.com/a/51112166/6279975)
 
+### [xcode频繁出现 nw_socket_handle_socket_event 问题](https://blog.csdn.net/qhexin/article/details/83503293)
+
+解决方式:
+
+1. Edit Scheme -- Run -- Arguments -- Enviroment Variables
+
+2. 增加 Name:   OS_ACTIVITY_MODE
+
+           Value:   disable
+
+ 
+
+重新调试就好了
+
+
 ### Blogs
 
 - [Flutter Vs React Native: Which Framework is Better in 2020?](https://theonetechnologies.com/blog/post/flutter-vs-react-native-which-framework-is-better-in-2020)
