@@ -3,7 +3,56 @@
 ### Server-to-server notifications
 
 - [Enabling App Store Server Notifications](https://developer.apple.com/documentation/storekit/original_api_for_in-app_purchase/subscriptions_and_offers/enabling_app_store_server_notifications?language=objc)
-- [responseBody](https://developer.apple.com/documentation/appstoreservernotifications/responsebody?language=objc)
+- [status](https://developer.apple.com/documentation/appstorereceipts/status?language=objc)
+- [responseBody(notification)](https://developer.apple.com/documentation/appstoreservernotifications/responsebody?language=objc)
+- [requestBody(verifyReceipt)](https://developer.apple.com/documentation/appstorereceipts/requestbody?language=objc)
+- [responseBody(verifyReceipt)](https://developer.apple.com/documentation/appstorereceipts/responsebody?language=objc)
+
+#### status
+
+21000
+The request to the App Store was not made using the HTTP POST request method.
+
+21001
+This status code is no longer sent by the App Store.
+
+21002
+The data in the receipt-data property was malformed or the service experienced a temporary issue. Try again.
+
+21003
+The receipt could not be authenticated.
+
+21004
+The shared secret you provided does not match the shared secret on file for your account.
+
+21005
+The receipt server was temporarily unable to provide the receipt. Try again.
+
+21006
+This receipt is valid but the subscription has expired. When this status code is returned to your server, the receipt data is also decoded and returned as part of the response. Only returned for iOS 6-style transaction receipts for auto-renewable subscriptions.
+
+21007
+This receipt is from the test environment, but it was sent to the production environment for verification.
+
+21008
+This receipt is from the production environment, but it was sent to the test environment for verification.
+
+21009
+Internal data access error. Try again later.
+
+21010
+The user account cannot be found or has been deleted.
+
+#### 
+
+`expires_date_ms`
+
+Manage auto-renewable subscriptions. Store this value, `original_transaction_id`, `product_id`, and `purchase_date_ms` for each subscription, as a best practice.
+
+- [expires_date_ms](https://developer.apple.com/documentation/appstorereceipts/expires_date_ms?language=objc)
+- [original_transaction_id](https://developer.apple.com/documentation/appstorereceipts/original_transaction_id?language=objc)
+- `product_id`: The unique identifier of the product purchased. You provide this value when creating the product in App Store Connect, and it corresponds to the productIdentifier property of the SKPayment object stored in the transaction’s payment property.
+- `purchase_date_ms`: The time when the App Store charged the user’s account for a subscription purchase or renewal after a lapse, in the UNIX epoch time format, in milliseconds. Use this time format for processing dates.
 
 
 #### [notification_type](https://developer.apple.com/documentation/appstoreservernotifications/notification_type?language=objc)
