@@ -49,6 +49,7 @@ The user account cannot be found or has been deleted.
 
 Manage auto-renewable subscriptions. Store this value, `original_transaction_id`, `product_id`, and `purchase_date_ms` for each subscription, as a best practice.
 
+- [transaction_id](https://developer.apple.com/documentation/appstorereceipts/transaction_id?language=objc)
 - [expires_date_ms](https://developer.apple.com/documentation/appstorereceipts/expires_date_ms?language=objc)
 - [original_transaction_id](https://developer.apple.com/documentation/appstorereceipts/original_transaction_id?language=objc)
 - `product_id`: The unique identifier of the product purchased. You provide this value when creating the product in App Store Connect, and it corresponds to the productIdentifier property of the SKPayment object stored in the transaction’s payment property.
