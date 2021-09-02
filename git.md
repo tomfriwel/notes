@@ -173,3 +173,9 @@ Error: Failure while executing; `git clone https://github.com/adoptopenjdk/homeb
 `$ git config --global http.proxyAuthMethod 'basic'`
 
 - [git returns http error 407 from proxy after CONNECT](https://stackoverflow.com/a/53956231/6279975)
+
+### reset auth
+
+`$ git config --system --unset credential.helper`
+
+- [How to reset git authentication?](https://stackoverflow.com/questions/51581582/how-to-reset-git-authentication)
