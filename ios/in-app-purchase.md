@@ -98,3 +98,8 @@ Indicates that an in-app purchase the user was entitled to through Family Sharin
 RENEWAL (DEPRECATED)
 As of March 10, 2021 this notification is no longer sent in production and sandbox environments. Update your existing code to rely on the DID_RECOVER notification type instead.
 ```
+
+### Refs
+
+- [iOS Receipt Validation – Apple App Store In-App Purchases](https://qonversion.io/blog/in-app-purchases-app-store-receipt-validation/)
+- [The Ultimate Handbook On App-Store Receipt Validation](https://qonversion.io/blog/the-ultimate-handbook-on-app-store-receipt-validation/)
