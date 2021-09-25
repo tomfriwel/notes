@@ -29,15 +29,20 @@
 - [涂鸦王国](https://www.gracg.com)
 - [乐艺leewiART](http://www.leewiart.com)
 - [站酷](https://www.zcool.com.cn)
-- [pixiv](https://www.pixiv.net)
+- [LOFTER](https://www.lofter.com)
 
 ### Art Images
 
 - https://www.artstation.com/
+- [pixiv](https://www.pixiv.net)
 - https://www.inprnt.com
 - https://www.deviantart.com
 - http://huaban.com
 - https://all3dp.com about 3d
+
+### Fans and Artist
+
+- [爱发电](https://afdian.net)
 
 ### 配色
 
