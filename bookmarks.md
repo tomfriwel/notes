@@ -176,6 +176,14 @@
 - [About LaTeX and MathML support in Pages, Numbers, Keynote, and iBooks Author](https://support.apple.com/en-us/HT202501)
 - [Algorithm Wiki](http://algorithm-wiki.org/wiki/Main_Page)
 
+# 物理
+
+- [APS physics(物理评论快报)](https://www.aps.org)
+- [ScienceDirect(细胞·干细胞)](https://www.sciencedirect.com)
+- [nature(自然·医学)](https://www.nature.com/nm/)
+- [LOPscience(天体物理学杂志通讯)](https://iopscience.iop.org)
+- [科学网](http://news.sciencenet.cn)
+- [ACS Publications(美国化学会杂志)](https://pubs.acs.org)
 
 
 # 语言
