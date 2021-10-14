@@ -154,4 +154,55 @@ Referneces:
 docker build -t <your_username>/my-first-repo .
 ```
 
+### 2021 10 13
 
+persist db & bind mouts
+
+```sh
+docker run -dp 3000:3000 \
+    -w /app -v "$(pwd):/app" -v todo-db:/etc/todos \
+    node:12-alpine \
+    sh -c "apk --no-cache --virtual build-dependencies add python make g++ && yarn install && yarn run dev"
+```
+
+# Error
+
+### [Using Bind Mounts: error Couldn't find a package.json file in "/app" #76](https://github.com/docker/getting-started/issues/76#issuecomment-702357280)
+
+Run the command inside the `app` directory.
+
+### [docker build command fails on yarn install step with error "gyp ERR! find Python" #124](https://github.com/docker/getting-started/issues/124#issuecomment-782028688)
+
+```sh
+docker run -dp 3000:3000 \
+    -w /app -v "$(pwd):/app" \
+    node:12-alpine \
+    sh -c "yarn install && yarn run dev"
+```
+
+to 
+
+```sh
+docker run -dp 3000:3000 \
+    -w /app -v "$(pwd):/app" \
+    node:12-alpine \
+    sh -c "apk --no-cache --virtual build-dependencies add python make g++ && yarn install && yarn run dev"
+
+```
+
+### [Docker (Apple Silicon/M1 Preview) MySQL "no matching manifest for linux/arm64/v8 in the manifest list entries"](https://stackoverflow.com/a/65592942/6279975)
+
+```
+services:
+  db:
+    platform: linux/x86_64
+    image: mysql:5.7
+    ...
+```
+
+```
+services:
+  db:
+    image: mariadb:10.5.8
+    ...
+```
