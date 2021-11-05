@@ -70,6 +70,24 @@ $ docker run -dp 80:80 docker/getting-started
 
 You can access this page in broswer by `<your ip address>` or `localhost`(if local).
 
+`docker run ...`:
+```sh
+Usage:  docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+
+Run a command in a new container
+```
+
+If the container is created before, you an use `docker ps -a` view all created containers(running and not running). And use `docker start <CONTAINER ID>` to start the container.
+
+`-a`, --all    Show all containers (default shows just running)
+
+`docker start <CONTAINER ID>`:
+```sh
+Usage:  docker start [OPTIONS] CONTAINER [CONTAINER...]
+
+Start one or more stopped containers
+```
+
 ### References
 
 - [10 Commands to Collect System and Hardware Info in Linux](https://www.tecmint.com/commands-to-collect-system-and-hardware-information-in-linux/)
