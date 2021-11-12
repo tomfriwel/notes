@@ -88,6 +88,10 @@ Usage:  docker start [OPTIONS] CONTAINER [CONTAINER...]
 Start one or more stopped containers
 ```
 
+`docker build -t <manual name> .`
+
+`-t` define a human-readable name for the final image.
+
 ### References
 
 - [10 Commands to Collect System and Hardware Info in Linux](https://www.tecmint.com/commands-to-collect-system-and-hardware-information-in-linux/)
