@@ -77,7 +77,7 @@ Usage:  docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 Run a command in a new container
 ```
 
-If the container is created before, you an use `docker ps -a` view all created containers(running and not running). And use `docker start <CONTAINER ID>` to start the container.
+If the container is created before, you can use `docker ps -a` view all created containers(running and not running). And use `docker start <CONTAINER ID>` to start the container.
 
 `-a`, --all    Show all containers (default shows just running)
 
@@ -87,6 +87,70 @@ Usage:  docker start [OPTIONS] CONTAINER [CONTAINER...]
 
 Start one or more stopped containers
 ```
+
+If you just want start a exist container other than create a new container, use `start`, `run` will create a new container.
+
+### docker run -d -p 80:80 docker/getting-started
+
+The latest [Download the App contents](https://docs.docker.com/get-started/02_our_app/)
+
+#### Dcokerfile
+
+```dockerfile
+# syntax=docker/dockerfile:1
+FROM node:12-alpine
+RUN apk add --no-cache python3 g++ make
+WORKDIR /app
+COPY . .
+RUN yarn install --production
+CMD ["node", "src/index.js"]
+```
+
+When I build there will occor an error: `ERROR: unable to select packages:  python (no such package):...`, I download latest [App contents](https://docs.docker.com/get-started/02_our_app/).
+
+There is an error again: `error /app/node_modules/sqlite3: Command failed.`. This related to an 403 error. I deleted the `yarn.lock` and run `yarn` to regenerate it and deleted `node_modules` folder.
+
+Still go wrong!!!!
+
+[`FROM`](https://docs.docker.com/engine/reference/builder/#from):
+```dockerfile
+# Set the baseImage to use for subsequent instructions. FROM must be the first instruction in a Dockerfile.
+
+FROM baseImage
+FROM baseImage:tag
+FROM baseImage@digest
+```
+
+[`RUN`](https://docs.docker.com/engine/reference/builder/#run):
+```dockerfile
+# Execute any commands on top of the current image as a new layer and commit the results.
+
+RUN apt-get update && apt-get install -y curl
+```
+
+[`WORKDIR`](https://docs.docker.com/engine/reference/builder/#workdir):
+```dockerfile
+# Set the working directory for any subsequent ADD, COPY, CMD, ENTRYPOINT, or RUN instructions that follow it in the Dockerfile.
+
+WORKDIR /path/to/workdir
+WORKDIR relative/path
+```
+
+[`COPY`](https://docs.docker.com/engine/reference/builder/#copy):
+```dockerfile
+# Copy files or folders from source to the dest path in the image's filesystem.
+
+COPY hello.txt /absolute/path
+COPY hello.txt relative/to/workdir
+```
+
+[`CMD`](https://docs.docker.com/engine/reference/builder/#cmd):
+```dockerfile
+# Provide defaults for an executing container. If an executable is not specified, then ENTRYPOINT must be specified as well. There can only be one CMD instruction in a Dockerfile.
+
+CMD [ "/bin/ls", "-l" ]
+```
+
 
 `docker build -t <manual name> .`
 
