@@ -14,6 +14,9 @@
 - [How to Develop Fictional Characters: 8 Tips for Character Development](https://www.masterclass.com/articles/how-to-develop-fictional-characters#8-tips-for-character-development)
 - [How to Write Unique Character Voice](https://www.masterclass.com/articles/how-to-write-unique-character-voice#quiz-0)
 
+### Book Cover
+
+- [Photo Usage Best Practices For Authors](https://bookbrush.com/photo-usage-best-practices-for-authors/#:~:text=Can%20I%20use%20an%20Unsplash%20photo%20for%20a,Trademarks%2C%20logos%2C%20or%20brands%20that%20appear%20in%20Photos)
 
 ### Design
 
