@@ -112,6 +112,8 @@ There is an error again: `error /app/node_modules/sqlite3: Command failed.`. Thi
 
 Still go wrong!!!!
 
+`yarn remove sqlite3` remove `sqlite3` and just export `mysql` in `src/persistence/index.js`
+
 [`FROM`](https://docs.docker.com/engine/reference/builder/#from):
 ```dockerfile
 # Set the baseImage to use for subsequent instructions. FROM must be the first instruction in a Dockerfile.
@@ -155,6 +157,116 @@ CMD [ "/bin/ls", "-l" ]
 `docker build -t <manual name> .`
 
 `-t` define a human-readable name for the final image.
+
+### run mysql
+
+```sh
+docker run -d \
+    --network todo-app --network-alias mysql \
+    -v todo-mysql-data:/var/lib/mysql \
+    -e MYSQL_ROOT_PASSWORD=secret \
+    -e MYSQL_DATABASE=todos \
+    mariadb:10.5.8
+```
+
+### [docker exec](https://docs.docker.com/engine/reference/commandline/exec/)
+
+`$ docker exec -it <mysql-container-id> mysql -p`
+
+```sh
+--interactive , -i		Keep STDIN open even if not attached
+--tty , -t		Allocate a pseudo-TTY
+```
+
+### Connecting to MySQL
+
+[nicolaka/netshoot](https://github.com/nicolaka/netshoot)
+
+`$ docker run -it --network todo-app nicolaka/netshoot`
+
+This container ships with a lot of tools that are useful for troubleshooting or debugging networking issues
+
+each container has its own IP address.
+
+Inside the container, use `dig mysql`(which is a useful DNS tool. We're going to look up the IP address for the hostname mysql.)
+
+```sh
+~ # dig mysql
+
+; <<>> DiG 9.16.19 <<>> mysql
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 13921
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;mysql.				IN	A
+
+;; ANSWER SECTION:
+mysql.			600	IN	A	172.18.0.2
+
+;; Query time: 0 msec
+;; SERVER: 127.0.0.11#53(127.0.0.11)
+;; WHEN: Thu Nov 18 07:24:27 UTC 2021
+;; MSG SIZE  rcvd: 44
+
+```
+
+In app:
+```sh
+docker run -dp 3000:3000 \
+  -w /app -v "$(pwd):/app" \
+  --network todo-app \
+  -e MYSQL_HOST=mysql \
+  -e MYSQL_USER=root \
+  -e MYSQL_PASSWORD=secret \
+  -e MYSQL_DB=todos \
+  node:12-alpine \
+  sh -c "yarn install && yarn run dev"
+```
+
+### compose
+
+`docker-compose.yml`:
+```yml
+version: "3.8"
+services:
+  apphaha:
+    image: node:12-alpine
+    command: sh -c "yarn install && yarn run dev"
+    ports:
+      - target: 3000
+        published: 3000
+    working_dir: /app
+    volumes:
+      - ./:/app
+    environment:
+      MYSQL_HOST: mysqlhaha
+      MYSQL_USER: root
+      MYSQL_PASSWORD: secret
+      MYSQL_DB: todos
+  mysqlhaha:
+    image: mariadb:10.5.8
+    volumes:
+      - todo-mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: todos
+
+volumes:
+  todo-mysql-data: null
+
+```
+
+Start up the application stack using the docker-compose up command. We’ll add the -d flag to run everything in the background.
+
+`$ docker-compose up -d`
+
+Second run will get:
+```sh
+WARN[0000] Found orphan containers ([app-mysql-1]) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up. 
+```
+`$ docker-compose up -d --remove-orphans`
 
 ### References
 
