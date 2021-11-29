@@ -775,3 +775,4 @@ Thank you @kalpa
 ### Blogs
 
 - [Flutter Vs React Native: Which Framework is Better in 2020?](https://theonetechnologies.com/blog/post/flutter-vs-react-native-which-framework-is-better-in-2020)
+- [How to implement WebSockets in React Native](https://blog.logrocket.com/how-to-implement-websockets-in-react-native/)
