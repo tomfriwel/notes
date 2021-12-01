@@ -109,6 +109,7 @@
 ### Following Artists
 
 - Martina Petrova (Disney Style)
+- [Sean Sevestre](https://www.seansevestre.com)
 
 ### 工具
 
