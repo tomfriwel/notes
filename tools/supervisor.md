@@ -19,7 +19,6 @@ supervisorctl update
 
 [Supervisor not loading new configuration files](https://serverfault.com/a/479754/414805)
 
-
 ### Config log
 ```conf
 logfile = /tmp/supervisord.log
@@ -34,6 +33,8 @@ stderr_logfile=/a/path
 stderr_logfile_maxbytes=1MB
 stderr_logfile_backups=10
 ```
+
+### Fix: [Supervisor FATAl Exited too quickly (process log may have details)](https://stackoverflow.com/a/66292131/6279975)
 
 ### Docs
 
