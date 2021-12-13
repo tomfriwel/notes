@@ -34,3 +34,7 @@ stderr_logfile=/a/path
 stderr_logfile_maxbytes=1MB
 stderr_logfile_backups=10
 ```
+
+### Docs
+
+- [Configuration File](http://supervisord.org/configuration.html?highlight=startsecs)
