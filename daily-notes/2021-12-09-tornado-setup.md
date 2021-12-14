@@ -109,6 +109,8 @@ supervisorctl reread
 supervisorctl update
 ```
 
+- [mongodb setup](./2020-01-10-mongodb.md)
+
 ### Refs
 
 - [How to install MariaDB on CentOS 7 / RHEL 7](https://mariadb.com/resources/blog/installing-mariadb-10-on-centos-7-rhel-7/)
