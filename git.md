@@ -179,3 +179,9 @@ Error: Failure while executing; `git clone https://github.com/adoptopenjdk/homeb
 `$ git config --system --unset credential.helper`
 
 - [How to reset git authentication?](https://stackoverflow.com/questions/51581582/how-to-reset-git-authentication)
+
+### force push
+
+`$ git push --force origin master`
+
+- [How to use git push force the right way](https://www.datree.io/resources/git-push-force)
