@@ -66,7 +66,7 @@ In the directory `node-bulletin-board/bulletin-board-app`:
 ```sh
 docker build --tag bulletinboard:1.0 .
 docker run --publish 8000:8080 --detach --name bb bulletinboard:1.0
-docker rm --force bb
+docker rm --force <CONTAINER ID>
 ```
 
 `--publish` asks Docker to forward traffic incoming on the host’s port ***8000***, to the container’s port ***8080***. Containers have their own private set of ports, so if you want to reach one from the network, you have to forward traffic to it in this way. Otherwise, firewall rules will prevent all network traffic from reaching your container, as a default security posture.
