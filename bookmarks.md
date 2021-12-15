@@ -129,6 +129,7 @@
 - [w3schools.com](https://www.w3schools.com/default.asp)
 - [腾讯云社区-开发者手册](https://cloud.tencent.com/developer/devdocs)
 - [The One Technologies(vs)](https://theonetechnologies.com/blog)
+- [MIT App Inventor(基于模块的可视化编码平台)](https://appinventor.mit.edu)
 
 ### 技术博客
 - [techtalkontv](https://techtalkontv.wordpress.com)
