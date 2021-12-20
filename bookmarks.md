@@ -187,6 +187,9 @@
 - [科学网](http://news.sciencenet.cn)
 - [ACS Publications(美国化学会杂志)](https://pubs.acs.org)
 
+# 心理学
+
+- [Psychology Wiki](https://psychology.fandom.com/wiki/Psychology_Wiki)
 
 # 语言
 
