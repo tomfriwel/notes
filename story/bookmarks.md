@@ -21,6 +21,7 @@
 ### Design
 
 - [每周临摹 | 轻松学习、玩转设计](https://study.ui.cn/list.html)
+- [奇幻世界地图生成器](https://mywis.cn/wisl/fmg)
 
 ### Management
 
