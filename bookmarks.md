@@ -135,8 +135,10 @@
 - [techtalkontv](https://techtalkontv.wordpress.com)
 
 ### Github Organization
-- [WIX](https://github.com/wix)
 - [r/SpaceX](https://github.com/r-spacex)
+- [NVIDIA Research Projects](https://github.com/NVlabs)
+- [WIX](https://github.com/wix)
+
 
 ### iOS
 
