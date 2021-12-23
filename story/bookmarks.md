@@ -31,6 +31,10 @@
 
 - [thibmaek/awesome-raspberry-pi](https://github.com/thibmaek/awesome-raspberry-pi)
 
+### Game
+
+- [Game Programming Patterns](https://gameprogrammingpatterns.com)
+
 ### Authors
 
 - [亨利·菲尔丁（Henry Fielding，1707年4月22日-1754年10月8日），18世纪最杰出的英国小说家、戏剧家。](https://baike.baidu.com/item/亨利·菲尔丁/9955694?fr=aladdin)
