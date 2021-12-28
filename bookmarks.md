@@ -200,6 +200,7 @@
 
 # News - EN
 
+- [PCMag](https://www.pcmag.com)
 - [It's FOSS - Open Source in general and Linux in particular](https://itsfoss.com) - Linux
 - [nature](https://www.nature.com) - Science
 - [NSR - National Science Review](https://academic.oup.com/nsr)
