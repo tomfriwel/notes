@@ -64,6 +64,27 @@ exit
 
 `$ db.collection.find({'key1':'123', 'key2': {$nin: ['abc', 'bcd']}})`
 
+### create index
+
+```js
+// db.collection.createIndex(keys, options)
+// 后台创建索引
+db.collection.createIndex({ userId:1 }, {background: true})
+
+// 查看集合索引
+db.col.getIndexes()
+
+// 查看集合索引大小（byte）
+db.col.totalIndexSize()
+
+// 删除集合所有索引
+db.col.dropIndexes()
+
+// 删除集合指定索引
+db.col.dropIndex("索引名称")
+```
+
+- [MongoDB 索引](https://www.runoob.com/mongodb/mongodb-indexing.html)
 
 ### References
 
