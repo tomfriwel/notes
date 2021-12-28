@@ -49,7 +49,10 @@ sudo launchctl start com.openssh.sshd
 
 `/private/etc/hosts`
 
-### [How do I stop the Adobe Creative Cloud app from auto-launching on login?](https://apple.stackexchange.com/a/138945/237294)
+### Forbid Apps From Launching at Startup
+
+- [How to Stop Mac Apps From Launching at Startup](https://www.pcmag.com/how-to/stop-mac-apps-from-launching-at-startup)
+- [How do I stop the Adobe Creative Cloud app from auto-launching on login?](https://apple.stackexchange.com/a/138945/237294)
 
 ```shell
 launchctl unload -w /Library/LaunchAgents/com.adobe.AdobeCreativeCloud.plist
