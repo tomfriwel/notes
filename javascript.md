@@ -31,3 +31,22 @@ function unique(arr) {
 ```
 
 [JavaScript数组去重（12种方法，史上最全）](https://segmentfault.com/a/1190000016418021?utm_source=tag-newest)
+
+### Random String
+
+```js
+// reference: https://attacomsian.com/blog/javascript-generate-random-string#:~:text=There%20are%20many%20ways%20available%20to%20generate%20a,a%20string%20and%20then%20remove%20the%20trailing%20zeros%3A
+const randomString = (length = 8) => {
+  // Declare all characters
+  let chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+  // Pick characers randomly
+  let str = '';
+  for (let i = 0; i < length; i++) {
+      str += chars.charAt(Math.floor(Math.random() * chars.length));
+  }
+
+  return str;
+
+};
+```
