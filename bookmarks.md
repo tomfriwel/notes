@@ -179,6 +179,7 @@
 - [线性代数-同济大学(第五版)课件 [完整版]](https://wenku.baidu.com/view/e3efed47fe4733687e21aafd?pn=151NaN)
 - [About LaTeX and MathML support in Pages, Numbers, Keynote, and iBooks Author](https://support.apple.com/en-us/HT202501)
 - [Algorithm Wiki](http://algorithm-wiki.org/wiki/Main_Page)
+- [The Algorithm](https://the-algorithms.com)
 
 # 物理
 
