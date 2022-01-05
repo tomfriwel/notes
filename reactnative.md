@@ -399,6 +399,8 @@ public class MainActivity extends ReactActivity {
 
 # Android apk release and sign 签名
 
+`Build>Generate Signed APK...>Create new...>`
+
 [打包APK](https://reactnative.cn/docs/0.43/signed-apk-android.html)
 [Androidstudio 3.4打包并生成签名](https://blog.csdn.net/u013297881/article/details/92805299)
 
