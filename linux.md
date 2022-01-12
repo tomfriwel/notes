@@ -231,6 +231,9 @@ tar czf name_of_archive_file.tar.gz name_of_directory_to_tar
 
 tar czf name.tar.gz name_of_directory_to_tar
 
+# multipe directories
+tar -zcvf test3.tar.gz  test1 test2
+
 # decompress
 tar zxvf name_of_archive_file.tar.gz
 
@@ -240,6 +243,7 @@ tar -xvf name_of_archive_file.tar.gz -C /path/to/directory
 
 - [Compress a folder with tar?](https://unix.stackexchange.com/a/46971/238250)
 - [How to Extract Tar Files to Specific or Different Directory in Linux](https://www.tecmint.com/extract-tar-files-to-specific-or-different-directory-in-linux/)
+- [LINUX下想要直接压缩多个文件夹为tar.gz格式](https://blog.csdn.net/qiufeng_xinqing/article/details/44342731)
 
 
 ### CentOS Apache Nginx
