@@ -231,7 +231,7 @@ tar czf name_of_archive_file.tar.gz name_of_directory_to_tar
 
 tar czf name.tar.gz name_of_directory_to_tar
 
-# multipe directories
+# multiple directories
 tar -zcvf test3.tar.gz  test1 test2
 
 # decompress
