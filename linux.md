@@ -28,12 +28,13 @@ ping address
 DNS将域名解析成IP地址，但如果域名被劫持或者别人没有域名想要借用别人的，这是后可以在hosts添加相应的记录，强制域名解析到指定IP地址。
 
 ### Create SFTP account with folder access limit.
-```
+```sh
 sudo useradd -s /sbin/nologin -M sftpUserXXX
 sudo passwd sftpUserXXX
 sudo mkdir /xxx/xxx
 sudo chown root:root /xxx/xxx
 sudo chmod 755 /xxx/xxx
+# sudo chown -R webUser.webUser images
 
 # set access folder
 
