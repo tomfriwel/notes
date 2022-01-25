@@ -187,3 +187,13 @@ export var speed = 400
 #### `$` <-> `get_node()`
 
 `$` is shorthand for `get_node()`. For example, `$AnimatedSprite.play()` is the same as `get_node("AnimatedSprite").play()`.
+
+#### [Duplicating a node should result in either a true Instance or true unique copy, not a mix of both #317](https://github.com/godotengine/godot-proposals/issues/317#issuecomment-567048604)
+
+set `Inspector>Shape>Resource>Local To Scene` to true.
+
+```
+bool resource_local_to_scene
+
+If true, the resource will be made unique in each instance of its local scene. It can thus be modified in a scene instance without impacting other instances of that same scene.
+```
