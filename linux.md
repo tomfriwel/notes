@@ -256,3 +256,12 @@ netstat -tlnp
 
 - [How to configure Nginx as a reverse proxy for Apache on CentOS](https://www.hugeserver.com/kb/configure-nginx-reverse-proxy-apache-centos/)
 
+
+### command: systemctl
+
+```sh
+# list enabled list
+systemctl list-unit-files | grep enabled
+```
+
+- [How to list all enabled services from systemctl?](https://askubuntu.com/questions/795226/how-to-list-all-enabled-services-from-systemctl)

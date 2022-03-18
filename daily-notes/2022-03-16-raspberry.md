@@ -29,6 +29,11 @@ reboot
 sudo iwlist wlan0 scan
 ```
 
+`$ arp -a | grep rasp` find raspberry ip address.
+
+- [Connect to wifi from terminal raspberry pi](https://bytesofgigabytes.com/raspberrypi/connect-to-wifi-from-terminal-raspberry-pi/#:~:text=%20Connect%20to%20WiFi%20from%20terminal%20raspberry%20pi,make%20sure%20your%20WiFi%20is%20ON%20More%20)
+- [Set up WiFi through the command line terminal on Raspberry Pi](https://ericplayground.com/2017/11/06/set-up-wifi-through-the-command-line-terminal-on-raspberry-pi/#:~:text=1%20Getting%20WiFi%20network%20details.%20To%20scan%20for,to%20set%20up%20multiple%20configurations%20for%20wireless%20networking.)
+
 
 ## reset password
 
@@ -73,3 +78,47 @@ cat /sys/block/mmcblk0/mmcblk0p2/start   # 查看第二分区的起始地址，�
 ```
 
 - [玩玩树莓派之扩展SD卡剩余空间](https://www.jianshu.com/p/6588f935d41c)
+
+## bluetooth
+
+`rfkill`: Tool for enabling and disabling wireless devices.
+
+```sh
+bluetoothctl
+list
+scan on
+# Failed to start discovery: org.bluez.Error.NotReady
+# view wireless devices status
+rfkill list
+# 0: phy0: Wireless LAN
+#         Soft blocked: no
+#         Hard blocked: no
+# 1: hci0: Bluetooth
+#         Soft blocked: yes <<<
+#         Hard blocked: no
+# enter
+rfkill unblock all
+rfkill list
+# 0: phy0: Wireless LAN
+#         Soft blocked: no
+#         Hard blocked: no
+# 1: hci0: Bluetooth
+#         Soft blocked: no
+#         Hard blocked: no
+bluetoothctl
+scan on
+
+# recommend 升级安装蓝牙相关软件包
+# -y say yes
+sudo apt-get update
+sudo apt-get upgrade -y
+# if:
+# The following package was automatically installed and is no longer required:
+#   libfuse2
+# then: sudo apt autoremove -y
+sudo apt-get dist-upgrade -y
+sudo apt-get install pi-bluetooth bluez bluez-firmware blueman
+```
+
+- [用蓝牙实现两个树莓派之间的通信](https://blog.csdn.net/qq_50866711/article/details/115328832?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~aggregatepage~first_rank_ecpm_v1~rank_v31_ecpm-1-115328832.pc_agg_new_rank&utm_term=两个树莓派之间通信&spm=1000.2123.3001.4430)
+- [bluetooth.service running, but bluetoothctl says "org.bluez.Error.NotReady"](https://unix.stackexchange.com/questions/508221/bluetooth-service-running-but-bluetoothctl-says-org-bluez-error-notready)
