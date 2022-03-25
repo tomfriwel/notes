@@ -217,7 +217,8 @@
 
 # Raspberry Pi
 
-[34 个使用 Raspberry Pi 的酷创意](https://linuxtoy.org/archives/cool-ideas-for-raspberry-pi.html)
+- [34 个使用 Raspberry Pi 的酷创意](https://linuxtoy.org/archives/cool-ideas-for-raspberry-pi.html)
+- [The MaPi 各种，可下载相关杂志](https://magpi.raspberrypi.com)
 
 # 创作保护
 - [creative commons](https://creativecommons.org/choose/)
