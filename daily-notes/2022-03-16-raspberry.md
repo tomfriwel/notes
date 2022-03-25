@@ -15,18 +15,49 @@ systemctl status ssh
 
 ## WIFI
 
+### Config when write os image to SD card
+
+- [How To Configure WiFi on Raspberry Pi: Step By Step Tutorial](https://www.seeedstudio.com/blog/2021/01/25/three-methods-to-configure-raspberry-pi-wifi/)
+
+### Terminal(not success)
+
 When login:
 ```sh
 Wi-Fi is currently blocked by rfkill.
 Use raspi-config to set the country before use.
+# WLAN Country > [your country (China for me)]
 
+# lang setting
 # Localisation Options > Locale > (press space) zh_CN.GB2312, zh_CN.GB18030, zh_CN.GBK, zh_CN.UTF-8 > zh_CN.UTF-8
 # Timezone
-# WLAN Country > <your country (China for me)>
+
+# after setting
 reboot
 
-# scan wifi
+# scan wifi (in a mess)
 sudo iwlist wlan0 scan
+```
+
+add name and password of wifi to `/etc/wpa_supplicant/wpa_supplicant.conf`:
+```sh
+# ...
+network={
+    ssid="[wifi name]"
+    psk="[wifi password]"
+    key_mgmt=WPA-PSK
+}
+```
+
+```sh
+# add 
+sudo wpa_cli -i wlan0 reconfigure
+
+# [Failed to connect to non-global ctrl_ifname: wlan0 error: No such file or directory](https://raspberrypi.stackexchange.com/questions/84277/failed-to-connect-to-non-global-ctrl-ifname-wlan0-error-no-such-file-or-direct)
+sudo ifconfig wlan0 up
+pi@raspberrypi:~ $ sudo killall wpa_supplicant
+pi@raspberrypi:~ $ sudo wpa_supplicant -i wlan0 -D wext -c/etc/wpa_supplicant/wpa_supplicant.conf -B
+
+sudo wpa_cli -i wlan0 reconfigure
 ```
 
 `$ arp -a | grep rasp` find raspberry ip address.
