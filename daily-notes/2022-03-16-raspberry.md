@@ -153,3 +153,32 @@ sudo apt-get install pi-bluetooth bluez bluez-firmware blueman
 
 - [用蓝牙实现两个树莓派之间的通信](https://blog.csdn.net/qq_50866711/article/details/115328832?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~aggregatepage~first_rank_ecpm_v1~rank_v31_ecpm-1-115328832.pc_agg_new_rank&utm_term=两个树莓派之间通信&spm=1000.2123.3001.4430)
 - [bluetooth.service running, but bluetoothctl says "org.bluez.Error.NotReady"](https://unix.stackexchange.com/questions/508221/bluetooth-service-running-but-bluetoothctl-says-org-bluez-error-notready)
+
+### Git setup
+
+```sh
+sudo nano /etc/apt/sources.list
+
+# ---- add to file:
+deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi
+#deb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi
+# ---- add end
+
+sudo nano /etc/apt/sources.list.d/raspi.list
+# ---- add
+deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ buster main ui
+# ---- add end
+
+sudo apt-get update
+sudo apt-get upgrade
+
+# git
+sudo apt-get install git
+```
+
+### LCD hardware drive
+```sh
+git clone https://github.com/lcddiy/LCD-show.git
+```
+
+- [树莓派4B安装Git](https://www.jianshu.com/p/333183731bd1)
