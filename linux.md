@@ -265,3 +265,21 @@ systemctl list-unit-files | grep enabled
 ```
 
 - [How to list all enabled services from systemctl?](https://askubuntu.com/questions/795226/how-to-list-all-enabled-services-from-systemctl)
+
+
+### [Failed to download metadata for repo‘AppStream’「CentOS」](https://baijiahao.baidu.com/s?id=1726476962079244840&wfr=spider&for=pc)
+
+```sh
+# problem
+$ yum update
+Repository epel is listed more than once in the configuration
+CentOS Linux 8 - AppStream                                                                              74  B/s |  38  B     00:00    
+Error: Failed to download metadata for repo 'appstream': Cannot prepare internal mirrorlist: No URLs in mirrorlist
+
+# solution
+$ cd /etc/yum.repos.d/
+$ sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
+$ sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
+
+$ yum update -y
+```
