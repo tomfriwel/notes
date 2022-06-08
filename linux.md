@@ -283,3 +283,8 @@ $ sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g'
 
 $ yum update -y
 ```
+
+### find file contain specify text
+```sh
+grep -r "text to search" /search/path/* --exclude [file to exclude]
+```
