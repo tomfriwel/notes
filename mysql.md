@@ -213,3 +213,7 @@ Specifier   Description
 ```
 
 [如何让MySQLMonth()使用前导零？](https://cloud.tencent.com/developer/ask/49634)
+
+### 类型转换查询慢
+
+比如表字段类型是`varchar`，查询数据是`int`，尽量保持字段类型一致。
