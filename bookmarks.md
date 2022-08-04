@@ -223,3 +223,10 @@
 # 创作保护
 - [creative commons](https://creativecommons.org/choose/)
 - [谈谈创作共用许可证（Creative Commons licenses）](http://www.ruanyifeng.com/blog/2008/04/creative_commons_licenses.html)
+
+
+# Books
+
+- [经典编程书籍大全](https://github.com/jobbole/awesome-programming-books)
+- [Netkiller 系列免费电子书 - 编程](https://github.com/netkiller/netkiller.github.io)
+- [有数学书](https://github.com/0voice/expert_readed_books)
