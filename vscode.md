@@ -23,3 +23,8 @@
  Select `all` in `Setting`>`renderWhitespace`
 
  [在VScode中显示空格和tab符号](https://www.pianshen.com/article/34461565902/)
+
+ ### [1.25.0 - new error when opening ssh:// URIs - "Error handling uri: " build.gradle, .devcontainer.json #341](https://github.com/SchoofsKelvin/vscode-sshfs/issues/341)
+
+
+ Code>Preferences>Settings: `"sshfs.flags": ["-FS_NOTIFY_ERRORS"]`
