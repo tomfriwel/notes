@@ -83,20 +83,9 @@
 - []()
 - [1/2写实 - Jungah Lee](https://www.artstation.com/jibro)
 
-
----
-### 学术
-
-- [Molecular Expressions](https://micro.magnet.fsu.edu)
-- [Wolfram MathWorld](http://mathworld.wolfram.com)
-
----
-
 ### 色彩
 
 - https://micro.magnet.fsu.edu/optics/lightandcolor/primary.html
-
----
 
 ---
 
@@ -114,11 +103,23 @@
 ### 工具
 
 - [Chrome Extension - Designers' Secret Source](https://muz.li/)
+- [Font Converter](https://font-converter.net/en)
+
+### 工具使用
+
+- [Topbook](http://topbook.cc/) - 电脑工具各种技巧
+- [PAG - 跨平台渲染动画工作流](https://pag.io/)
 
 ---
 
+# 学术
+
+- [Molecular Expressions](https://micro.magnet.fsu.edu)
+- [Wolfram MathWorld](http://mathworld.wolfram.com)
+
 
 # 计算机
+
 
 ### 编程
 
@@ -161,19 +162,6 @@
 - [Neural Networks and Deep Learning - 神经网络介绍 - 入门](http://neuralnetworksanddeeplearning.com/exercises_and_problems.html)
 
 ---
-
-### 工具
-- [Font Converter](https://font-converter.net/en)
-
----
-
-# 学习
-
-### 工具使用
-
-- [Topbook](http://topbook.cc/) - 电脑工具各种技巧
-- [PAG - 跨平台渲染动画工作流](https://pag.io/)
-
 
 # 数学
 
