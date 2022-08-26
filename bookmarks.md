@@ -110,6 +110,10 @@
 - [Topbook](http://topbook.cc/) - 电脑工具各种技巧
 - [PAG - 跨平台渲染动画工作流](https://pag.io/)
 
+### 创作保护
+- [creative commons](https://creativecommons.org/choose/)
+- [谈谈创作共用许可证（Creative Commons licenses）](http://www.ruanyifeng.com/blog/2008/04/creative_commons_licenses.html)
+
 ---
 
 # 学术
@@ -207,10 +211,6 @@
 
 - [34 个使用 Raspberry Pi 的酷创意](https://linuxtoy.org/archives/cool-ideas-for-raspberry-pi.html)
 - [The MaPi 各种，可下载相关杂志](https://magpi.raspberrypi.com)
-
-# 创作保护
-- [creative commons](https://creativecommons.org/choose/)
-- [谈谈创作共用许可证（Creative Commons licenses）](http://www.ruanyifeng.com/blog/2008/04/creative_commons_licenses.html)
 
 
 # Books
