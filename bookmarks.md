@@ -104,6 +104,9 @@
 
 - Martina Petrova (Disney Style)
 - [Sean Sevestre](https://www.seansevestre.com)
+- []()
+- [Morgan Weistling - from marcobucci](https://www.morganweistling.com)
+- [josephzbukvic - from marcobucci](https://www.josephzbukvic.com)
 
 ### 工具
 
@@ -228,3 +231,8 @@
 - [经典编程书籍大全](https://github.com/jobbole/awesome-programming-books)
 - [Netkiller 系列免费电子书 - 编程](https://github.com/netkiller/netkiller.github.io)
 - [有数学书](https://github.com/0voice/expert_readed_books)
+
+# 学习平台
+
+- [edX](https://learning.edx.org)
+- [coursera](https://www.coursera.org)
