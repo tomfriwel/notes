@@ -145,3 +145,10 @@ safe_cast('tst', int, 0) # will return 0
 ```
 
 - [Safe casting in python](https://stackoverflow.com/a/6330109/6279975)
+
+
+### UnicodeDecodeError: 'ascii' codec can't decode byte 0x90 in position 614: ordinal not in range(128)
+
+`cPickle.load(f)` to `cPickle.load(f, encoding='bytes')`
+
+- [成功解决Python3版UnicodeDecodeError: ‘ascii‘ codec can‘t decode byte 0x90 in position 614: ordinal not in](https://blog.csdn.net/qq_41185868/article/details/79039604#:~:text=UnicodeDecodeError%3A%20%27ascii%27%20codec%20can%27t%20decode%20byte%200x90%20in,in%20position%20614%3A%20ordinal%20not%20in%20range%20%28128%29)
