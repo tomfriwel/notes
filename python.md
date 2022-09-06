@@ -158,3 +158,10 @@ safe_cast('tst', int, 0) # will return 0
 `net.SGD(training_data, 30, 10, 3.0, test_data=test_data)` to `net.SGD(list(training_data), 30, 10, 3.0, test_data=list(test_data))`
 
 - [object of type ‘zip‘ has no len()](https://blog.csdn.net/duohuanxi/article/details/109704121)
+
+
+### NameError: name 'xrange' is not defined
+
+replace `xrange` to `range`
+
+- [NameError: name 'xrange' is not defined报错的原因](https://www.cnblogs.com/xiaogangblog/p/13437497.html#:~:text=NameError%3A%20name%20%27xrange%27%20is%20not%20defined报错的原因,xrange%20%28%29函数时在python%202.x中的一个函数，在Python%203中，range%20%28%29的实现方式与xrange%20%28%29函数相同，所以就不存在专用的xrange%20%28%29，因此，当遇到这种问题时，有两种方法可以解决这个问题%E3%80%82)
