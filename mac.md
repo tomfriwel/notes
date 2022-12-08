@@ -60,3 +60,15 @@ launchctl load -w /Library/LaunchAgents/com.adobe.AdobeCreativeCloud.plist
 
 sudo rm /Library/LaunchAgents/com.adobe.AdobeCreativeCloud.plist
 ```
+
+### [Fix “Cannot install in Homebrew on ARM processor in Intel default prefix (/usr/local)!”](https://database.guide/fix-cannot-install-in-homebrew-on-arm-processor-in-intel-default-prefix-usr-local/)
+
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+### [https://blog.csdn.net/LIUXIAOXIAOBO/article/details/127024186](LibreSSL SSL_read: error:02FFF03C:system library:func(4095):Operation timed out, errno 60)
+
+use `https://github.com.ipaddress.com/www.github.com` check ip, copy value in ***IP Address***.
+
+use `sudo vi /etc/hosts`, add `[ip address] github.com`.
