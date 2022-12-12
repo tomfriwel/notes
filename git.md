@@ -185,3 +185,11 @@ Error: Failure while executing; `git clone https://github.com/adoptopenjdk/homeb
 `$ git push --force origin master`
 
 - [How to use git push force the right way](https://www.datree.io/resources/git-push-force)
+
+### global settings
+
+`~/.gitconfig`
+```sh
+git config --global --list
+
+```
