@@ -193,3 +193,7 @@ Error: Failure while executing; `git clone https://github.com/adoptopenjdk/homeb
 git config --global --list
 
 ```
+
+### find content in git hostory
+
+`$ git log -p <file path> | grep <content of searching>`
