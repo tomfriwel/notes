@@ -72,3 +72,29 @@ sudo rm /Library/LaunchAgents/com.adobe.AdobeCreativeCloud.plist
 use `https://github.com.ipaddress.com/www.github.com` check ip, copy value in ***IP Address***.
 
 use `sudo vi /etc/hosts`, add `[ip address] github.com`.
+
+
+### [MacBook使用笔记：安装Homebrew（M1）](https://zhuanlan.zhihu.com/p/372576355)
+
+```sh
+/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+```
+
+配置命令行路径：
+
+```sh
+# HomeBrew
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+# HomeBrew END
+```
+
+if apple silicon:
+```sh
+# HomeBrew
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/sbin:$PATH"
+# HomeBrew END
+```
