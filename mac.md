@@ -98,3 +98,13 @@ export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
 # HomeBrew END
 ```
+
+### Error: No such file or directory @ rb_sysopen - ...
+
+```sh
+==> Installing php dependency: apr-util
+==> Pouring apr-util-1.6.1_4.arm64_ventura.bottle.tar.gz
+Error: No such file or directory @ rb_sysopen - 
+```
+
+单独安装`$ brew install apr-util`
