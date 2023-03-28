@@ -288,3 +288,19 @@ $ yum update -y
 ```sh
 grep -r "text to search" /search/path/* --exclude [file to exclude]
 ```
+
+### give excute permission
+
+To use chmod to set permissions, we need to tell it:
+
+- Who: Who we are setting permissions for.
+- What: What change are we making? Are we adding or removing the permission?
+- Which: Which of the permissions are we setting?
+
+We use indicators to represent these values, and form short “permissions statements” such as u+x, where “u” means ” user” (who), “+” means add (what), and “x” means the execute permission (which).
+
+```sh
+chmod a+x <file>
+```
+
+- [How to Use the chmod Command on Linux](https://www.howtogeek.com/437958/how-to-use-the-chmod-command-on-linux/)
