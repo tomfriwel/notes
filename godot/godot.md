@@ -197,3 +197,7 @@ bool resource_local_to_scene
 
 If true, the resource will be made unique in each instance of its local scene. It can thus be modified in a scene instance without impacting other instances of that same scene.
 ```
+
+### [How do I detect when a mouse button is released?](https://godotengine.org/qa/43200/how-do-i-detect-when-a-mouse-button-is-released)
+
+Add a left mouse button action to the input map like mouse_left and use `Input.is_action_just_released("mouse_left")`.
