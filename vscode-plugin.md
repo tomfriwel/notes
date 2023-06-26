@@ -1,0 +1,7 @@
+# info
+GitHub Copilot
+v1.79.10634
+
+PHP
+DEVSENSE
+v1.34.13120
