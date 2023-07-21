@@ -29,11 +29,6 @@
 
 - [iOS 图像渲染过程解析](http://www.cocoachina.com/ios/20190404/26728.html)
 
-### 设计资源 design resources
-
-- [Apple Desgin 苹果设计资源](https://developer.apple.com/design/)
-- [微信设计资源](https://wechat.design)
-
 ### 设计学习
 
 - [UI中国 - 每周临摹 | 轻松学习、玩转设计](https://study.ui.cn/list.html)
@@ -243,3 +238,17 @@
 
 - [edX](https://learning.edx.org)
 - [coursera](https://www.coursera.org)
+
+----
+# 资源
+
+### 设计资源 design resources
+
+- [Apple Desgin 苹果设计资源](https://developer.apple.com/design/)
+- [微信设计资源](https://wechat.design)
+
+### 历史资料资源 history resources
+
+- [Internet Archive - 历史资料](https://archive.org/)
+- [Historical Photographs of China](https://hpcbristol.net/)
+- [Shanghai : a handbook for travellers and residents to the chief objects of interest in and around the foreign settlements and native city](https://archive.org/details/cu31924023217825/page/n43/mode/2up)
