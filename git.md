@@ -197,3 +197,34 @@ git config --global --list
 ### find content in git hostory
 
 `$ git log -p <file path> | grep <content of searching>`
+
+
+### sh with git command
+
+```sh
+touch test.sh
+vi test.sh
+chmod +x test.sh
+
+# check changes file
+git fetch
+git diff --name-only origin/master..master
+
+# set usernmae, passwork cache time
+git config --list
+
+格式git clone http://userName:password@链接地址
+实例git clone https://用户名:密码@git.coding.net/sample/HelloWorld.git
+
+作者：Yvanna_15
+链接：https://www.jianshu.com/p/d29c40145912
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+
+# 好像没用
+git config --global credential.helper 'cache --timeout=360000'
+git config --global credential.helper cache  
+
+git config --global credential.helper store
+```
