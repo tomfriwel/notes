@@ -289,7 +289,7 @@ $ yum update -y
 grep -r "text to search" /search/path/* --exclude [file to exclude]
 ```
 
-### give excute permission
+### give excute permission 赋予文件可执行权限
 
 To use chmod to set permissions, we need to tell it:
 
