@@ -304,3 +304,22 @@ chmod a+x <file>
 ```
 
 - [How to Use the chmod Command on Linux](https://www.howtogeek.com/437958/how-to-use-the-chmod-command-on-linux/)
+
+
+### 后台执行命令 run background task
+
+在Linux中，您可以通过在命令后添加`&`符号来让命令在后台执行。这样，您可以在不中断命令执行的情况下继续使用终端。例如，如果您想让`sleep 10`命令在后台运行，您可以这样做：
+
+```sh
+sleep 10 &
+```
+
+这将使`sleep 10`命令在后台运行，您可以立即在同一终端中执行其他命令。要查看后台进程的状态，您可以使用`jobs`命令。如果您想要将后台进程带到前台，可以使用`fg`命令，后面跟上进程的编号。例如：
+
+```sh
+fg %1
+```
+
+这将把编号为1的后台进程带到前台。
+
+（以上回答来自腾讯混元助手）
