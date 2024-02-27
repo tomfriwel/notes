@@ -438,6 +438,9 @@ fi
 # 获取要执行的命令
 command="$1"
 
+# 将命令输出到 nohup.out 文件
+echo "Running command: $command" >> nohup.out
+
 # 使用 nohup 运行命令，并将输出追加到 nohup.out 文件
 nohup $command >> nohup.out 2>&1 &
 ```
