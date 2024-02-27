@@ -422,3 +422,22 @@ jobs
 # 调到前台执行
 fg %1
 ```
+
+整理成`sh`脚本`run_nohup.sh`：
+
+
+```sh
+#!/bin/bash
+
+# 检查参数数量
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 \"<command>\""
+    exit 1
+fi
+
+# 获取要执行的命令
+command="$1"
+
+# 使用 nohup 运行命令，并将输出追加到 nohup.out 文件
+nohup $command >> nohup.out 2>&1 &
+```
