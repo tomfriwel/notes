@@ -20,5 +20,5 @@ echo "Running command: $command" >> nohup.out
 # 使用 nohup 运行命令，并将输出追加到 nohup.out 文件
 nohup $command >> nohup.out 2>&1 &
 
-# 查找进程
+# 查找进程PID
 pgrep -a -f "$command"
