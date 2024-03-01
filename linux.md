@@ -301,6 +301,9 @@ We use indicators to represent these values, and form short “permissions state
 
 ```sh
 chmod a+x <file>
+```
+
+```sh
 chmod +x <file>
 ```
 
