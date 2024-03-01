@@ -301,6 +301,7 @@ We use indicators to represent these values, and form short “permissions state
 
 ```sh
 chmod a+x <file>
+chmod +x <file>
 ```
 
 - [How to Use the chmod Command on Linux](https://www.howtogeek.com/437958/how-to-use-the-chmod-command-on-linux/)
