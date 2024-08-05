@@ -26,3 +26,5 @@ git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew
 brew update
 brew upgrade
 ```
+
+（最后没用到`openconnect`，只是更新了`homebrew`）
