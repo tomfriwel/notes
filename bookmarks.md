@@ -252,3 +252,8 @@
 - [Internet Archive - 历史资料](https://archive.org/)
 - [Historical Photographs of China](https://hpcbristol.net/)
 - [Shanghai : a handbook for travellers and residents to the chief objects of interest in and around the foreign settlements and native city](https://archive.org/details/cu31924023217825/page/n43/mode/2up)
+
+
+### 开源协议选择
+
+- https://choosealicense.com/licenses/
