@@ -31,3 +31,5 @@ DeepSeek-V3（model 参数值为 deepseek-v3）
 
 DeepSeek-V3 为671B 参数 MoE 模型，在百科知识、数学推理等多项任务上优势突出。
 
+
+- [腾讯调用统计](https://lke.cloud.tencent.com/lke#/app/system/statistics/resource)
