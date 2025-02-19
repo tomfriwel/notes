@@ -33,3 +33,4 @@ DeepSeek-V3 为671B 参数 MoE 模型，在百科知识、数学推理等多项�
 
 
 - [腾讯调用统计](https://lke.cloud.tencent.com/lke#/app/system/statistics/resource)
+- [DeepSeek技术专题：部署教程、一线玩法、原理解析](https://cloud.tencent.com/developer/special/deepseek)
