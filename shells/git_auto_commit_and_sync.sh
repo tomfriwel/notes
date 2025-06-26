@@ -14,6 +14,8 @@ fi
 # 获取当前分支名称
 CURRENT_BRANCH=$(git branch --show-current)
 
+echo "当前分支：$CURRENT_BRANCH"
+
 # 检查是否有未暂存的更改或未提交的更改
 if ! git diff-index --quiet HEAD --; then
     echo "检测到未提交的更改，正在提交..."
