@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# 自动提交并同步 Git 仓库脚本；文件创建后请确保脚本具有执行权限：chmod +x git_auto_commit_and_sync.sh
+
 # 进入你的项目目录（如果需要的话）
 # cd /path/to/your/project
 
