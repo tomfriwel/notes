@@ -7,6 +7,8 @@
 if ! git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
     echo "错误：当前目录不是一个 Git 仓库。"
     exit 1
+else
+    echo "当前目录是一个 Git 仓库。${PWD}"
 fi
 
 # 获取当前分支名称
