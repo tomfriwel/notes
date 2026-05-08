@@ -11,7 +11,7 @@ export API_TIMEOUT_MS=600000
 export ANTHROPIC_MODEL=deepseek-v3.1-terminus
 export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1
 
-
+# ~/.zshrc
 cd my-project
 claude
 
