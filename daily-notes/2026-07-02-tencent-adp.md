@@ -108,4 +108,20 @@ location = /chat {
 echo "1" | sudo make url
 
 
+# 查看当前的 secret key：(用于在CI4中生成链接)
+sudo docker exec adp-chat-client-default bash -c "grep CUSTOMER_ACCOUNT_SECRET_KEY /app/.env"
+
+# 如果上面的结果是空的，生成一个随机密钥
+openssl rand -hex 32
+# 填到 adp-chat-client 的 .env
+# 编辑 deploy/default/.env：
+vi deploy/default/.env
+# # 找到这行，填入生成的 key：
+# CUSTOMER_ACCOUNT_SECRET_KEY=刚才生成的密钥
+
+#  重启 adp-chat-client 容器
+sudo docker restart adp-chat-client-default
+# 验证配置生效
+sudo docker exec adp-chat-client-default bash -c "grep CUSTOMER_ACCOUNT_SECRET_KEY /app/.env"
+
 ```
