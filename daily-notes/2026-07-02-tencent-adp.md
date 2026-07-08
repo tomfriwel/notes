@@ -71,6 +71,9 @@ sudo docker info | grep -A 5 "Registry Mirrors"
 # 5. 重新 build
 sudo make pack
 
+# 如果超时，改一下超时时间（版本根据实际Dockerfile内容修改）
+sed -i 's|RUN pip install --no-cache-dir uv==0.9.2|RUN pip install --no-cache-dir --timeout 300 --retries 5 uv==0.9.2|' docker/Dockerfile
+
 
 sudo make deploy
 # 这个在proxy那台遇到了，在测试服app01没遇到
