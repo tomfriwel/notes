@@ -179,3 +179,47 @@ progressive：表示视频和音频是合并的（非流媒体）。
 
 下载视频+音频：
 `yt-dlp -f '401+140' 'https://www.youtube.com/watch?v=视频ID'`
+
+
+# yt-dlp 原生支持 B 站（bilibili），不用装任何额外插件。用法和 YouTube 基本一样：
+
+```bash
+# 看有哪些清晰度
+yt-dlp -F 'https://www.bilibili.com/video/BVxxxxxxxxxx'
+
+# 默认下载最高画质
+yt-dlp 'https://www.bilibili.com/video/BVxxxxxxxxxx'
+
+# 指定清晰度下载（如 1080P）
+yt-dlp -f 'bv*[height<=1080]+ba/b' 'https://www.bilibili.com/video/BVxxxxxxxxxx'
+
+# 只下音频（BGM、电台类）
+yt-dlp -f ba -o '%(title)s.%(ext)s' 'https://www.bilibili.com/video/BVxxxxxxxxxx'
+```
+
+## 三个常见的坑，提前跟你说
+
+**1. 高清要登录 Cookie**
+B 站的 1080P 高清、4K、大会员视频，不登录只能下到 480P/720P。解决：
+
+```bash
+# 直接用你浏览器里已登录的 cookie（Chrome/Edge/Safari 都行）
+yt-dlp --cookies-from-browser chrome 'https://www.bilibili.com/video/BVxxxxxxxxxx'
+```
+
+**2. 分 P 视频默认会下全部 P**
+B 站一个视频多个分 P（比如长合集），yt-dlp 会把它们当播放列表全部下载。只想下某一 P：
+
+```bash
+# 只下第 3 P
+yt-dlp --playlist-items 3 'https://www.bilibili.com/video/BVxxxxxxxxxx'
+```
+
+**3. 下载后合并需要 ffmpeg**
+B 站高清视频同样是音视频分离，需要本机 ffmpeg 合并（检查：`ffmpeg -version`，没有的话 `brew install ffmpeg`）。
+
+---
+
+另外提醒一句：B 站视频仅供个人学习/收藏使用，别拿去二次传播或商用。
+
+你把想下的 B 站视频链接发我，我可以直接帮你下载（告诉我目标清晰度就行）。
